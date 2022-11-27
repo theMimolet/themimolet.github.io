@@ -29,9 +29,14 @@ h2, h3{
 
 /* Classe .pad_need pour les cases de tableau qui ont besoin de + d'espace */
 
-.pad_need{
+.main td{
 	padding: 0.25% 0.75%;
 }
+
+.main th{
+	padding: 0.25% 0.75%;
+}
+
 
 /* Polices */
 
@@ -63,15 +68,15 @@ h2, h3{
 	font-size: 0.9em;
 	width: auto;
 	height: auto;
-    padding-bottom: 20px;
-    padding-top: 0.2px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin: auto;
-    background-color: white;
-    border-radius: 5px 5px 5px 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+	padding-bottom: 20px;
+	padding-top: 0.2px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin: auto;
+	background-color: white;
+	border-radius: 5px 5px 5px 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .main a {
@@ -93,15 +98,15 @@ h2, h3{
 .main table {
 	font-size: 0.8em;
 	background-color: white;
-    margin: auto;
-    width: auto;
+	margin: auto;
+	width: auto;
 	height: auto;
 }
 
 /* Tout ce qui concerne les autres pages ou le site en général */
 
 .sub_art {
-    background-color: white;
+	background-color: white;
 	text-align: justify;
 	font-family: "Blockletters";
 	font-size: 0.9em;
@@ -109,11 +114,11 @@ h2, h3{
 	justify-content: center;
 	width: auto;
 	height: auto;
-    border: 1px solid black;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin: auto;
-    border-radius: 5px 5px 5px 5px;
+	border: 1px solid black;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin: auto;
+	border-radius: 5px 5px 5px 5px;
 }
 
 .sub_art a {
@@ -134,26 +139,26 @@ h2, h3{
 article{
 	width: auto;
 	height: auto;
-    text-align: justify;
-    padding-left: 1%;
-    padding-right: 2%;
-    padding-top: 1%;
-    margin: auto;
-    background-color: white;
+	text-align: justify;
+	padding-left: 1%;
+	padding-right: 2%;
+	padding-top: 1%;
+	margin: auto;
+	background-color: white;
 }
 
 aside{
 	float: right;
 	font-family: "Playtime";
-    width: 25%;
-    height: auto;
+	width: 25%;
+	height: auto;
    	font-size: 1.2em
    	margin:	auto;
 }
 aside table{
 	border: 1px solid black;
-    width: auto;
-    height: auto;
+	width: auto;
+	height: auto;
 	margin: auto;
    	background-color: white;
 }
@@ -161,6 +166,10 @@ aside table{
 /* Pour les asides */
 
 td{
+	font-size: 1.3em;
+}
+
+th{
 	font-size: 1.3em;
 }
 
@@ -182,8 +191,8 @@ td{
 
 
 iframe{
-    width: 375px;
-    height: 210px;
+	width: 375px;
+	height: 210px;
 }
 
 /* Menu */
@@ -192,6 +201,7 @@ header{
 	background-image: url("../images/banner.jpg");
 	background-repeat: repeat;
 	background-attachment: fixed;
+	background-size: 100% auto;
 	margin-bottom: 5px;
 	border-radius: 5px 5px 5px 5px;
 }
@@ -237,6 +247,7 @@ header{
 }
 
 /* Galerie */
+
 div.gallery {
  	margin: 2px;
  	border: 2px solid #000;
