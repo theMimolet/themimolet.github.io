@@ -26,18 +26,6 @@ h2, h3{
 	font-size: 2em;
 }
 
-
-/* Classe .pad_need pour les cases de tableau qui ont besoin de + d'espace */
-
-.main td{
-	padding: 0.25% 0.75%;
-}
-
-.main th{
-	padding: 0.25% 0.75%;
-}
-
-
 /* Polices */
 
 @font-face{
@@ -101,6 +89,14 @@ h2, h3{
 	margin: auto;
 	width: auto;
 	height: auto;
+}
+
+.main td{
+	padding: 0.75% 0.50% 0.75% 0.50%;
+}
+
+.main th{
+	padding: 0.75% 0.50% 0.75% 0.50%;
 }
 
 /* Tout ce qui concerne les autres pages ou le site en général */
@@ -252,7 +248,7 @@ div.gallery {
  	margin: 2px;
  	border: 2px solid #000;
  	float: left;
- 	width: 480px;
+ 	width: 40%;
 }
 
 div.gallery:hover {
@@ -262,6 +258,7 @@ div.gallery:hover {
 div.gallery img {
   	width: 100%;
   	height: auto;
+  	scale: auto;
 }
 
 div.desc {
@@ -272,8 +269,14 @@ div.mobile{
 	margin: 2px;
  	border: 2px solid #000;
  	float: left;
- 	width: 240px;
+ 	width: 20%;
  }
+
+div.mobile img {
+  	width: 100%;
+  	height: auto;
+  	scale: auto;
+} 
 
  div.mobile:hover {
   	border: 2px solid rgb(248, 190, 89);
