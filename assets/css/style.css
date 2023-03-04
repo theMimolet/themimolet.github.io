@@ -1,0 +1,777 @@
+
+/* Body et modifications générales */
+
+body{
+	background-color: black;
+	color: white;
+	margin: 0px;
+	background-image: url("../images/dirt.png");
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: 4% auto;
+}
+
+a{
+	color: rgb(45, 147, 255);
+}
+
+main{
+	margin-right: -0.25vw;	
+	margin-left: 0.25vw;
+}
+
+/* Polices */
+
+@font-face{
+	font-family:"Beeg";
+	src: url(../font/LEMONMILK-Medium.otf) format("truetype");
+}
+
+h2{
+	font-family: "beeg";
+}
+
+/* Bouton du site */
+
+	.btn_div{
+		padding: 10px;
+		font-family: "beeg";
+	}
+
+	.btn_div a{
+		font-family: "beeg";		
+	}
+
+	.btn_bg{
+		color: rgb(237, 237, 237);
+		background-color: rgb(0, 130, 0); 
+		
+		text-align: center;
+		text-decoration: none;
+		
+		margin-left: auto;
+		margin-right: auto;
+
+		width: auto;
+		
+		padding: 15px;
+		border-radius: 5px 5px 5px 5px;
+		
+		transition: background-color 0.5s, color 0.5s, border 0.5s; 		
+	}
+
+	.btn_bg:hover{
+		background-color: rgb(0, 145, 0); 
+		color:rgb(237, 237, 237);
+	}
+
+/* Bannière - Header */
+
+header{
+	text-align: center;
+
+	margin-bottom: 5px;
+
+	overflow: hidden;
+}
+
+.header_bg{
+	background-image: url("../images/mc_banner.png");
+	background-attachment: fixed;
+	background-size: 100% auto;
+	transition: background-size 0.5s;
+}
+
+.rien{
+	font-size: 0em;
+}
+
+#logo{
+  margin-top: 2%;
+  margin-bottom: 8%;
+  margin-left: auto;
+	margin-right: auto;
+
+	position: sticky;
+	
+	width: 20%;
+	height: 20%;
+	transition: width 0.5s, height 0.5s;
+}
+
+#logo:hover{
+	width: 23%;
+	height: 23%;
+}
+
+	/* Navbar */
+
+	.navbar ul {
+		margin: auto;
+		margin-left: auto;
+		margin-right: auto;
+	  	
+		list-style-type: none;
+		
+		padding: 0;
+	  	
+		overflow: hidden;
+		
+		background-color: #333;
+	}
+
+	.navbar li {
+		display: inline-block;
+		
+		text-align: center;
+		font-family: "beeg";
+		text-shadow: 1px 1px 2px black;
+	}
+
+	.navbar li a, .dropbtn {
+		background-color: #A2A2A2;
+	  color: rgb(224, 224, 224);
+
+		display: block;
+	  	
+		text-align: center;
+		text-decoration: none;
+	  	
+		padding: 14px 16px;	
+	  border: 2px solid black;
+	  transition: background-color 0.25s, padding 0.25s;
+	}
+
+	.navbar li a:hover, .dropdown:hover .dropbtn {
+	  	background-color: green;
+	}
+
+	.navbar li.dropdown {
+	  display: inline-block;
+	}
+
+	.navbar .dropdown-content {
+		display: none;
+	  	position: absolute;
+	  	z-index: 1;
+
+	  	min-width: 160px;
+	  	
+		background-color: #f9f9f9;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	}
+
+	.navbar .dropdown-content a {
+	  	color: rgb(237, 237, 237);
+	  	
+	  	display: block;
+	  	
+		text-decoration: none;
+		text-align: left;
+
+		padding: 12px 12px;
+		margin-top: -2px;
+	}
+
+	.navbar .dropdown-content a:hover {
+		background-color: green; 
+		color: rgb(237, 237, 237);
+	}
+
+	.navbar .dropdown:hover .dropdown-content {
+	  	display: block;
+	}
+
+	.navbar li.active a {
+		background-color: green;
+		color: white;
+	}
+	
+	.navbar .dropdown-content .active {
+		background-color: green;
+		color: white;
+	}
+
+/* Page d'accueil */
+
+#home{
+	margin: auto;
+	width:99vw;
+}
+
+	/* Présentation du site */
+
+	#main_page{
+		margin-top: -15px;
+		margin-bottom: 10px;
+	}
+
+	#bvn{
+		font-size: 1.3em;
+	}
+
+	#main_page h2{
+		padding-top: 15px;
+		font-size: 1.9em;
+		width: 100%;
+	}
+
+	.m_page_intro{
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+
+		padding-bottom: 5px;	
+
+		background-color: rgb(86, 86, 86);
+
+		border-radius: 3px 3px 3px 3px;
+
+		width: 100%;
+	}
+
+	.m_page_intro p{
+		padding-left: 10px;
+		padding-right: 15px;
+		justify-self: center;
+	}
+
+	.m_page_intro *{
+		font-family: "helvetica";
+	}
+
+	.m_page_intro img{
+		height: 15vh;
+		width: auto;
+	}
+
+	/* Minecraft et ses dérivés */
+
+	#main_page_2{
+		display: flex;
+		justify-content: center;
+	}
+
+	#main_page_2 h2{
+		padding-top: 5px;
+		font-size: 1.7em;
+		width: 100%;
+	}
+
+	.m_page_mc{
+		display: flex;
+		flex-direction: column;
+
+		text-align: center;
+		align-content: center;
+		
+		background-color: rgb(86, 86, 86);
+
+		border-radius: 3px 3px 3px 3px;
+
+		padding-bottom: 5px;
+		width: 70%;
+	}
+
+	.m_page_mc p{
+		padding-left: 10px;
+		padding-right: 15px;
+		justify-self: center;
+	}
+
+	.m_page_mc *{
+		font-family: "helvetica";
+	}
+
+	main iframe{
+		width: 39.6vw;
+		height: 50vh;
+	}
+
+	#main_page_2 .btn_div{
+		margin-top: 20px;
+	}
+
+		/* Partie jeux */
+
+		#p_jeux{
+			text-align: center;
+			text-decoration: none;
+			background-color: rgb(86, 86, 86);
+			font-family: "helvetica";
+			border-radius: 3px 3px 3px 3px;
+			
+			width: 30%;
+			margin-left: 10px;
+			height: 80vh;
+		}
+
+		#game_list{
+			margin: auto;
+			width: 27vw;
+			height: 80%;
+			border-radius: 3px 3px 3px 3px;
+
+			background-color : rgb(101, 101, 101);
+
+			padding-top: 25px;
+			padding-bottom: 15px;
+			
+			overflow: scroll;
+		}
+
+		#p_jeux figure{
+			display: block;
+			margin: auto;
+			margin-bottom: 2%;
+			
+			background-color: #333;
+			color: rgb(237, 237, 237);
+			
+			border-radius: 3px 3px 3px 3px;
+			
+			height: auto;
+			width: 90%;
+			
+			font-size: 1em;
+
+			transition: width 0.25s, font-size 0.25s;
+		}
+
+		#p_jeux figure figcaption{
+			padding: 10px;
+			padding-bottom: 15px;
+			font-size: 0.8em;
+		}
+
+		#p_jeux figure img{
+			border-radius: 3px 3px 3px 3px;
+			width: 100%;
+		}
+
+		#p_jeux figure:hover{
+			width: 95%;
+			font-size: 1.055em;
+		}
+
+/* Page Wiki */
+
+.wiki{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width:99vw;
+}
+
+	/* Structure du Wiki */
+
+	.partie{
+		display: flex;
+		text-align: justify;
+		font-family: "helvetica";
+	}
+
+	.lore{
+		padding-left: 35px;
+		padding-right: 35px;
+		width: 100vw;
+		background-color : rgb(74, 76, 74);
+	}
+
+			/* Pour le sommaire */
+
+		.sommaire{
+			text-align: left;
+			width: 30vw;
+			background-color : rgba(102, 105, 102, 0.778);
+			border-radius: 3px 0px 0px 3px;
+		}
+
+		.sommaire a{
+			text-decoration: none;
+			color : rgb(237, 237, 237);	
+			
+			transition: color 0.5s;
+			margin-right: 5px;
+		}
+
+		.sommaire a:hover{
+			text-decoration: none;
+			color: #5cd262;		
+		}
+
+		.sommaire h3{
+			text-align: center;
+		}
+
+		/* Pour le aside */
+
+		.partie aside{
+			padding: 5px;
+			width: 30vw;
+			background-color : rgba(102, 105, 102, 0.778);
+			border-radius: 0px 3px 3px 0px;
+		}
+
+		.partie table{
+			text-align: center;
+			border-collapse: collapse;
+			border-radius: 3px 3px 3px 3px;
+			background-color: #949494;
+		}
+
+		.partie table img{
+			width: 100%;
+		}
+
+		.partie td,.partie th{
+			border: 2px solid black;
+			padding: 0.75% 0.50% 0.75% 0.50%;
+		}
+
+		.mc_bg{
+			background: #171614;
+			font-size: 0px;
+			padding: 0px;
+		}
+
+		.bottom{
+			background: #171614;
+			font-family: "beeg";
+			font-size: 1em;
+		}
+
+		.bottom a{
+			text-decoration: none;
+			color: rgb(237, 237, 237);
+			transition: color 0.25s;
+		}
+
+		.bottom a:hover{
+			color: #95F79E;
+		}
+
+/* Contact */
+
+form{
+	text-align: left;
+}
+
+#contact_main{
+	display: flex;
+	justify-content: space-between;
+	
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+	background-color: rgb(86, 86, 86);
+
+	border-radius: 3px 3px 3px 3px;
+
+	width: 99vw;
+
+	font-family: "helvetica";
+}
+
+#contact_main p{
+	padding-left: 10px;
+	padding-right: 15px;
+	justify-self: center;
+}
+
+#contact_fieldset{
+	width: 45vw; 
+	margin: auto;
+	border-radius: 5px 5px 5px 5px;
+	margin-top: 2.5vh;
+	margin-bottom: 2.5vh;
+}
+
+#probleme{
+	color: rgb(255, 92, 92);
+}
+
+#contact_fieldset .btn_bg{
+	border: white 0px;
+}
+
+#contact_contribution{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2.5vh;
+	padding-bottom: 2.5vh;
+}
+
+#contact_img{
+	background-image: url("../images/contact/2022-04-13_14.54.04.png");
+	background-attachment:local;
+	background-position: center center;
+	background-size: auto auto;
+	width: 50vw;
+	height: auto;
+}
+
+/* Footer */
+
+#foot{
+	text-align: center;
+	align-content:baseline;	
+	
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+
+	background-color: #4a4a4a;
+	padding-top: 10px ;	
+	padding-bottom: 5px;
+}
+
+#foot a{
+	color: orange;
+	font-family: "beeg";
+	text-decoration: none;
+	transition: color 0.25s;
+}
+
+#foot p{
+	padding-left: 10px;
+	padding-right: 15px;
+	font-family: "helvetica";
+}
+
+#foot a:hover{
+	color: #CB942F;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1000px) {
+
+	main{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	.header_bg{
+		background-position: center;
+		background-repeat: repeat;
+		background-attachment:scroll;
+		background-size: 150% auto;		
+	}
+
+	#logo{		
+		width: 70%;
+		height: 70%;
+		margin-bottom: 5px;
+	}
+
+	#logo:hover{
+		width: 80%;
+		height: 80%;
+		margin-bottom: 5px;
+	}
+
+	/* Navbar */
+
+	.navbar ul {
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.navbar li a, .dropbtn {
+		width: 50vw;
+	}
+
+	.dropbtn{
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+
+	#three{
+		margin-bottom: 5px;
+	}
+
+	.navbar li.dropdown {
+	  display: inline-block;
+	}
+
+	.navbar .dropdown-content a {
+		text-align: center;
+		padding: 15.9px 15.9px;
+		margin-top: -5px;
+	}
+
+	.navbar .dropdown .dropdown-content {
+		display: block;
+	}
+	
+	/* Page d'accueil */
+
+#home{
+	margin: auto;
+	width: 100vw;
+}
+
+	/* Présentation du site */
+
+	.m_page_intro{
+		border-radius: 0px 0px 0px 0px;
+	}
+
+	#main_page h2{
+		padding-top: 15px;
+		font-family: "beeg";
+		font-size: 1.9em;
+		width: 100%;
+	}
+
+	/* Minecraft et ses dérivés */
+
+	#main_page_2{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#main_page_2 h2{
+		padding-top: 5px;
+		font-family: "beeg";
+		font-size: 1.7em;
+		width: 100%;
+	}
+
+	.m_page_mc{
+		padding-bottom: 5px;
+		width: 100%;
+		margin-bottom: 2vh;
+	}
+
+	main iframe{
+		width: 100vw;
+		height: 50vh;
+	}
+
+	#main_page_2 .btn_div{
+		margin-top: 15px;
+	}
+		/* Partie jeux */
+
+		#p_jeux{
+			text-align: center;
+			text-decoration: none;
+			
+			border-radius: 0px 0px 0px 0px;
+			padding-bottom: 5px ;
+			width: 100vw;
+			height: auto;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+
+		#game_list{
+			margin: auto;
+			width: 90vw;
+			height: 100%;
+
+			padding-top: 25px;
+			padding-bottom: 15px;
+		}
+
+
+	/* Page Wiki */
+
+	.wiki{
+		text-align: center;
+		width: 100vw;
+		margin: 0px;
+	}
+
+		/* Structure du Wiki */
+
+		.partie{
+			display: flex;
+			flex-direction: column;
+			text-align: justify;
+			font-family: "helvetica";
+		}
+
+		.lore{
+			padding-left: 5vw;
+			padding-right: 5vw;
+			width: 90vw;
+			background-color : rgb(74, 76, 74);
+		}
+
+		.lore a{
+			color: rgb(45, 147, 255);
+		}
+
+			/* Pour le sommaire */
+
+			.sommaire{
+				text-align: left;
+				width: 100%;
+				background-color : rgba(102, 105, 102, 0.778);
+				border-radius: 0px 0px 0px 0px;
+			}
+
+			.sommaire a{
+				text-decoration: none;
+				color : rgb(237, 237, 237);	
+				
+				transition: color 0.5s;
+				margin-right: 5px;
+			}
+
+			.sommaire a:hover{
+				text-decoration: none;
+				color: #5cd262;		
+			}
+
+			/* Pour le aside */
+
+			.partie aside{
+				padding: 1vw;
+				width: 98vw;
+				border-radius: 0px 0px 0px 0px;
+			}
+
+			.partie aside table{
+				align-content: center;
+				margin: auto;
+				width: auto;
+			}
+			
+			/* Contact */
+
+#contact_main{
+	justify-content:center;
+	flex-direction: column;
+	
+	margin-left: 0px;
+	margin-right: 0px;
+
+	border-radius: 0px 0px 0px 0px;
+
+	width: 100vw;
+}
+
+#contact_fieldset{
+	width: 90vw; 
+	margin: auto;
+	border-radius: 5px 5px 5px 5px;
+}
+
+#contact_img{
+	background-image: url("../images/contact/2022-04-13_14.54.04.png");
+	background-attachment:local;
+	background-position: center center;
+	background-size: auto auto;
+	width: 100vw;
+	height: 80vh;
+}
+
+}
