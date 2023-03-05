@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="../images/mc_icon.ico">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../javascript/script.js"></script>
+	<title>Contact - Craftpedia</title>
+</head>
+<body>
+
+	<!-- Header -->
+
+	<header>
+		<div class="header_bg">
+			<a href="../../index.html"><img src="../images/cp_logo.png" alt="logo" id="logo"></a>
+			<h1 class="rien">Craftpedia</h1>
+		</div>
+		<div class="navbar">
+			<ul>
+				<li><a href="../../index.html">Accueil</a></li>
+			    <li class="dropdown">
+			   		<a class="dropbtn">Les jeux</a>
+				    <div class="dropdown-content">
+				      	<a href="wiki_minecraft.html">Minecraft</a>
+				      	<a href="wiki_minecraft_dungeons.html">Minecraft Dungeons</a>
+						<a href="wiki_minecraft_legends.html">Minecraft Legends</a>
+						<a href="wiki_minecraft_earth.html">Minecraft Earth</a>
+						<a href="wiki_minecraft_story_mode.html">Minecraft Story Mode</a>
+				    </div>
+			  	</li>
+			  	<li class="active"><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<!-- Boite de la page Contact -->
+	<main id="contact_main">
+
+		<!-- Formulaire -->
+
+		<div id="contact_contribution">
+			<h2>Contact</h2>
+			<p>Vous souhaitez contribuer à Craftpedia ? Veuillez remplir le formulaire ci-dessous pour qu'on puisse vous contacter par la suite!</p>
+		
+			<!-- Formulaire -->
+
+			<fieldset id="contact_fieldset">
+				<legend>Formulaire</legend>
+				<form> 
+					<p>
+						<label for="nom">Nom :</label>
+						<input type="text" name="nom" id="nom" placeholder="Sud" required>
+					</p>
+
+					<p>
+						<label for="prenom">Prénom :</label>
+						<input type="text" name="prenom" id="prenom" placeholder="George" required>
+					</p>
+
+					<p>
+						<label for="age">Âge :</label>
+						<input type="number" name="age" placeholder="18" min="1" max="100" required>
+					</p>
+
+					<p>
+						<label for="adresse">Adresse :</label>
+						<input type="text" name="adresse" id="adresse" placeholder="14 Rue des mimosas, St Glinglin s/ Forêt" required>
+					</p>
+
+					<p>
+						<label for="anniversaire">Date de naissance :</label>
+						<input type="date" id="anniversaire" name="anniversaire" placeholder="Votre date de naissance">
+					</p>
+					<p>
+						<label for="email">Adresse email :</label>
+						<input type="email" name="email" id="email" placeholder="exemple@adresse.com" required>
+					</p>
+					<input type="submit" value="Envoyer" class="btn_div btn_bg">
+				</form>
+			</fieldset>
+			<p id="probleme">⚠ Suite à un problème sur nos serveurs, nous ne pouvons pas recevoir votre formulaire pour le moment ⚠</p>
+		</div>
+		<div id="contact_img"></div>
+	</main>
+
+	<!-- Footer avec un lien vers le link-tree du créateur du site -->
+
+	<footer id="foot">
+		<p>Site créé par <a href="https://linktr.ee/mimolet" target="_blank">Mimolet</a></p>
+	</footer>
+</body>
+</html>
