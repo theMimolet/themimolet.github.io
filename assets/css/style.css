@@ -4,7 +4,9 @@
 body{
 	background-color: black;
 	color: white;
+
 	margin: 0px;
+
 	background-image: url("../images/dirt.png");
 	background-repeat: repeat;
 	background-attachment: fixed;
@@ -25,6 +27,10 @@ main{
 @font-face{
 	font-family:"Beeg";
 	src: url(../font/LEMONMILK-Medium.otf) format("truetype");
+}
+
+p, h3, figcaption{
+	font-family: "helvetica";
 }
 
 h2{
@@ -69,9 +75,7 @@ h2{
 
 header{
 	text-align: center;
-
 	margin-bottom: 5px;
-
 	overflow: hidden;
 }
 
@@ -107,12 +111,12 @@ header{
 	/* Navbar */
 
 	.navbar ul {
+		list-style-type: none;
+
 		margin: auto;
 		margin-left: auto;
 		margin-right: auto;
-	  	
-		list-style-type: none;
-		
+	  		
 		padding: 0;
 	  	
 		overflow: hidden;
@@ -129,8 +133,11 @@ header{
 	}
 
 	.navbar li a, .dropbtn {
+		user-select: none;
+		
 		background-color: #A2A2A2;
 	  color: rgb(224, 224, 224);
+		transition: background-color 0.25s, padding 0.25s;
 
 		display: block;
 	  	
@@ -139,7 +146,6 @@ header{
 	  	
 		padding: 14px 16px;	
 	  border: 2px solid black;
-	  transition: background-color 0.25s, padding 0.25s;
 	}
 
 	.navbar li a:hover, .dropdown:hover .dropbtn {
@@ -152,19 +158,19 @@ header{
 
 	.navbar .dropdown-content {
 		display: none;
-	  	position: absolute;
-	  	z-index: 1;
+	  position: absolute;
+	  z-index: 1;
 
-	  	min-width: 160px;
+	  min-width: 160px;
 	  	
 		background-color: #f9f9f9;
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	}
 
 	.navbar .dropdown-content a {
-	  	color: rgb(237, 237, 237);
+	  color: rgb(237, 237, 237);
 	  	
-	  	display: block;
+	  display: block;
 	  	
 		text-decoration: none;
 		text-align: left;
@@ -236,10 +242,6 @@ header{
 		justify-self: center;
 	}
 
-	.m_page_intro *{
-		font-family: "helvetica";
-	}
-
 	.m_page_intro img{
 		height: 15vh;
 		width: auto;
@@ -279,10 +281,6 @@ header{
 		justify-self: center;
 	}
 
-	.m_page_mc *{
-		font-family: "helvetica";
-	}
-
 	main iframe{
 		width: 39.6vw;
 		height: 50vh;
@@ -298,7 +296,7 @@ header{
 			text-align: center;
 			text-decoration: none;
 			background-color: rgb(86, 86, 86);
-			font-family: "helvetica";
+			
 			border-radius: 3px 3px 3px 3px;
 			
 			width: 30%;
@@ -602,10 +600,6 @@ form{
 		text-align: center;
 		padding: 15.9px 15.9px;
 		margin-top: -5px;
-	}
-
-	.navbar .dropdown .dropdown-content {
-		display: block;
 	}
 	
 	/* Page d'accueil */
