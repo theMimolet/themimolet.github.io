@@ -22,11 +22,17 @@ main{
 	margin-left: 0.25vw;
 }
 
+fieldset{
+	border-radius: 5px 5px 5px 5px;
+	margin-top: 2.5vh;
+	margin-bottom: 2.5vh;
+}
+
 /* Polices */
 
 @font-face{
 	font-family:"Beeg";
-	src: url(../font/LEMONMILK-Medium.otf) format("truetype");
+	src: url(./font/LEMONMILK-Medium.otf) format("truetype");
 }
 
 p, h3, figcaption{
@@ -361,6 +367,50 @@ header{
 	width:99vw;
 }
 
+.feature_list li{
+	margin-bottom: 10px;
+}
+
+	/* Galerie */
+
+	#w_galerie{
+		font-size: 1.3em;
+	}
+
+	.lore fieldset p{
+		text-decoration: none;
+		margin-left: 1vw;
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+
+	.galerie-div{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.galerie-div figure{
+		background-color: #8b8b8b;
+		border-radius: 3px 3px 3px 3px;
+		padding: 5px;
+		margin: 5px;
+	}
+
+	.galerie-div figure img{
+		width: 18vw;
+		height: auto;
+		border-radius: 3px 3px 3px 3px;
+	}
+
+	.galerie-div figure figcaption{
+		width: 18vw;
+		text-align: center;
+		font-family: "beeg";
+		text-shadow: 1px 1px 2px black;
+	}
+
 	/* Structure du Wiki */
 
 	.partie{
@@ -415,7 +465,7 @@ header{
 			text-align: center;
 			border-collapse: collapse;
 			border-radius: 3px 3px 3px 3px;
-			background-color: #949494;
+			background-color: #5b7059;
 		}
 
 		.partie table img{
@@ -481,9 +531,6 @@ form{
 #contact_fieldset{
 	width: 45vw; 
 	margin: auto;
-	border-radius: 5px 5px 5px 5px;
-	margin-top: 2.5vh;
-	margin-bottom: 2.5vh;
 }
 
 #probleme{
@@ -683,6 +730,37 @@ form{
 		margin: 0px;
 	}
 
+		/* Galerie */
+
+		.lore fieldset p{
+			text-align: center;
+			margin-left: 0vw;
+		}
+
+		.galerie-div{
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content:flex-start;
+
+			width: 100%;
+			height: auto;
+		}
+	
+		.galerie-div figure{
+			border-radius: 3px 3px 3px 3px;
+			padding: 5px;
+			margin: 5px;
+		}
+	
+		.galerie-div figure img{
+			width: 100%;
+			height: auto;
+		}
+	
+		.galerie-div figure figcaption{
+			width: 100%;
+		}
+
 		/* Structure du Wiki */
 
 		.partie{
@@ -706,23 +784,8 @@ form{
 			/* Pour le sommaire */
 
 			.sommaire{
-				text-align: left;
 				width: 100%;
-				background-color : rgba(102, 105, 102, 0.778);
 				border-radius: 0px 0px 0px 0px;
-			}
-
-			.sommaire a{
-				text-decoration: none;
-				color : rgb(237, 237, 237);	
-				
-				transition: color 0.5s;
-				margin-right: 5px;
-			}
-
-			.sommaire a:hover{
-				text-decoration: none;
-				color: #5cd262;		
 			}
 
 			/* Pour le aside */
