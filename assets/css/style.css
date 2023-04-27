@@ -6,19 +6,21 @@
 
 *{
   font-family: 'Mukta', sans-serif;
+  color:black;
+  transition: color 0.5s;
 }
 
 body{
   margin: 0px;
   
-  transition: background-color 1s;
+  transition: background-color 0.5s;
   /* Light Mode */
-  background-color: rgb(202, 202, 202);
+  background-color: rgb(235, 235, 235);
 }
 
 main{
   text-align: center;
-  background-color: rgb(243, 241, 239);
+  
   box-shadow: 0px 0px 7px 1px gray;
 
   border-radius: 5px 5px 5px 5px;
@@ -32,8 +34,9 @@ main{
   margin-top: 10px;
   margin-bottom: 10px;
 
-  transition: background-color 1s;
+  transition: background-color 0.5s;
   /* Light Mode */
+  background-color: rgb(255, 255, 255);
 }
 
 .top-bg{
@@ -59,6 +62,10 @@ main{
   
   margin: 5px;
   margin-bottom: 0px;
+  cursor: pointer;
+
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 
   transition: background-color 0.2s;
   /* Light Mode */
@@ -90,6 +97,9 @@ main{
   margin: 5px;
   margin-bottom: 0px;
   -webkit-user-select: none;
+          user-select: none;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 
 .languages-dropdown div{
@@ -121,7 +131,7 @@ main{
   width: 25%;
   margin-top: -100px;
   border: solid rgb(243, 241, 239) 5px;
-  transition: width 1s;
+  transition: width 1s, border 0.5s;
 }
 
 h1{
