@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@900&display=swap');
 
 /* Mise en forme */
 
@@ -12,6 +13,11 @@
   font-family: 'Mukta', sans-serif;
   color:black;
   transition: color 0.5s;
+}
+
+p{
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 #citation{
@@ -35,8 +41,7 @@ main{
   
   box-shadow: 0px 0px 7px 1px gray;
 
-  border-radius: 5px 5px 5px 5px;
-  
+  border-radius: 5px;
   
   padding: 5px;
   width: 725px;
@@ -152,21 +157,12 @@ h1{
   margin-bottom: 0px;
 }
 
-.english{
-  display: block;
-}
-
-
-.german{
-  display: none;
-}
-
 /* Réseaux */
 
 .socials{
   width: 80%;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
   -webkit-user-select: none;
           user-select: none;
@@ -187,13 +183,12 @@ h1{
   padding: 5px;
   
   border-radius: 5px;
-  border: none;
 
   font-size: 0;
   cursor: pointer;
 
   box-shadow: 0px 0px 3px 0px black;
-  background-color: rgba(255, 255, 255, 0.7) ;
+  background-color: rgba(255, 255, 255, 0.7);
 
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
@@ -204,6 +199,77 @@ h1{
 .socials div:hover{
   background-color: rgba(212, 208, 204, 0.7);
 }
+
+#game-gallery{
+  margin: auto;
+  height: 25vh;
+  width: 95%;
+
+  overflow-y:hidden;
+  overflow-x: auto;
+  
+  display: flex;
+  align-items: center;
+
+  background-color: rgba(212, 208, 204, 0.7);
+  box-shadow: 0px 0px px 0px black inset;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+}
+
+#game-gallery img{
+  height: 90%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: height 0.5s, box-shadow 0.5s;
+  margin-left: 15px;
+  box-shadow: 0px 0px 5px 0px black;
+}
+
+#game-description{
+  height: max-content;
+  display: flex;
+}
+
+#game-description section{
+  width: 70%;
+}
+
+#game-description table{
+	width: auto;
+	height: auto;
+	margin: auto;
+  border-collapse: collapse;
+}
+
+#game-description table td{
+  width: 300px;
+  border: solid black 2px;
+}
+
+.illustration{
+  font-size: 0px;
+}
+
+.illustration iframe{
+  width: 300px;
+  height: 170px;
+}
+
+.play a{
+  text-decoration: none;
+}
+
+.play a span{
+  color: white;
+  text-shadow: 0px 0px 3px black;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2em;
+}
+
+
+/* Responsive */
+
 
 @media screen and (max-width: 735px) and (min-width:500px){
   main{  
@@ -228,10 +294,6 @@ h1{
     padding: 5px;
   }
 }
-
-
-/* Responsive */
-
 
 @media screen and (max-width: 500px) {
   main{  
