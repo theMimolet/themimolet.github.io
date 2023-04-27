@@ -1,16 +1,23 @@
 /* Google import */
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 /* Mise en forme */
 
 
-/* Générale */
+/* Police */
 
 *{
   font-family: 'Mukta', sans-serif;
   color:black;
   transition: color 0.5s;
+}
+
+#citation{
+  margin-top: 10px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.7em;
 }
 
 /* Fond */
