@@ -1,29 +1,60 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mimolet</title>
   <link rel="icon" type="image/x-icon" href="./assets/images/website_icon.ico">
+  <title>Mimolet</title>
+  <script src="assets/javascript/jquery.js"></script>
+  <script src="assets/javascript/script.js"></script>
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
   <main>
     <div class="top-bg">
       <div class="top-buttons">
-        <button>
-          <div class="dark-mode-on">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon-stars" width="100%" height="auto" viewBox="0 0 24 24" stroke-width="1.5" stroke="rgba(50,50,50,1)" fill="rgba(0,0,0,0.8)" stroke-linecap="round" stroke-linejoin="round">
+        <button class="dark-mode-btn">
+          <div class="dark-mode-off">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon-stars" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
             <path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
             <path d="M19 11h2m-1 -1v2" />
           </svg>  
+          </div>
+          <div class="dark-mode-on">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brightness-up" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="12" cy="12" r="3" />
+              <line x1="12" y1="5" x2="12" y2="3" />
+              <line x1="17" y1="7" x2="18.4" y2="5.6" />
+              <line x1="19" y1="12" x2="21" y2="12" />
+              <line x1="17" y1="17" x2="18.4" y2="18.4" />
+              <line x1="12" y1="19" x2="12" y2="21" />
+              <line x1="7" y1="17" x2="5.6" y2="18.4" />
+              <line x1="6" y1="12" x2="4" y2="12" />
+              <line x1="7" y1="7" x2="5.6" y2="5.6" />
+            </svg>
           </div>          
           dark_mode
         </button>
-        <button>Language</button>  
+        <button class="languages-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 5h7" />
+            <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+            <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+            <path d="M12 20l4 -9l4 9" />
+            <path d="M19.1 18h-6.2" />
+          </svg>
+          languages   
+        </button>
+        <div class="languages-dropdown">
+          <div id="english-btn">EN</div>
+          <div id="french-btn">FR</div>
+          <div id="german-btn">DE</div>
+        </div>
+         
       </div>      
     </div>    
     <img src="assets/images/mimo_pic.png" alt="Mimolet profile picture" class="profile_pic">
@@ -31,7 +62,7 @@
     <div class="description">
       <div class="english">
         <p>
-          Hello, I'm Mimolet. I'm an Internet dude who loves video-games, trains and internet in general. 
+          Hello, my name is Mimolet. I'm an Internet dude who loves video-games, trains and internet in general. 
           I am currently studying to become one day a professionnal video game developper.
           I also like to edit videos, photos and be a nerd in general.
           I made this website to make it easier to find what I do and where I am on the Internet.
@@ -39,10 +70,18 @@
       </div>
       <div class="french">
         <p>
-          Salut, c'est moi Mimolet. Je suis un gars d'Internet qui aime les jeux-vidéos, les trains et internet en général. 
+          Salut, je m'appelle Mimolet. Je suis un gars d'Internet qui aime les jeux-vidéos, les trains et internet en général. 
           Je fais actuellement des études pour devenir un développeur de jeux-vidéos professionnel un jour. 
           J'aime aussi faire des montages vidéo et photos et être un geek. 
           J'ai conçus ce site pour que ce soit plus simple de voir ce que je fais et où je suis sur Internet.
+        </p>
+      </div>
+      <div class="german">
+        <p>
+          Hallo, meine Name ist Mimolet. Ich bin ein Internet-Typ, der Videospiele, Züge und Internet im Allgemeinen liebt. 
+          Ich studiere derzeit, um eines Tages ein professioneller Videospiel-entwickler zu werden. 
+          Ich mag es auch, Video- und Fotobearbeitungen zu machen und ein Geek zu sein. 
+          Ich habe diese Website so gestaltet, dass es einfacher ist zu sehen, was ich tue und wo ich im Internet bin.
         </p>
       </div>
     </div>
