@@ -76,10 +76,6 @@ main{
   background-color: rgba(212, 208, 204, 0.7);
 }
 
-.top-buttons button:active{
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
 .dark-mode-off{
   display: block;
 }
@@ -130,7 +126,7 @@ main{
   border-radius: 100%;
   width: 25%;
   margin-top: -100px;
-  border: solid rgb(243, 241, 239) 5px;
+  border: solid rgb(255, 255, 255) 5px;
   transition: width 1s, border 0.5s;
 }
 
