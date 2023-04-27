@@ -20,8 +20,9 @@ $(document).ready(function(){
     $("*").css({"color":"black"});
     $("body").css({"background-color":"rgb(235, 235, 235)"});
     $("main").css({"background-color":"rgb(255, 255, 255)","box-shadow": "0px 0px 7px 1px gray"});
-    $(".top-buttons button").css({"background-color":"rgba(255, 255, 255, 0.7)"}); 
-    $(".languages-dropdown div").css({"background-color":"rgba(243, 241, 239, 0.8)"});
+    $(".daButtons").css({"background-color":"rgba(255, 255, 255, 0.7)"}); 
+    $(".socials div").css({"background-color":"rgba(255, 255, 255, 0.7)"});
+    $("#languages-dropdown div").css({"background-color":"rgba(243, 241, 239, 0.8)"});
     $(".profile_pic").css({"border": "solid rgb(255, 255, 255) 5px"});
   };
   
@@ -35,8 +36,9 @@ $(document).ready(function(){
     $("*").css({"color":"rgb(220, 220, 220)"}); 
     $("body").css({"background-color":"rgb(36, 36, 36)"});
     $("main").css({"background-color":"rgb(51, 51, 51)","box-shadow": "0px 0px 7px 1px gray"});
-    $(".top-buttons button").css({"background-color":"rgba(51, 51, 51, 0.7)"});
-    $(".languages-dropdown div").css({"background-color":"rgba(51, 51, 51, 0.8)"});
+    $(".daButtons").css({"background-color":"rgba(51, 51, 51, 0.7)"});
+    $(".socials div").css({"background-color":"rgba(51, 51, 51, 0.7)"});
+    $("#languages-dropdown div").css({"background-color":"rgba(51, 51, 51, 0.7)"});
     $(".profile_pic").css({"border": "solid rgb(51, 51, 51) 5px"});
   };
 
@@ -45,7 +47,7 @@ $(document).ready(function(){
 
 
   dark_mode_off(); 
-  $(".languages-dropdown").hide();
+  $("#languages-dropdown").hide();
   $(".french").hide();
 
 
@@ -55,7 +57,7 @@ $(document).ready(function(){
 
   // Hover des boutons
 
-  $(".top-buttons button").hover(function(){
+  $(".daButtons").hover(function(){
     if(dark_mode === false){
       $(this).css({"background-color":"rgba(212, 208, 204, 0.7)"});
     } else {
@@ -69,7 +71,7 @@ $(document).ready(function(){
     }
   });
 
-  $(".languages-dropdown div").hover(function(){
+  $("#languages-dropdown div").hover(function(){
     if(dark_mode === false){
       $(this).css({"background-color":"rgba(212, 208, 204, 0.7)"});
     } else {
@@ -83,10 +85,23 @@ $(document).ready(function(){
     }
   });
 
+  $(".socials div").hover(function(){
+    if(dark_mode === false){
+      $(this).css({"background-color":"rgba(212, 208, 204, 0.7)"});
+    } else {
+      $(this).css({"background-color":"rgba(75, 75, 75, 0.7)"});
+    }
+  }, function(){
+    if(dark_mode === false){
+      $(this).css({"background-color":"rgba(255, 255, 255, 0.7)"}); 
+    } else {
+      $(this).css({"background-color":"rgba(51, 51, 51, 0.7)"});
+    }
+  });
 
   // Dark Mode
 
-  $(".dark-mode-btn").click(function(){
+  $("#dark-mode-btn").click(function(){
     if(dark_mode === false){
       dark_mode_on();
       dark_mode = true;
@@ -97,16 +112,16 @@ $(document).ready(function(){
       console.log("Dark mode off");
     }
   });
-  
+
 
   // Langues
 
-  $(".languages-btn").click(function(){
+  $("#languages-btn").click(function(){
     if (language_display === false){
-      $(".languages-dropdown").show();
+      $("#languages-dropdown").show();
       language_display = true;
     } else {
-      $(".languages-dropdown").hide();
+      $("#languages-dropdown").hide();
       language_display = false;
     }
   });
