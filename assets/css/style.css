@@ -200,6 +200,8 @@ h1{
   background-color: rgba(212, 208, 204, 0.7);
 }
 
+/* Gallerie des jeux */
+
 #game-gallery{
   margin: auto;
   height: 25vh;
@@ -226,12 +228,18 @@ h1{
   box-shadow: 0px 0px 5px 0px black;
 }
 
+#TTOD{
+  margin-right: 15px;
+}
+
 #game-description{
   height: max-content;
   display: flex;
+  align-items: center;
 }
 
 #game-description section{
+  margin-top: 0px;
   width: 70%;
 }
 
@@ -293,6 +301,29 @@ h1{
   .description{
     padding: 5px;
   }
+
+  /* Réseaux */
+
+  .socials{
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  #game-gallery{
+    width: 100%;
+    Border-radius: 0px;
+  }
+
+  /* Gallerie de jeux */
+
+  #game-gallery{
+    width: 100%;
+    Border-radius: 0px;
+  }
+
+  #game-description{
+    flex-direction: column;
+  }  
 }
 
 @media screen and (max-width: 500px) {
@@ -318,4 +349,24 @@ h1{
   .description{
     padding: 5px;
   }
+
+    /* Réseaux */
+
+  .socials{
+    width: 100%;
+    flex-wrap: wrap;
+    border-radius: 0px;
+  }
+
+  /* Gallerie de jeux */
+
+  #game-gallery{
+    width: 100%;
+    Border-radius: 0px;
+  }
+
+  #game-description{
+    flex-direction: column;
+  }
+
 }
