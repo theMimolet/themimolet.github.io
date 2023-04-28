@@ -4,9 +4,9 @@ $(document).ready(function(){
   
   // Variables
 
-  let dark_mode = false;
+  let dark_mode = JSON.parse(localStorage.getItem("dark_mode"));
   let language_display = false;
-  let language = "english";
+  let language = localStorage.getItem("language");
   let show_game = "none";
   
 
@@ -29,6 +29,8 @@ $(document).ready(function(){
     $("#game-gallery").css({"background-color":"rgba(212, 208, 204, 0.7)"})
     $("#languages-dropdown div").css({"background-color":"rgba(243, 241, 239, 0.8)"});
     $(".profile_pic").css({"border": "solid rgb(255, 255, 255) 5px"});
+
+    console.log("Dark mode off");
   };
   
   // Dark mode
@@ -48,16 +50,64 @@ $(document).ready(function(){
     $("#game-gallery").css({"background-color":"rgba(112, 108, 104, 0.7)"})
     $("#languages-dropdown div").css({"background-color":"rgba(51, 51, 51, 0.7)"});
     $(".profile_pic").css({"border": "solid rgb(51, 51, 51) 5px"});
+
+    console.log("Dark mode on");
   };
 
 
+  // Language 
+
+  function set_english(){
+    $(".english").show();
+    $(".french").hide();
+    $(".german").hide();
+    console.log("Language is now set to english");
+  };
+
+  function set_french(){
+    $(".french").show();
+    $(".german").hide();
+    $(".english").hide();
+    console.log("Language is now set to french");
+  };
+
+  function set_german(){
+    $(".german").show();
+    $(".french").hide();
+    $(".english").hide();
+    console.log("Language is now set to german");
+  };
+
   // Setup 
 
+  if (dark_mode === null) {
+    dark_mode = false;
+  };
 
-  dark_mode_off(); 
+  console.log(dark_mode)
+  if (dark_mode === true){
+    dark_mode_on();
+  };
+  if (dark_mode === false){
+    dark_mode_off();
+  };
+
+  if (language === null) {
+    language = "english";
+  };
+
+  console.log(language)
+  if (language === "english"){
+    set_english();
+  };
+  if (language === "french"){
+    set_french();
+  };
+  if (language === "german"){
+    set_german();
+  };
+
   $("#languages-dropdown").hide();
-  $(".french").hide();
-  $(".german").hide();
   $(".save-nautica").hide();
   $(".totem-destiny").hide();
 
@@ -97,8 +147,11 @@ $(document).ready(function(){
 
   $(".socials div").hover(function(){
     if(dark_mode === false){
+      console.log("dark_mode_off");
       $(this).css({"background-color":"rgba(212, 208, 204, 0.7)"});
-    } else {
+    };
+    if(dark_mode === true){
+      console.log("dark_mode_on");
       $(this).css({"background-color":"rgba(75, 75, 75, 0.7)"});
     }
   }, function(){
@@ -115,14 +168,13 @@ $(document).ready(function(){
     if(dark_mode === false){
       dark_mode_on();
       dark_mode = true;
-      console.log("Dark mode on");
+      localStorage.setItem("dark_mode", true.toString());
     } else {
       dark_mode_off(); 
       dark_mode = false;
-      console.log("Dark mode off");
+      localStorage.setItem("dark_mode", false.toString());
     }
   });
-
 
   // Langues
 
@@ -140,11 +192,9 @@ $(document).ready(function(){
 
   $("#english-btn").click(function(){
     if (language != "english"){
-    $(".french").hide();
-    $(".german").hide();
-    $(".english").show();
-    console.log("Language is now set to english");
-    language = "english"  
+      set_english();
+      language = "english";
+      localStorage.setItem("language", "english");  
     };    
   });
 
@@ -152,11 +202,9 @@ $(document).ready(function(){
 
   $("#french-btn").click(function(){
     if (language != "french"){
-    $(".french").show();
-    $(".german").hide();
-    $(".english").hide();
-    console.log("Language is now set to french");  
-    language = "french"
+      set_french();
+      language = "french";
+      localStorage.setItem("language", "french");  
     };    
   });
 
@@ -164,11 +212,9 @@ $(document).ready(function(){
 
   $("#german-btn").click(function(){
     if (language != "german"){
-    $(".french").hide();
-    $(".german").show();
-    $(".english").hide();
-    console.log("Language is now set to german");  
-    language = "german"
+      set_german();
+      language = "german";
+      localStorage.setItem("language", "german");  
     };    
   });
 
