@@ -20,12 +20,6 @@ p{
   margin-right: 15px;
 }
 
-#citation{
-  margin-top: 10px;
-  font-family: 'Dancing Script', cursive;
-  font-size: 1.7em;
-}
-
 /* Fond */
 
 body{
@@ -49,7 +43,7 @@ main{
 
   margin: auto;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
   transition: background-color 0.5s;
   /* Light Mode */
@@ -155,6 +149,12 @@ h1{
   font-size: 2.5em;
   margin-top: -5px;
   margin-bottom: 0px;
+}
+
+#citation{
+  margin-top: 10px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.7em;
 }
 
 /* Réseaux */
@@ -276,6 +276,7 @@ h1{
 }
 
 
+
 /* Responsive */
 
 
@@ -284,12 +285,15 @@ h1{
     border-radius: 0px; 
 
     padding: 0px;
+    padding-bottom: 10px;
     
     width: 100vw;
     height: auto;
 
     margin-top: 0px;
+    margin-bottom: 0px;
   }
+
   .top-bg{
     border-radius: 0px;
   }
@@ -335,12 +339,15 @@ h1{
     border-radius: 0px; 
 
     padding: 0px;
+    padding-bottom: 10px;
     
     width: 100vw;
     height: auto;
 
     margin-top: 0px;
+    margin-bottom: 0px;
   }
+
   .top-bg{
     border-radius: 0px;
   }

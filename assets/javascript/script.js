@@ -55,27 +55,31 @@ $(document).ready(function(){
   };
 
 
-  // Language 
+  // Language
+
+  function language_change_log(){
+    console.log("Language is now set to " +  language);
+  };
 
   function set_english(){
     $(".english").show();
     $(".french").hide();
     $(".german").hide();
-    console.log("Language is now set to english");
+    language_change_log();
   };
 
   function set_french(){
     $(".french").show();
     $(".german").hide();
     $(".english").hide();
-    console.log("Language is now set to french");
+    language_change_log();
   };
 
   function set_german(){
     $(".german").show();
     $(".french").hide();
     $(".english").hide();
-    console.log("Language is now set to german");
+    language_change_log();
   };
 
   // Setup 
@@ -84,7 +88,6 @@ $(document).ready(function(){
     dark_mode = false;
   };
 
-  console.log(dark_mode)
   if (dark_mode === true){
     dark_mode_on();
   };
@@ -96,7 +99,6 @@ $(document).ready(function(){
     language = "english";
   };
 
-  console.log(language)
   if (language === "english"){
     set_english();
   };
@@ -147,11 +149,9 @@ $(document).ready(function(){
 
   $(".socials div").hover(function(){
     if(dark_mode === false){
-      console.log("dark_mode_off");
       $(this).css({"background-color":"rgba(212, 208, 204, 0.7)"});
     };
     if(dark_mode === true){
-      console.log("dark_mode_on");
       $(this).css({"background-color":"rgba(75, 75, 75, 0.7)"});
     }
   }, function(){
