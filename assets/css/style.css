@@ -69,7 +69,6 @@ main{
   
   border-radius: 5px;
   box-shadow: 0px 0px 3px 0px black;
-  border: none;
   width: 40px;
   height: 40px;
   padding: 5px;
@@ -100,11 +99,9 @@ main{
 #languages-dropdown{
   border-radius: 5px;
   box-shadow: 0px 0px 3px 0px black;
-  border: none;
   width: 50px;
   height:min-content;
   margin: 5px;
-  margin-bottom: 0px;
   -webkit-user-select: none;
           user-select: none;
   -webkit-backdrop-filter: blur(20px);
@@ -117,6 +114,9 @@ main{
   cursor: pointer;
   background-color: rgba(243, 241, 239, 0.8);
   transition: background-color 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #english-btn{
@@ -298,6 +298,11 @@ h1{
     border-radius: 0px;
   }
 
+  #languages-dropdown div{
+    height: 50px;
+    font-size: 1.5em;
+  }
+
   .profile_pic{
     margin-top: calc(-100px - 15vw/15vh);
   }
@@ -350,6 +355,11 @@ h1{
 
   .top-bg{
     border-radius: 0px;
+  }
+
+  #languages-dropdown div{
+    height: 50px;
+    font-size: 1.5em;
   }
 
   .profile_pic{

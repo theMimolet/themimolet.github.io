@@ -28,6 +28,8 @@ $(document).ready(function(){
     $("#game-description table td").css({"border": "solid black 2px"})
     $("#game-gallery").css({"background-color":"rgba(212, 208, 204, 0.7)"})
     $("#languages-dropdown div").css({"background-color":"rgba(243, 241, 239, 0.8)"});
+    $("#english-btn").css({"border-bottom":"solid black 1px"});
+    $("#french-btn").css({"border-bottom":"solid black 1px"});
     $(".profile_pic").css({"border": "solid rgb(255, 255, 255) 5px"});
 
     console.log("Dark mode off");
@@ -49,6 +51,8 @@ $(document).ready(function(){
     $("#game-description table td").css({"border": "solid  2px rgb(200, 200, 200)"})
     $("#game-gallery").css({"background-color":"rgba(112, 108, 104, 0.7)"})
     $("#languages-dropdown div").css({"background-color":"rgba(51, 51, 51, 0.7)"});
+    $("#english-btn").css({"border-bottom":"solid rgba(220, 220, 220, 0.7) 1px"});
+    $("#french-btn").css({"border-bottom":"solid rgba(220, 220, 220, 0.7) 1px"});
     $(".profile_pic").css({"border": "solid rgb(51, 51, 51) 5px"});
 
     console.log("Dark mode on");
