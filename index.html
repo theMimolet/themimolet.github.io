@@ -8,13 +8,15 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <script src="assets/javascript/jquery.js"></script>
   <script src="assets/javascript/script.js"></script>
-  
 </head>
 <body>
   <noscript>You need to enable JavaScript to make this website work correctly.</noscript>
   <main>
     <div class="top-bg">
       <div class="top-buttons">
+
+        <!-- Dark mode button -->
+
         <div class="daButtons" id="dark-mode-btn">
           <svg class="dark-mode-off" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon-stars" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -28,6 +30,9 @@
               <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
           </svg>
         </div>
+
+        <!-- Languages button -->
+
         <div class="daButtons" id="languages-btn">
           <svg class="dark-mode-off" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -46,6 +51,9 @@
               <path d="M19.1 18h-6.2" />
           </svg> 
         </div>
+
+        <!-- Languages dropdown -->
+
         <div id="languages-dropdown">
           <div id="english-btn">EN</div>
           <div id="french-btn">FR</div>
@@ -53,9 +61,15 @@
         </div>
       </div>      
     </div>    
+
+    <!-- Main page start -->
+
     <img src="assets/images/mimo_pic.png" alt="Mimolet profile picture" class="profile_pic">
     <h1>Mimolet</h1>
     <p id="citation">"Say cheese !"</p>
+
+    <!-- Description -->
+
     <div class="description">
       <div class="english">
         <p>
@@ -82,7 +96,13 @@
         </p>
       </div>
     </div>
+
+    <!-- Links to my socials -->
+
     <div class="socials">
+
+        <!-- Instagram -->
+
         <div>
           <a href="https://www.instagram.com/themimolet/">
             <svg class="dark-mode-off" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -100,6 +120,9 @@
             Instagram
           </a>
         </div>
+
+        <!-- YouTube -->
+
         <div>
           <a href="https://www.youtube.com/@Mimolet">
             <svg class="dark-mode-off" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -115,6 +138,9 @@
             YouTube
           </a>
         </div>
+
+        <!-- Twitter -->
+
         <div>
           <a href="https://twitter.com/themimolet">
             <svg class="dark-mode-off" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -128,6 +154,9 @@
             Twitter
           </a>
         </div>
+
+        <!-- Twitch -->
+
         <div>
           <a href="https://www.twitch.tv/themimolet">
             <svg class="dark-mode-off" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitch" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -145,6 +174,9 @@
             Twitch
           </a>
         </div>
+
+        <!-- LinkedIn -->
+
         <div>
           <a href="https://www.linkedin.com/in/mimolet/">
             <svg class="dark-mode-off" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -166,6 +198,9 @@
             LinkedIn
           </a>
         </div>
+
+        <!-- Steam -->
+
         <div>
           <a href="https://steamcommunity.com/id/Mimolet/">
             <svg class="dark-mode-off" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-steam" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -181,8 +216,11 @@
             Steam
           </a>
         </div>
+
+        <!-- Reddit -->
+
         <div>
-          <a href="https://steamcommunity.com/id/Mimolet/">
+          <a href="https://www.reddit.com/user/theMimolet">
             <svg class="dark-mode-off" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-reddit" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M12 8c2.648 0 5.028 .826 6.675 2.14a2.5 2.5 0 0 1 2.326 4.36c0 3.59 -4.03 6.5 -9 6.5c-4.875 0 -8.845 -2.8 -9 -6.294l-1 -.206a2.5 2.5 0 0 1 2.326 -4.36c1.646 -1.313 4.026 -2.14 6.674 -2.14z" />
@@ -204,6 +242,9 @@
             Reddit
           </a>
         </div>
+
+        <!-- Spotify -->
+
         <div>
           <a href="https://open.spotify.com/user/313letrc55zsllnehrsxiy5rsedm">
             <svg class="dark-mode-off" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-spotify" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -225,6 +266,9 @@
         </div>
     </div>
     <hr width="35%">
+
+    <!-- Game section -->
+
     <div class="game-section">
       <h2>
         <div class="english">Some games I made</div>
@@ -232,15 +276,21 @@
         <div class="german">Ein paar Spiele, die ich gemacht habe</div>
       </h2>
       <div id="game-gallery">
-        <img id="SN" src="https://img.itch.zone/aW1nLzExNjQzODc4LnBuZw==/315x250%23c/X3BpfL.png" alt="Save Nautica Thumbnail">
-        <img id="TTOD" src="https://img.itch.zone/aW1nLzExMTU4NDg2LnBuZw==/315x250%23c/UaEpk1.png" alt="The Totem of Destiny Thumbnail">
+        <img id="save-nautica-thumbnail" src="https://img.itch.zone/aW1nLzExNjQzODc4LnBuZw==/315x250%23c/X3BpfL.png" alt="Save Nautica Thumbnail">
+        <img id="totem-destiny-thumbnail" src="https://img.itch.zone/aW1nLzExMTU4NDg2LnBuZw==/315x250%23c/UaEpk1.png" alt="The Totem of Destiny Thumbnail">
       </div>
+      
+      <!-- Game Description -->
+      
       <h3>
         <span class="save-nautica">Save Nautica</span>
         <span class="totem-destiny">The Totem of Destiny</span>
       </h3>
+
       <div id="game-description">
-        
+
+        <!-- Save Nautica's Description -->
+
         <section class="save-nautica">
           <p class="english">
             Save Nautica is a game where you control Trashbot, a robot whose mission is to collect every trash dumped into the ocean. 
@@ -267,6 +317,9 @@
             Und auch die Seite von <a href="https://octopus-ntw.com/">Octop'Us</a>.
           </p>
         </section>
+
+        <!-- The Totem Of Destiny's Description -->
+
         <section class="totem-destiny">
           <p class="english">
             The Totem of Destiny is a game in which you play a secret agent who tries to infiltrate a base full of capybaras in order to recover the Golden Totem, an artifact that holds a mysterious power.
@@ -281,6 +334,9 @@
             Dieses Spiel entstand im Rahmen eines Gruppenprojekts für Ludus Académie. (Außerdem ist das Spiel in seinem aktuellen Zustand ausschließlich auf Französisch)
           </p>
         </section>
+
+        <!-- Aside with the tables -->
+
         <aside>
           <table class="save-nautica">
             <tr><td class="illustration"><iframe width="560" height="315" src="https://www.youtube.com/embed/N1d5eWZLMTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td></tr>
@@ -300,6 +356,9 @@
       <p><span class="english">And here the link to my Itch Account</span><span class="french">Et voilà un lien à mon compte Itch</span><span class="german">Und hier ist ein Link zu meinem Itch-Konto</span> : <a href="https://themimolet.itch.io/">themimolet.itch.io</a></p>
     </div>
     <hr width="35%">
+
+    <!-- Footer with my mail for contact -->
+
     <footer>
       <p>
         <span class="english">And if you want to contact me, here's my public email address : </span>

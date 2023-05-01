@@ -1,13 +1,10 @@
-/* Google import */
+/* Google font import */
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@900&display=swap');
 
-/* Mise en forme */
-
-
-/* Police */
+/* Shaping */
 
 *{
   font-family: 'Mukta', sans-serif;
@@ -20,7 +17,7 @@ p{
   margin-right: 15px;
 }
 
-/* Fond */
+/* Background */
 
 body{
   margin: 0px;
@@ -46,17 +43,18 @@ main{
   margin-bottom: 20px;
 
   transition: background-color 0.5s;
-  /* Light Mode */
   background-color: rgb(255, 255, 255);
 }
 
-/* En-tête */
+/* Header */
 
 .top-bg{
   border-radius: 5px 5px 5px 5px;
   height: 200px;
   background: linear-gradient(300deg, rgb(255, 94, 0), rgb(228, 153, 41)) ;
 }
+
+/* Buttons */
 
 .top-buttons{
   display: flex;
@@ -88,6 +86,8 @@ main{
   background-color: rgba(212, 208, 204, 0.7);
 }
 
+/* Dark Mode Button */
+
 .dark-mode-off{
   display: block;
 }
@@ -95,6 +95,8 @@ main{
 .dark-mode-on{
   display: none;
 }
+
+/* Languages Dropdown */
 
 #languages-dropdown{
   border-radius: 5px;
@@ -135,6 +137,8 @@ main{
   background-color: rgba(212, 208, 204, 0.7);
 }
 
+/* Picture */
+
 .profile_pic{
   border-radius: 100%;
   width: 25%;
@@ -157,7 +161,7 @@ h1{
   font-size: 1.7em;
 }
 
-/* Réseaux */
+/* Socials */
 
 .socials{
   width: 80%;
@@ -200,7 +204,7 @@ h1{
   background-color: rgba(212, 208, 204, 0.7);
 }
 
-/* Gallerie des jeux */
+/* Game gallery */
 
 #game-gallery{
   margin: auto;
@@ -228,9 +232,11 @@ h1{
   box-shadow: 0px 0px 5px 0px black;
 }
 
-#TTOD{
+#totem-destiny-thumbnail{
   margin-right: 15px;
 }
+
+/* Game Description */
 
 #game-description{
   height: max-content;
@@ -255,6 +261,8 @@ h1{
   border: solid black 2px;
 }
 
+/* Game Description Table */
+
 .illustration{
   font-size: 0px;
 }
@@ -274,7 +282,6 @@ h1{
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 2em;
 }
-
 
 
 /* Responsive */
@@ -311,7 +318,7 @@ h1{
     padding: 5px;
   }
 
-  /* Réseaux */
+  /* Socials*/
 
   .socials{
     width: 100%;
@@ -323,7 +330,7 @@ h1{
     Border-radius: 0px;
   }
 
-  /* Gallerie de jeux */
+  /* Game gallery */
 
   #game-gallery{
     width: 100%;
@@ -371,7 +378,7 @@ h1{
     padding: 5px;
   }
 
-    /* Réseaux */
+  /* Socials*/
 
   .socials{
     width: 100%;
@@ -379,7 +386,7 @@ h1{
     border-radius: 0px;
   }
 
-  /* Gallerie de jeux */
+  /* Game gallery */
 
   #game-gallery{
     width: 100%;

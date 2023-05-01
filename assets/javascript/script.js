@@ -9,9 +9,7 @@ $(document).ready(function(){
   let language = localStorage.getItem("language");
   let show_game = "none";
   
-
-  // Light mode
-
+  // Light mode function
 
   function dark_mode_off(){
     
@@ -19,23 +17,25 @@ $(document).ready(function(){
     $(".dark-mode-off").show();
 
     $("*").css({"color":"black"});
-    $(".play a span").css({"color":"white"});
     $("body").css({"background-color":"rgb(235, 235, 235)"});
+
     $("main").css({"background-color":"rgb(255, 255, 255)","box-shadow": "0px 0px 7px 1px gray"});
     $(".daButtons").css({"background-color":"rgba(255, 255, 255, 0.7)"}); 
-    $(".socials div").css({"background-color":"rgba(255, 255, 255, 0.7)"});
-    $(".play").css({"background-color":"lime"});
-    $("#game-description table td").css({"border": "solid black 2px"})
-    $("#game-gallery").css({"background-color":"rgba(212, 208, 204, 0.7)"})
     $("#languages-dropdown div").css({"background-color":"rgba(243, 241, 239, 0.8)"});
     $("#english-btn").css({"border-bottom":"solid black 1px"});
     $("#french-btn").css({"border-bottom":"solid black 1px"});
+    
     $(".profile_pic").css({"border": "solid rgb(255, 255, 255) 5px"});
-
+    $(".socials div").css({"background-color":"rgba(255, 255, 255, 0.7)"});
+    
+    $("#game-gallery").css({"background-color":"rgba(212, 208, 204, 0.7)"});
+    $("#game-description table td").css({"border": "solid black 2px"});
+    $(".play").css({"background-color":"lime"});
+    
     console.log("Dark mode off");
   };
   
-  // Dark mode
+  // Dark mode function
 
   function dark_mode_on(){
     
@@ -44,22 +44,25 @@ $(document).ready(function(){
 
     $("*").css({"color":"rgb(220, 220, 220)"}); 
     $("body").css({"background-color":"rgb(36, 36, 36)"});
+
     $("main").css({"background-color":"rgb(51, 51, 51)","box-shadow": "0px 0px 7px 1px gray"});
     $(".daButtons").css({"background-color":"rgba(51, 51, 51, 0.7)"});
-    $(".socials div").css({"background-color":"rgba(51, 51, 51, 0.7)"});
-    $(".play").css({"background-color":"rgb(32, 99, 32)"});
-    $("#game-description table td").css({"border": "solid  2px rgb(200, 200, 200)"})
-    $("#game-gallery").css({"background-color":"rgba(112, 108, 104, 0.7)"})
     $("#languages-dropdown div").css({"background-color":"rgba(51, 51, 51, 0.7)"});
     $("#english-btn").css({"border-bottom":"solid rgba(220, 220, 220, 0.7) 1px"});
     $("#french-btn").css({"border-bottom":"solid rgba(220, 220, 220, 0.7) 1px"});
-    $(".profile_pic").css({"border": "solid rgb(51, 51, 51) 5px"});
 
+    $(".profile_pic").css({"border": "solid rgb(51, 51, 51) 5px"});
+    $(".socials div").css({"background-color":"rgba(51, 51, 51, 0.7)"});
+
+    $("#game-description table td").css({"border": "solid  2px rgb(200, 200, 200)"});
+    $("#game-gallery").css({"background-color":"rgba(112, 108, 104, 0.7)"});
+    $(".play").css({"background-color":"rgb(32, 99, 32)"});
+    
     console.log("Dark mode on");
   };
 
 
-  // Language
+  // Language functions
 
   function language_change_log(){
     console.log("Language is now set to " +  language);
@@ -118,10 +121,10 @@ $(document).ready(function(){
   $(".totem-destiny").hide();
 
   
-  // Interactions avec les boutons
+// Button interactions
 
 
-  // Hover des boutons
+  // Button hovering
 
   $(".daButtons").hover(function(){
     if(dark_mode === false){
@@ -180,7 +183,7 @@ $(document).ready(function(){
     }
   });
 
-  // Langues
+  // Languages
 
   $("#languages-btn").click(function(){
     if (language_display === false){
@@ -192,7 +195,7 @@ $(document).ready(function(){
     }
   });
 
-  // Anglais
+  // English
 
   $("#english-btn").click(function(){
     if (language != "english"){
@@ -202,7 +205,7 @@ $(document).ready(function(){
     };    
   });
 
-  // Français
+  // French
 
   $("#french-btn").click(function(){
     if (language != "french"){
@@ -212,7 +215,7 @@ $(document).ready(function(){
     };    
   });
 
-  // Allemand
+  // German
 
   $("#german-btn").click(function(){
     if (language != "german"){
@@ -223,20 +226,21 @@ $(document).ready(function(){
   });
 
 
-  // Jeux   show_game
+  // Game gallery
+
 
   function game_reset(){
     $(".totem-destiny").hide();
     $(".save-nautica").hide();
-    $("#SN").css({"height":"90%", "box-shadow": "0px 0px 5px 0px black"});
-    $("#TTOD").css({"height":"90%", "box-shadow": "0px 0px 5px 0px black"});
+    $("#save-nautica-thumbnail").css({"height":"90%", "box-shadow": "0px 0px 5px 0px black"});
+    $("#totem-destiny-thumbnail").css({"height":"90%", "box-shadow": "0px 0px 5px 0px black"});
   };
 
-  $("#SN").click(function(){
+  $("#save-nautica-thumbnail").click(function(){
     if (show_game !== "SaveNautica"){
       game_reset();
       $(".save-nautica").show();
-      $("#SN").css({"height":"93%", "box-shadow": "0px 0px 15px 0px black"});
+      $("#save-nautica-thumbnail").css({"height":"93%", "box-shadow": "0px 0px 15px 0px black"});
       show_game = "SaveNautica";
     } else {
       game_reset();
@@ -245,11 +249,11 @@ $(document).ready(function(){
     }
   });
 
-  $("#TTOD").click(function(){
+  $("#totem-destiny-thumbnail").click(function(){
     if (show_game !== "TotemDestiny"){
       game_reset();
       $(".totem-destiny").show();
-      $("#TTOD").css({"height":"93%", "box-shadow": "0px 0px 15px 0px black"});
+      $("#totem-destiny-thumbnail").css({"height":"93%", "box-shadow": "0px 0px 15px 0px black"});
       show_game = "TotemDestiny";
     } else {
       game_reset();
@@ -257,5 +261,4 @@ $(document).ready(function(){
       show_game = "none";
     }
   });
-
 });
