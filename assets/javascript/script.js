@@ -13,24 +13,8 @@ $(document).ready(function(){
 
   function dark_mode_off(){
     
-    $(".dark-mode-on").hide();
-    $(".dark-mode-off").show();
-
-    $("*").css({"color":"black"});
-    $("body").css({"background-color":"rgb(235, 235, 235)"});
-
-    $("main").css({"background-color":"rgb(255, 255, 255)","box-shadow": "0px 0px 7px 1px gray"});
-    $(".daButtons").css({"background-color":"rgba(255, 255, 255, 0.7)"}); 
-    $("#languages-dropdown div").css({"background-color":"rgba(243, 241, 239, 0.8)"});
-    $("#english-btn").css({"border-bottom":"solid black 1px"});
-    $("#french-btn").css({"border-bottom":"solid black 1px"});
-    
-    $(".profile_pic").css({"border": "solid rgb(255, 255, 255) 5px"});
-    $(".socials div").css({"background-color":"rgba(255, 255, 255, 0.7)"});
-    
-    $("#game-gallery").css({"background-color":"rgba(212, 208, 204, 0.7)"});
-    $("#game-description table td").css({"border": "solid black 2px"});
-    $(".play").css({"background-color":"lime"});
+    $("body").addClass("light");
+    $("body").removeClass("dark");
     
     console.log("Dark mode off");
   };
@@ -39,25 +23,9 @@ $(document).ready(function(){
 
   function dark_mode_on(){
     
-    $(".dark-mode-off").hide();
-    $(".dark-mode-on").show();
+    $("body").addClass("dark");
+    $("body").removeClass("light");
 
-    $("*").css({"color":"rgb(220, 220, 220)"}); 
-    $("body").css({"background-color":"rgb(36, 36, 36)"});
-
-    $("main").css({"background-color":"rgb(51, 51, 51)","box-shadow": "0px 0px 7px 1px gray"});
-    $(".daButtons").css({"background-color":"rgba(51, 51, 51, 0.7)"});
-    $("#languages-dropdown div").css({"background-color":"rgba(51, 51, 51, 0.7)"});
-    $("#english-btn").css({"border-bottom":"solid rgba(220, 220, 220, 0.7) 1px"});
-    $("#french-btn").css({"border-bottom":"solid rgba(220, 220, 220, 0.7) 1px"});
-
-    $(".profile_pic").css({"border": "solid rgb(51, 51, 51) 5px"});
-    $(".socials div").css({"background-color":"rgba(51, 51, 51, 0.7)"});
-
-    $("#game-description table td").css({"border": "solid  2px rgb(200, 200, 200)"});
-    $("#game-gallery").css({"background-color":"rgba(112, 108, 104, 0.7)"});
-    $(".play").css({"background-color":"rgb(32, 99, 32)"});
-    
     console.log("Dark mode on");
   };
 
@@ -122,52 +90,6 @@ $(document).ready(function(){
 
   
 // Button interactions
-
-
-  // Button hovering
-
-  $(".daButtons").hover(function(){
-    if(dark_mode === false){
-      $(this).css({"background-color":"rgba(212, 208, 204, 0.7)"});
-    } else {
-      $(this).css({"background-color":"rgba(75, 75, 75, 0.7)"});
-    }
-  }, function(){
-    if(dark_mode === false){
-      $(this).css({"background-color":"rgba(255, 255, 255, 0.7)"}); 
-    } else {
-      $(this).css({"background-color":"rgba(51, 51, 51, 0.7)"});
-    }
-  });
-
-  $("#languages-dropdown div").hover(function(){
-    if(dark_mode === false){
-      $(this).css({"background-color":"rgba(212, 208, 204, 0.7)"});
-    } else {
-      $(this).css({"background-color":"rgba(75, 75, 75, 0.7)"});
-    }
-  }, function(){
-    if(dark_mode === false){
-      $(this).css({"background-color":"rgba(255, 255, 255, 0.7)"}); 
-    } else {
-      $(this).css({"background-color":"rgba(51, 51, 51, 0.7)"});
-    }
-  });
-
-  $(".socials div").hover(function(){
-    if(dark_mode === false){
-      $(this).css({"background-color":"rgba(212, 208, 204, 0.7)"});
-    };
-    if(dark_mode === true){
-      $(this).css({"background-color":"rgba(75, 75, 75, 0.7)"});
-    }
-  }, function(){
-    if(dark_mode === false){
-      $(this).css({"background-color":"rgba(255, 255, 255, 0.7)"}); 
-    } else {
-      $(this).css({"background-color":"rgba(51, 51, 51, 0.7)"});
-    }
-  });
 
   // Dark Mode
 
@@ -261,4 +183,6 @@ $(document).ready(function(){
       show_game = "none";
     }
   });
+
+  console.log("The code has run successfully");
 });
