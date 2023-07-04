@@ -8,6 +8,7 @@ $(document).ready(function(){
   let language_display = false;
   let language = localStorage.getItem("language");
   let show_game = "none";
+  let show_org = "none";
   
   // Light mode function
 
