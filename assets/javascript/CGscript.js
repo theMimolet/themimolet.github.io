@@ -356,15 +356,15 @@ $(document).ready(function(){
       };
       $(".present." +(game_wave.toString())).text(right_color);
   
-      if (right_place == 4){
-        game_ended = 1; 
-        win = 1;
-      }
-      
       if ((game_wave + 1) == 13){
         game_ended = 1;
         win = 0;
       };
+
+      if (right_place == 4){
+        game_ended = 1; 
+        win = 1;
+      }
 
       if (game_ended == 1){
         no_chooser()
