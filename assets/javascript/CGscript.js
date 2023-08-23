@@ -61,7 +61,6 @@ $(document).ready(function(){
   $(".end-panel").hide();
   $(".win").hide();
   $(".lose").hide();
-  $("#game").css("justify-content","center");
 
   $("#start-btn").click(function(){
     go_chooser()
@@ -75,7 +74,6 @@ $(document).ready(function(){
 
     game_wave = 1; 
     create_wave();
-    $("#game").css("justify-content","flex-start");
   });
 
   
@@ -105,8 +103,6 @@ $(document).ready(function(){
     for (let m = 0; m < 13; m++){
       removeElementsByClass(m);
     };
-
-    $("#game").css("justify-content","center");
 
   });
 

@@ -25,7 +25,6 @@ body{
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content:center;
 
   overflow-y: auto;
 }
@@ -64,6 +63,10 @@ body{
 }
 
 /* Begin Panel */
+
+.begin-panel {
+  margin: auto;
+}
 
 .begin-panel button{
   border-radius: 10px;
@@ -260,7 +263,7 @@ body{
 }
 
 #choose-btn-return{
-  background-image: url("rem4.png");
+  background-image: url("../images/rem4.png");
   background-repeat: no-repeat;
   background-size:contain;
 
@@ -275,7 +278,7 @@ body{
 }
 
 #choose-btn-enter{
-  background-image: url("ent.png");
+  background-image: url("../images/ent.png");
   background-repeat: no-repeat;
   background-size:contain;
 
