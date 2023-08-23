@@ -185,5 +185,9 @@ $(document).ready(function(){
     }
   });
 
+  $("#colourguess-thumbnail").click(function(){
+    window.open("https://themimolet.github.io/colourguess", "_blank");
+  });
+
   console.log("The code has run successfully");
 });
