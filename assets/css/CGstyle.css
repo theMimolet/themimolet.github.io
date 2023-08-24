@@ -16,6 +16,10 @@ body{
     user-select: none;
 }
 
+h1{
+  font-size: 0px;
+}
+
 /* Game section */
 
 #game{
@@ -89,6 +93,24 @@ body{
 
 .logo{
   width: 100%;
+}
+
+.tuto{
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-left: 350px;
+  margin-right: 350px;
+  border-radius: 5px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 2px;
+}
+
+.gras{
+  font-weight: 900;
+}
+
+.underline{
+  text-decoration: underline;
 }
 
 /* End panel */
