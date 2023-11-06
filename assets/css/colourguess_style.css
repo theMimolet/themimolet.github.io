@@ -63,7 +63,6 @@ h1{
 
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
   background: linear-gradient(160deg,rgba(255, 255, 255, 0.65), rgba(146, 146, 146,0.65));
-
 }
 
 /* Begin Panel */
@@ -239,6 +238,11 @@ h1{
 
 #chooser div{
   margin: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .color{
@@ -285,7 +289,7 @@ h1{
 }
 
 #choose-btn-return{
-  background-image: url("../images/rem4.png");
+  background-image: url("../images/colourguess/return.png");
   background-repeat: no-repeat;
   background-size:contain;
 
@@ -300,7 +304,7 @@ h1{
 }
 
 #choose-btn-enter{
-  background-image: url("../images/ent.png");
+  background-image: url("../images/colourguess/enter.png");
   background-repeat: no-repeat;
   background-size:contain;
 
@@ -313,3 +317,4 @@ h1{
   cursor: pointer;
   box-shadow: rgb(0, 255, 21) 0px 0px 5px 2px;
 }
+

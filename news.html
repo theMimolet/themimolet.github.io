@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./assets/images/website_icon.ico">
+  <title>News - Mimolet</title>
+  <link rel="stylesheet" href="./assets/css/news_style.css">
+  <script src="./assets/javascript/jquery.js"></script> 
+  <script src="./assets/javascript/index_script.js"></script>
+  <script src="./assets/javascript/language_script.js"></script>
+</head>
+<body class="dark">
+  <main>
+    <div class="top-bg">
+      <div class="left-buttons">
+        <div class="menu-buttons" id="return-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M9 14l-4 -4l4 -4" />
+            <path d="M5 10h11a4 4 0 1 1 0 8h-1" />
+          </svg>
+        </div>
+      </div>
+      <div class="right-buttons">
+
+        <!-- Dark mode button -->
+
+        <div class="menu-buttons" id="dark-mode-btn">
+          <svg class="icon-light" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon-stars" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+            <path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
+            <path d="M19 11h2m-1 -1v2" />
+          </svg>  
+          <svg class="icon-dark" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="12" cy="12" r="4" />
+              <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+          </svg>
+        </div>
+
+        <!-- Languages button -->
+
+        <div class="menu-buttons" id="languages-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 5h7" />
+            <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+            <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+            <path d="M12 20l4 -9l4 9" />
+            <path d="M19.1 18h-6.2" />
+          </svg>
+        </div>
+
+        <!-- Languages dropdown -->
+
+        <div id="languages-dropdown">
+          <div id="english-btn">EN</div>
+          <div id="french-btn">FR</div>
+          <div id="german-btn">DE</div>
+        </div>
+
+      </div>      
+    </div>    
+
+    <!-- News title -->
+
+    <h1>
+      <span class="english">News</span>
+      <span class="french">Nouvelles</span>
+      <span class="german">Nachrichten</span>
+    </h1>
+
+    <!-- The News -->
+
+    <div class="news">
+      <div class="english">
+        <p>
+          07/11/23 : 
+        </p>
+        <ul>
+          <li>Added the news page</li>
+          <li>Colourguess has been translated in english and in german</li>
+          <li>Start of a series of post on Instagram about a Minecraft server (<a href="https://www.instagram.com/themimolet/">here</a>)</li>
+        </ul>
+      </div>
+      <div class="french">
+        <p>
+          07/11/23 : 
+        </p>
+        <ul>
+          <li>Ajout de la page de nouvelles</li>
+          <li>Colourguess a été traduit en anglais et en allemand</li>
+          <li>Début d'une série de posts sur Instagram à propos d'un serveur Minecraft (<a href="https://www.instagram.com/themimolet/">ici</a>)</li>
+        </ul>
+      </div>
+      <div class="german">
+        <p>
+          07/11/23 : 
+        </p>
+        <ul>
+          <li>Nachrichtenseite hinzugefügt</li>
+          <li>Colourguess wurde in Englisch und Deutsch übersetzt</li>
+          <li>Beginn einer Serie von Posten auf Instagram über einen Minecraft-Server (<a href="https://www.instagram.com/themimolet/">hier</a>)</li>
+        </ul>
+      </div> 
+    </div>
+    <img src="./assets/images/news/2023-10-26_12.04.50.png" alt="Minecraft screenshot of a tower in construction">
+  </main>
+</body>
+</html>
