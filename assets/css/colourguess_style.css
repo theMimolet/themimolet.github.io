@@ -54,7 +54,7 @@ h1{
 .panel{
   height: auto;
   text-align: center;
-  
+
   width: 725px;
   border-radius: 10px;
 
@@ -150,7 +150,7 @@ h1{
   margin: 10px;
 }
 
-#score{
+.score{
   color: rgb(255, 225, 0);
   text-shadow: rgb(255, 183, 0) 0px 0px 3px;
   font-weight: 900;
@@ -318,3 +318,91 @@ h1{
   box-shadow: rgb(0, 255, 21) 0px 0px 5px 2px;
 }
 
+/* Responsive */
+
+
+@media screen and (max-width: 735px){
+
+  /* Game section */
+
+  #game::-webkit-scrollbar {
+    width: 0em;
+  }
+
+  /* Panels */
+  
+  .panel{
+    width: 100%;
+    border-radius: 0px;
+    margin-bottom: 5px;
+    padding: 0px;
+    
+    box-shadow: none;
+  }
+  
+  /* Begin Panel */
+  
+  .begin-panel {
+    margin: auto;
+  }
+
+  .begin-panel button{
+    margin-bottom: 15px;
+  }
+  
+  .tuto{
+    margin-left: 45%;
+    margin-right: 45%;
+  }
+  
+  /* End panel */
+  
+  .end-panel{
+    box-shadow: none;
+  }
+
+  .win img{
+    width: 60%;
+  }
+  
+  .lose img{
+    width: 90%;
+  }
+  
+  /* Game panels */
+  
+  .game-panel {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .number{
+    font-weight: 500;
+    font-size: 2em;
+    margin-right: 0vw;
+  }
+  
+  .invisible{
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0);
+    margin-left: 0px;
+  }
+  
+  .ui{
+    margin: 10px;
+  }
+  
+  /* Chooser section */
+  
+  #chooser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    box-shadow: rgb(0, 0, 0) 0px 0px 2px;
+    background-color: rgba(211, 211, 211, 0.349);
+  
+    height: auto;
+    width: 100%; 
+  }
+}

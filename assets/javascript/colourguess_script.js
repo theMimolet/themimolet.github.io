@@ -377,7 +377,7 @@ $(document).ready(function(){
         if (win == 1) {
           $(".lose").hide();
           $(".win").show();
-          $("#score").text(game_wave);
+          $(".score").text(game_wave);
         } else {
           $(".win").hide();
           $(".lose").show();

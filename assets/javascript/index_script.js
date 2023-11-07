@@ -5,7 +5,7 @@ $(document).ready(function(){
   // Variables
 
   let dark_mode = JSON.parse(localStorage.getItem("dark_mode"));
-  let news_version = 1;  
+  let news_version = 2;  
   let show_game = "none";
 
   // Setup 
