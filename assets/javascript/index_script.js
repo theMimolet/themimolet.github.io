@@ -72,13 +72,13 @@ $(document).ready(function(){
 
   $("#news-btn").click(function(){
     localStorage.setItem("newsVer", news_version);
-    window.location.href='https://themimolet.github.io/news';
+    window.open("https://themimolet.github.io/news");
   });
 
   // Return button
  
   $("#return-btn").click(function(){
-    window.location.href='https://themimolet.github.io/';
+    window.open("https://themimolet.github.io/");
   });
 
   // Game gallery
