@@ -72,13 +72,6 @@ $(document).ready(function(){
 
   $("#news-btn").click(function(){
     localStorage.setItem("newsVer", news_version);
-    window.open("https://themimolet.github.io/news");
-  });
-
-  // Return button
- 
-  $("#return-btn").click(function(){
-    window.open("https://themimolet.github.io/");
   });
 
   // Game gallery

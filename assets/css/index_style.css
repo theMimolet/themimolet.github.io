@@ -17,7 +17,6 @@
   --icon:#000000;
     --icon-light: block;
     --icon-dark: none;
-  --notif-color: rgb(196, 13, 13);
   --accent: linear-gradient(300deg, rgb(255, 94, 0), rgb(228, 153, 41)); 
 }
 
@@ -32,7 +31,6 @@
   --icon:#ffffff;
     --icon-light: none;
     --icon-dark: block;
-  --notif-color: rgb(253, 84, 84);
   --accent: linear-gradient(300deg, rgb(255, 94, 0), rgb(228, 153, 41)); 
 }
 

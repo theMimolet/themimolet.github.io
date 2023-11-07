@@ -16,6 +16,12 @@
           "iframe[allow]"
         ]
       }
+    ],
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
     ]
   },
   "browserslist": [
