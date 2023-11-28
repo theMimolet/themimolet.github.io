@@ -1,6 +1,8 @@
 /* Google font import */
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@900&display=swap');
 
 /* Variables */ 
 
@@ -34,25 +36,15 @@
 
 /* Shaping */
 
-h1{
-  padding-top: 15px;
-}
-
 *{
   font-family: 'Mukta', sans-serif;
   color:var(--text);
   transition: color 0.5s;
-  text-align: center;
 }
 
 p{
   margin-left: 15px;
   margin-right: 15px;
-  text-align:left;
-}
-
-ul, li{
-  text-align:left;
 }
 
 svg path{
@@ -95,6 +87,12 @@ main{
 }
 
 /* Buttons */
+
+.top-buttons{
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
 
 .left-buttons{
   display: flex;
@@ -158,6 +156,7 @@ main{
 }
 
 #languages-dropdown div{
+  text-align: center;
   width: 100%;
   height: min-content;
   cursor: pointer;
@@ -183,142 +182,10 @@ main{
 }
 
 #german-btn{
+  border-radius: 0px;
+  border-bottom: var(--border);
+}
+
+#italian-btn{
   border-radius: 0px 0px 5px 5px;
-}
-
-/* News */
-
-h1{
-  font-size: 2.5em;
-  margin-top: -5px;
-  margin-bottom: 0px;
-}
-
-img{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 91%;
-  border-radius: 10px;
-}
-
-.post{
-  text-align: center;
-  margin: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  border-radius: 10px;
-
-  background-color: var(--game-gallery);
-  box-shadow: 0px 0px 0px black inset;
-  border-radius: 5px;
-  transition: background-color 0.5s;
-
-  padding: 1px;
-}
-
-/* Responsive */
-
-
-@media screen and (max-width: 735px) and (min-width:500px){
-  main{  
-    border-radius: 0px; 
-
-    padding: 0px;
-    padding-bottom: 10px;
-    
-    width: 100vw;
-    height: auto;
-
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .top-bg{
-    border-radius: 0px;
-  }
-
-  #languages-dropdown div{
-    height: 50px;
-    font-size: 1.5em;
-  }
-
-  .news{
-    padding: 5px;
-  }
-
-  img{
-    border-radius: 0%;
-    width: 100%;
-  }
-
-  .post{
-    text-align: center;
-    
-    border-radius: 0%;
-    width: 100%;
-
-    transition: background-color 0.5s;
-
-    margin: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-    padding: 0px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-  }
-
-}
-
-@media screen and (max-width: 500px) {
-  main{  
-    border-radius: 0px; 
-
-    padding: 0px;
-    padding-bottom: 10px;
-    
-    width: 100vw;
-    height: auto;
-
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .top-bg{
-    border-radius: 0px;
-  }
-
-  #languages-dropdown div{
-    height: 50px;
-    font-size: 1.5em;
-  }
-
-  .news{
-    padding: 5px;
-  }
-
-  img{
-    border-radius: 0%;
-    width: 100%;
-  }
-
-  .post{
-    text-align: center;
-    
-    border-radius: 0%;
-    width: 100%;
-    
-    transition: background-color 0.5s;
-
-    margin: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-    padding: 0px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-  }
-
 }

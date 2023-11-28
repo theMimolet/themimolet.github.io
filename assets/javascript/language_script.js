@@ -17,6 +17,9 @@ $(document).ready(function(){
   if (language === "german"){
     set_german();
   };
+  if (language === "italian"){
+    set_italian();
+  };
   $("#languages-dropdown").hide();
 
  // Languages
@@ -37,6 +40,7 @@ function language_change_log(){
 
 function set_english(){
   $(".english").show();
+  $(".italian").hide();
   $(".french").hide();
   $(".german").hide();
   language_change_log();
@@ -44,6 +48,7 @@ function set_english(){
 
 function set_french(){
   $(".french").show();
+  $(".italian").hide();
   $(".german").hide();
   $(".english").hide();
   language_change_log();
@@ -51,6 +56,15 @@ function set_french(){
 
 function set_german(){
   $(".german").show();
+  $(".italian").hide();
+  $(".french").hide();
+  $(".english").hide();
+  language_change_log();
+};
+
+function set_italian(){
+  $(".italian").show();
+  $(".german").hide();
   $(".french").hide();
   $(".english").hide();
   language_change_log();
@@ -95,7 +109,16 @@ $("#german-btn").click(function(){
   language_back()    
 });
 
+// Italian
 
+$("#italian-btn").click(function(){
+  if (language != "italian"){
+    set_italian();
+    language = "italian";
+    localStorage.setItem("language", language);
+  };
+  language_back()    
+});
 
 });
 
