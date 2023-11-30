@@ -359,6 +359,7 @@ h1{
   
   .end-panel{
     box-shadow: none;
+    margin: 5px;
   }
 
   .win img{
