@@ -43,7 +43,7 @@ $(document).ready(function(){
     for (let i=0; i<4; i++){
       goal += (Math.floor(Math.random() * 8)+1).toString();
     };
-    console.log("Goal : " + goal);
+    console.log("Come on. Guess :)");
   }
 
   function no_chooser(){
