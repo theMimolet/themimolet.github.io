@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColourGuess - Mimolet</title>
+  <link rel="stylesheet" href="./colourguess_style.css">
+  <link rel="shortcut icon" href="./images/website_icon.ico" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./colourguess_script.js"></script>
+  <script src="../assets/javascript/language_script.js"></script>
+</head>
+<body>
+
+<section id="game">
+  <div class="panel begin-panel welcome-panel">
+    <img class="logo" src="./images/colourguess.png" alt="colourguess">
+    <h1>ColourGuess</h1>
+    <div class="french">
+      <p>Bienvenue sur <span class="gras">ColourGuess</span> !</p>
+      <p><span class="underline">Le but est simple</span> : trouver le <span class="gras">code de 4 couleurs</span>.</p>
+      <p>Mais vous n'avez que <span class="gras"> 12 tentatives</span> pour le déchiffrer.</p>
+      <p>En <span class="gras">rouge</span> va être indiqué le nombre de couleurs <span class="gras">correctes par leur position et leur couleur</span> : </p>
+      <div class="perfect tuto">2</div>
+      <p>En <span class="gras">jaune</span> va être indiqué le nombre de couleurs <span class="gras">correctes uniquement par leur couleur</span> : </p>
+      <div class="present tuto">3</div>
+      <p>Êtes-vous prêt ?</p>
+    </div>
+    <div class="english">
+      <p>Welcome to <span class="gras">ColourGuess</span> !</p>
+      <p><span class="underline">The goal is simple</span> : find the <span class="gras">4 color code</span>.</p>
+      <p>But you'll have only<span class="gras"> 12 attempts</span> to decipher it.</p>
+      <p>In <span class="gras">red</span> will be displayed the number of <span class="gras">correct colors at the right spot </span> : </p>
+      <div class="perfect tuto">2</div>
+      <p>In <span class="gras">yellow</span> will be displayed the number of <span class="gras">correct colors only</span> : </p>
+      <div class="present tuto">3</div>
+      <p>Are you ready ?</p>
+    </div>
+    <div class="german">
+      <p>Willkommen zu <span class="gras">ColourGuess</span> !</p>
+      <p><span class="underline">Das Ziel ist einfach</span> : Finden Sie den <span class="gras">Code von 4 Farben</span>.</p>
+      <p>Aber Sie haben nur <span class="gras"> 12 Versuche</span>, es zu entschlüsseln.</p>
+      <p>In <span class="gras">rot</span> wird die Anzahl der <span class="gras">richtigen Farben anhand ihrer Position und ihrer Farbe</span> angezeigt : </p>
+      <div class="perfect tuto">2</div>
+      <p>In <span class="gras">gelb</span> wird die Anzahl der <span class="gras">richtigen Farben nur durch ihre Farbe</span> angezeigt : </p>
+      <div class="present tuto">3</div>
+      <p>Sind Sie bereit ?</p>
+    </div>
+    <div class="italian">
+      <p>Benvenuti su <span class="gras">ColourGuess</span> !</p>
+      <p><span class="underline">L'obiettivo è semplice</span> : trovi il codice <span class="gras">dei 4 colori</span>.</p>
+      <p>Ma avrai solo <span class="gras"> 12 tentativi</span> per decifrarlo.</p>
+      <p>In <span class="gras">rosso</span> verrà visualizzato il numero di <span class="gras">colori corretti nel punto giusto</span> : </p>
+      <div class="perfect tuto">2</div>
+      <p>In <span class="gras">giallo</span> verrà visualizzato solo il numero <span class="gras">dei colori corretti </span> : </p>
+      <div class="present tuto">3</div>
+      <p>Siete pronti ?</p>
+    </div>
+    
+    <button id="start-btn">
+      <span class="french">Commencer</span> 
+      <span class="english">Begin</span>
+      <span class="german">Anfangen</span> 
+      <span class="italian">Inizio</span> 
+    </button>
+  </div>
+  
+  <div class="panel end-panel">
+    <p>
+      <span class="french">Fin de la partie !</span> 
+      <span class="english">Game Over !</span>
+      <span class="german">Spiel vorbei !</span> 
+      <span class="german">Game Over !</span> 
+    </p>
+
+    <div class="win">
+      <p class="epic">
+        <span class="english">YOU WON </span>
+        <span class="french">VOUS AVEZ GAGNÉ </span>
+        <span class="german">SIE HABEN GEWONNEN </span>
+        <span class="italian">HAI VINTO </span>!</p>
+      <p>
+        <span class="english">You did it in </span>
+        <span class="french">Vous avez réussi en </span>
+        <span class="german">Sie haben es in </span>
+        <span class="italian">Ci sei riuscito in </span>
+        <span class="score"></span>
+        <span class="english"> attempts</span>
+        <span class="french"> essais</span>
+        <span class="german"> Versuche geschafft</span>
+        <span class="italian"> tentativi</span>
+        ! 
+      </p>
+          
+      <img src="https://media.tenor.com/XJ2jEWe_2KgAAAAd/cute-adorable.gif" alt="cat with confettis">
+    </div>
+    
+    <div class="lose">
+      <p>
+        <span class="english">YOU LOST</span>
+        <span class="french">VOUS AVEZ PERDU</span>
+        <span class="german">SIE HABEN VERLORERN</span>
+        <span class="italian">HAI PERSO</span>
+        !
+      </p>
+      <p>
+        <span class="english">You used all of your attempts...</span>
+        <span class="french">Vous avez utilisé tous vos essais...</span>
+        <span class="german">Sie haben alle ihre Versuche aufgebraucht...</span>
+        <span class="italian">Hai esaurito tutti i tuoi tentativi...</span>
+      </p>
+      <img src="https://media.tenor.com/5KrDexj2ok8AAAAd/television-tv-shows.gif" alt="cat with confettis">
+    </div>
+
+    <button id="restart-btn">
+      <span class="french">Recommencer</span>
+      <span class="english">Restart</span>
+      <span class="german">Neustart</span>
+      <span class="italian">Ricomincia</span>
+    </button>
+    <button id="menu-btn">
+      <span class="french">Retour à l'écran titre</span>
+      <span class="english">Back to title screen</span>
+      <span class="german">Zurück zum Titelbildschirm</span>
+      <span class="italian">Torna alla schermata del titolo</span>
+    </button>
+  </div>  
+</section>
+
+<section id="chooser">
+  <div>
+    <button class="color red" id="choose-btn-1">
+      Red (1)
+    </button>
+    <button class="color orange" id="choose-btn-2">
+      Orange (2)
+    </button>
+    <button class="color yellow" id="choose-btn-3">
+      Yellow (3)
+    </button>
+    <button class="color pink" id="choose-btn-4">
+      Pink (4)
+    </button>
+    <button class="color blue" id="choose-btn-5">
+      Blue (5)
+    </button>
+    <button class="color green" id="choose-btn-6"> 
+      Green (6)
+    </button>
+    <button class="color gray" id="choose-btn-7">
+      Gray (7)
+    </button>
+    <button class="color white" id="choose-btn-8">
+      White (8)
+    </button>
+  </div>
+  <div>
+    <button id="choose-btn-return">
+      Return (0)
+    </button>
+    <button id="choose-btn-enter">
+      Enter (0)
+    </button>
+  </div>
+</section>
+</body>
+</html>
