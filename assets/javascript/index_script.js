@@ -6,7 +6,6 @@ $(document).ready(function(){
 
   let dark_mode = JSON.parse(localStorage.getItem("dark_mode"));
   let news_version = 6;  
-  // let show_game = "none";
 
   // Setup 
 
@@ -27,9 +26,6 @@ $(document).ready(function(){
     $(".icon-update-true").hide();
     $(".icon-update-false").show();
   };
-
-  // $(".save-nautica").hide();
-  // $(".totem-destiny").hide();
   
 // Button interactions
 
@@ -74,45 +70,19 @@ $(document).ready(function(){
     localStorage.setItem("newsVer", news_version);
   });
 
-  // // Game gallery
+  // Game gallery
 
+  $("#totem-destiny-thumbnail").click(function(){
+    window.open("https://themimolet.github.io/The_Totem_Of_Destiny");
+  });
 
-  // function game_reset(){
-  //   $(".totem-destiny").hide();
-  //   $(".save-nautica").hide();
-  //   $("#save-nautica-thumbnail").css({"height":"90%", "box-shadow": "0px 0px 5px 0px black"});
-  //   $("#totem-destiny-thumbnail").css({"height":"90%", "box-shadow": "0px 0px 5px 0px black"});
-  // };
+  $("#save-nautica-thumbnail").click(function(){
+    window.open("https://themimolet.github.io/Save_Nautica");
+  });
 
-  // $("#save-nautica-thumbnail").click(function(){
-  //   if (show_game !== "SaveNautica"){
-  //     game_reset();
-  //     $(".save-nautica").show();
-  //     $("#save-nautica-thumbnail").css({"height":"93%", "box-shadow": "0px 0px 15px 0px black"});
-  //     show_game = "SaveNautica";
-  //   } else {
-  //     game_reset();
-  //     $(".save-nautica").hide();
-  //     show_game = "none";
-  //   }
-  // });
-
-  // $("#totem-destiny-thumbnail").click(function(){
-  //   if (show_game !== "TotemDestiny"){
-  //     game_reset();
-  //     $(".totem-destiny").show();
-  //     $("#totem-destiny-thumbnail").css({"height":"93%", "box-shadow": "0px 0px 15px 0px black"});
-  //     show_game = "TotemDestiny";
-  //   } else {
-  //     game_reset();
-  //     $(".totem-destiny").hide();
-  //     show_game = "none";
-  //   }
-  // });
-
-  // $("#colourguess-thumbnail").click(function(){
-  //   window.open("https://themimolet.github.io/colourguess", "_blank");
-  // });
+  $("#colourguess-thumbnail").click(function(){
+    window.open("https://themimolet.github.io/ColourGuess");
+  });
 
   console.log("The code has run successfully");
 });

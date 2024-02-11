@@ -14,6 +14,12 @@ h1{
   text-align: center;
 }
 
+h2{
+  padding-top: 15px;
+  margin : -5px auto 0px auto;
+  text-align: center;
+}
+
 img{
   text-align: center;
   margin-left: auto;
@@ -42,30 +48,8 @@ img{
 
 
 @media screen and (max-width: 735px) and (min-width:500px){
-  main{  
-    border-radius: 0px; 
-
-    padding: 0px;
-    padding-bottom: 10px;
-    
-    width: 100vw;
-    height: auto;
-
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .top-bg{
-    border-radius: 0px;
-  }
-
-  #languages-dropdown div{
-    height: 50px;
-    font-size: 1.5em;
-  }
-
   .news{
-    padding: 5px;
+    padding: 0px;
   }
 
   img{
@@ -81,40 +65,13 @@ img{
 
     transition: background-color 0.5s;
 
-    margin: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-    padding: 0px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    margin: 10px 0px 10px 0px;
+    padding: 1px 0px 1px 0px;
   }
 
 }
 
 @media screen and (max-width: 500px) {
-  main{  
-    border-radius: 0px; 
-
-    padding: 0px;
-    padding-bottom: 10px;
-    
-    width: 100vw;
-    height: auto;
-
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .top-bg{
-    border-radius: 0px;
-  }
-
-  #languages-dropdown div{
-    height: 50px;
-    font-size: 1.5em;
-  }
-
   .news{
     padding: 5px;
   }
@@ -132,13 +89,8 @@ img{
     
     transition: background-color 0.5s;
 
-    margin: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-    padding: 0px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    margin: 10px 0px 10px 0px;
+    padding: 1px 0px 1px 0px;
   }
 
 }

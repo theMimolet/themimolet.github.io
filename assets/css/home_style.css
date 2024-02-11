@@ -175,28 +175,6 @@
 
 
 @media screen and (max-width: 735px) and (min-width:500px){
-  main{  
-    border-radius: 0px; 
-
-    padding: 0px;
-    padding-bottom: 10px;
-    
-    width: 100vw;
-    height: auto;
-
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .top-bg{
-    border-radius: 0px;
-  }
-
-  #languages-dropdown div{
-    height: 50px;
-    font-size: 1.5em;
-  }
-
   .profile_pic{
     margin-top: calc(-100px - 15vw/15vh);
   }

@@ -1,41 +1,129 @@
+/* Banner */
 
 .save-nautica{
   background: url(../images/games-banner/save-banner.png);
   background-position: center;
   background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+/* Titles */
 
 h1{
   padding-top: 15px;
   text-align: center;
 }
 
+h2{
+  padding: 15px 15px 0px 15px;
+  margin : -5px auto 0px auto;
+  text-align: left;
+}
+
+/* Presentation */
+
 .presentation{
   text-align: center;
-  width: 75%;
+  margin: 15px 15px 25px 15px;
+  background-color: var(--game-gallery);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: backround-color 1s;
 }
 
-.itch{
-  background: var(--itch);
-  padding: 5px 15px 5px 15px;
-  border-radius: 5px;
-  text-decoration-line: none;
-  transition: background 0.2s;
-  text-shadow: 1px 1px 3px black;
-  text-align: center;
+.presentation iframe{
+  width: 81%;
+  margin: 25px auto auto auto;
 }
 
-.presentation table{
+.game-info{
 	border: 1px solid rgb(255, 255, 255);
-	width: 100%;
+	width: 95%;
 	height: auto;
 	margin: auto;
+  margin-bottom: 15px;
   background-color: rgb(0, 0, 0);
+  text-align: start;
 }
 
-.presentation td, th{
-	padding: 0.75% 0.50% 0.75% 0.50%;
+.game-info td, .game-info td span, .game-info td a{
+  color: white;
 }
+
+.game-info td:first-child{
+  text-align: right;
+  font-weight: 800;
+  opacity: 0.7;
+}
+
+.game-info td{
+  padding: 2px 4px;
+  text-align: left;
+}
+
+
+/* PLAY */
+
+.play{
+  margin: 15px 15px 20px 15px;
+  background-color: var(--game-gallery);
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  transition: backround-color 1s;
+}
+
+.play p{
+  margin: 15px 0px 20px 15px;
+  font-size: 1.4em;
+  text-align: start;
+}
+
+.play-list{
+  text-align: center;
+  margin: auto 15px auto auto;
+}
+
+.play-list a{
+  margin-left: 10px;
+}
+
+.play-list a span{
+  color: white;
+}
+
+/* BUTTONS */
+
+.game-link-btn{
+  color: rgb(255, 255, 255);
+  width: 100px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+
+  text-decoration-line: none;
+  transition: background 0.2s;
+  text-shadow: 1px 1px 3px black;  
+}
+
+.itch-btn{
+  background: var(--itch);
+}
+
+.itch-btn:hover{
+  background: var(--itch-hover);
+}
+
+.download-btn{
+  background: var(--download);
+}
+
+.download-btn:hover{
+  background: var(--download-hover);
+}
+
+/* Organisations Gallery */
 
 #org-gallery{
   margin: auto auto 10px auto;
@@ -68,3 +156,4 @@ h1{
   height: 100%;
   border-radius: 5px;
 }
+
