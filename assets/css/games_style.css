@@ -8,6 +8,22 @@
   background-size: cover;
 }
 
+.totem-destiny{
+  background: url(../images/games-banner/totem-banner.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.colourguess{
+  background: url(../images/games-banner/guess-banner.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Titles */
 
 h1{

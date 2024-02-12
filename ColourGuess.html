@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./assets/images/website_icon.ico">
+  <title>ColourGuess - Mimolet</title>
+  <link rel="stylesheet" href="./assets/css/main_style.css">
+  <link rel="stylesheet" href="./assets/css/games_style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./assets/javascript/index_script.js"></script>
+  <script src="./assets/javascript/language_script.js"></script>
+</head>
+<body class="dark">
+  <main>
+    <div class="top-bg colourguess">
+      <div class="left-buttons">
+        <a href="https://themimolet.github.io/">
+          <div class="menu-buttons" id="return-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M9 14l-4 -4l4 -4" />
+              <path d="M5 10h11a4 4 0 1 1 0 8h-1" />
+            </svg>
+          </div>
+        </a>
+      </div>
+      <div class="right-buttons">
+
+        <!-- Dark mode button -->
+
+        <div class="menu-buttons" id="dark-mode-btn">
+          <svg class="icon-light" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon-stars" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+            <path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
+            <path d="M19 11h2m-1 -1v2" />
+          </svg>  
+          <svg class="icon-dark" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="12" cy="12" r="4" />
+              <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+          </svg>
+        </div>
+
+        <!-- Languages button -->
+
+        <div class="menu-buttons" id="languages-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 5h7" />
+            <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+            <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+            <path d="M12 20l4 -9l4 9" />
+            <path d="M19.1 18h-6.2" />
+          </svg>
+        </div>
+
+        <!-- Languages dropdown -->
+
+        <div id="languages-dropdown">
+          <div id="english-btn">EN</div>
+          <div id="french-btn">FR</div>
+          <div id="german-btn">DE</div>
+          <div id="italian-btn">IT</div>
+        </div>
+
+      </div>      
+    </div>        
+    <h1>ColourGuess</h1>
+
+    <!-- Save Nautica's Presentation -->
+
+    <div class="presentation">
+      <!-- Save Nautica's Description -->    
+      <div class="description">
+        <p class="english">
+          ColourGuess is an online MasterMind trying to produce a decent gaming experience. You have a 4 color code to find, but you only have 12 attempts to crack it!
+        </p>
+        <p class="french">
+          ColourGuess est un MasterMind en ligne essayant de produire une expérience de jeu convenable. Vous avez un code de 4 couleurs à trouver, mais vous n'avez que 12 tentatives pour le déchiffrer !
+        </p>
+        <p class="german">
+          ColourGuess ist ein Online-MasterMind, der versucht, ein anständiges Spielerlebnis zu schaffen. Sie müssen einen 4-Farben-Code finden, haben aber nur 12 Versuche, ihn zu knacken!
+        </p>
+        <p class="italian">
+          ColourGuess è un MasterMind online che cerca di produrre un'esperienza di gioco decente. Devi trovare un codice a 4 colori, ma hai solo 12 tentativi per decifrarlo!
+        </p>
+      </div>
+      <table class="game-info">
+        <tr>
+          <td>
+            <span class="english">Developers</span>
+            <span class="french">Développeurs</span>
+            <span class="german">Entwickler</span>
+            <span class="italian">Sviluppatori</span></td>
+          <td class="left">Mimolet</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="english">Start of project</span>
+            <span class="french">Début de projet</span>
+            <span class="german">Anfang des projects</span>
+            <span class="italian">Inizio del progetto</span>
+          </td>
+          <td>
+            <span class="english">August 2023</span>
+            <span class="french">Août 2023</span>
+            <span class="german">August 2023</span>
+            <span class="italian">Agosto 2023</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="english">Languages</span>
+            <span class="french">Langues</span>
+            <span class="german">Sprachen</span>
+            <span class="italian">Lingue</span>
+          </td>
+          <td>
+            <span class="english">French, German, English, Italian</span>
+            <span class="french">Français, Allemand, Anglais, Italien</span>
+            <span class="german">Französisch, Deutsch, Englisch, Italienisch</span>
+            <span class="italian">Francese, Tedesco, Inglese, Italiano</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="english">Platforms</span>
+            <span class="french">Plateformes</span>
+            <span class="german">Plattformen</span>
+            <span class="italian">Piattaforme</span>
+          </td>
+          <td>HTML 5</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="english">Engine</span>
+            <span class="french">Moteur</span>
+            <span class="german">Motor</span>
+            <span class="italian">Motore</span>
+          </td>
+          <td>Web</td>
+        </tr>
+      </table>
+    
+    <!-- Play button -->
+
+    </div>
+
+    <div class="play">
+      <p>
+        <span class="english">Play</span>
+        <span class="french">Jouer à </span>
+        <span class="italian">Gioca a</span>
+        ColourGuess
+        <span class="german">spielen</span>
+      </p>
+      <div class="play-list">
+        <a href="https://themimolet.github.io/ColourGuess/game" class="game-link-btn download-btn" target="_blank">
+          <span class="english">Play</span>
+          <span class="french">Jouer</span>
+          <span class="german">Spielen</span>
+          <span class="italian">Giocare</span>
+        </a>
+      </div>
+    </div>
+
+    <hr width="35%">
+
+    <div>
+      <h2>
+        <span class="english">The Little Story</span>
+        <span class="french">La Petite Histoire</span>
+        <span class="german">Die kleine Geschichte</span>
+        <span class="italian">La piccola storia</span>
+      </h2>
+      <div class="english">
+        <p>
+          My girlfriend at the time introduced me to the game MasterMind
+          and I quickly became good at the game and I really liked it and we played games over and over again.
+          However, after a while, she got fed up (normal, she's human) and as I wanted to continue playing,
+          even when I was at home, I then decided to program my own MasterMind.
+        </p>
+      </div>
+      <div class="french">
+        <p>
+          Ma copine de l'époque m'a fait découvrir le jeu MasterMind 
+          et je suis rapidement devenu fort au jeu et ça me plaisait beaucoup et on faisait des parties en boucle.
+          Cependant, au bout d'un moment, elle en avait marre (normal, elle est humaine) et comme je voulais continuer à jouer, 
+          même lorsque j'étais chez moi, j'ai alors décidé de programmer mon propre MasterMind. 
+        </p>
+      </div>
+      <div class="german">
+        <p>
+          Meine damalige Freundin machte mich mit dem Spiel MasterMind bekannt
+          und ich wurde schnell gut in dem Spiel und es gefiel mir sehr gut und wir spielten immer und immer wieder Spiele.
+          Nach einer Weile hatte sie jedoch die Nase voll (normal, sie ist ein Mensch) und da ich weiterspielen wollte,
+          Schon zu Hause beschloss ich dann, meinen eigenen MasterMind zu programmieren.
+        </p>
+      </div>
+      <div class="italian">
+        <p>
+          La mia ragazza dell'epoca mi fece conoscere il gioco MasterMind
+          e sono diventato subito bravo nel gioco e mi è piaciuto molto e abbiamo giocato ancora e ancora.
+          Tuttavia, dopo un po' si è stancata (è normale, è umana) e poiché volevo continuare a giocare,
+          anche quando ero a casa, ho poi deciso di programmare il mio MasterMind.
+        </p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
