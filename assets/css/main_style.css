@@ -18,9 +18,12 @@
     --icon-light: block;
     --icon-dark: none;
   --accent: linear-gradient(300deg, rgb(255, 94, 0), rgb(228, 153, 41));
-  
-  --itch: linear-gradient(90deg, rgb(255, 92, 91), rgb(153, 21, 44));
-  --download: linear-gradient(90deg, rgb(143, 218, 41), rgb(93, 142, 27));
+  --scroll: rgb(255, 136, 0);
+  --scroll-hover: rgba(255, 136, 0, 0.363);
+  --itch: linear-gradient(90deg, rgba(255, 91, 91, 0.7), rgba(153, 21, 43, 0.7));
+    --itch-hover: linear-gradient(90deg, rgb(255, 92, 91), rgb(153, 21, 44));
+  --download: linear-gradient(90deg, hsla(85, 71%, 51%, 0.7), rgba(93, 142, 27, 0.7));
+    --download-hover: linear-gradient(90deg, rgb(143, 218, 41), rgb(93, 142, 27));
 }
 
 .dark{
@@ -220,14 +223,14 @@ main{
 }
 
 
-@media screen and (max-width: 735px) and (min-width:500px){
+@media screen and (max-width: 830px) and (min-width:500px){
   main{  
     border-radius: 0px; 
 
     padding: 0px;
     padding-bottom: 10px;
     
-    width: 100vw;
+    width: 97.7vw;
     height: auto;
 
     margin: 0px;
