@@ -5,7 +5,7 @@ $(document).ready(function(){
   // Variables
 
   let dark_mode = JSON.parse(localStorage.getItem("dark_mode"));
-  let news_version = 6;  
+  let news_version = 7;  
 
   // Setup 
 
@@ -68,20 +68,6 @@ $(document).ready(function(){
 
   $("#news-btn").click(function(){
     localStorage.setItem("newsVer", news_version);
-  });
-
-  // Game gallery
-
-  $("#totem-destiny-thumbnail").click(function(){
-    window.open("https://themimolet.github.io/The_Totem_Of_Destiny");
-  });
-
-  $("#save-nautica-thumbnail").click(function(){
-    window.open("https://themimolet.github.io/Save_Nautica");
-  });
-
-  $("#colourguess-thumbnail").click(function(){
-    window.open("https://themimolet.github.io/ColourGuess");
   });
 
   console.log("The code has run successfully");
