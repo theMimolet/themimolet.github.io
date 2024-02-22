@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ColourGuess Game - Mimolet</title>
+  <title>ColourGuess game - Mimolet</title>
   <link rel="stylesheet" href="./colourguess_style.css">
-  <link rel="shortcut icon" href="./images/website_icon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/images/website_icon.ico" type="image/x-icon">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="./colourguess_script.js"></script>
   <script src="../assets/javascript/language_script.js"></script>
@@ -57,7 +57,7 @@
       <p>Siete pronti ?</p>
     </div>
     
-    <button id="start-btn">
+    <button id="start-btn" onclick="start(true);">
       <span class="french">Commencer</span> 
       <span class="english">Begin</span>
       <span class="german">Anfangen</span> 
@@ -112,13 +112,13 @@
       <img src="https://media.tenor.com/5KrDexj2ok8AAAAd/television-tv-shows.gif" alt="cat with confettis">
     </div>
 
-    <button id="restart-btn">
+    <button id="restart-btn" onclick="start(false)">
       <span class="french">Recommencer</span>
       <span class="english">Restart</span>
       <span class="german">Neustart</span>
       <span class="italian">Ricomincia</span>
     </button>
-    <button id="menu-btn">
+    <button id="menu-btn" onclick="menu()">
       <span class="french">Retour à l'écran titre</span>
       <span class="english">Back to title screen</span>
       <span class="german">Zurück zum Titelbildschirm</span>
@@ -129,36 +129,36 @@
 
 <section id="chooser">
   <div>
-    <button class="color red" id="choose-btn-1">
+    <button class="color red" id="choose-btn-1" onclick="chooses(1)">
       Red (1)
     </button>
-    <button class="color orange" id="choose-btn-2">
+    <button class="color orange" id="choose-btn-2" onclick="chooses(2)">
       Orange (2)
     </button>
-    <button class="color yellow" id="choose-btn-3">
+    <button class="color yellow" id="choose-btn-3" onclick="chooses(3)">
       Yellow (3)
     </button>
-    <button class="color pink" id="choose-btn-4">
+    <button class="color pink" id="choose-btn-4" onclick="chooses(4)">
       Pink (4)
     </button>
-    <button class="color blue" id="choose-btn-5">
+    <button class="color blue" id="choose-btn-5" onclick="chooses(5)">
       Blue (5)
     </button>
-    <button class="color green" id="choose-btn-6"> 
+    <button class="color green" id="choose-btn-6" onclick="chooses(6)"> 
       Green (6)
     </button>
-    <button class="color gray" id="choose-btn-7">
+    <button class="color gray" id="choose-btn-7" onclick="chooses(7)">
       Gray (7)
     </button>
-    <button class="color white" id="choose-btn-8">
+    <button class="color white" id="choose-btn-8" onclick="chooses(8)">
       White (8)
     </button>
   </div>
   <div>
-    <button id="choose-btn-return">
+    <button id="choose-btn-return" onclick="removePlace()">
       Return (0)
     </button>
-    <button id="choose-btn-enter">
+    <button id="choose-btn-enter" onclick="answerProcess()">
       Enter (0)
     </button>
   </div>

@@ -84,6 +84,7 @@
 }
 
 #game-gallery a{
+  border-radius: 5px;
   height: 90%;
   cursor: pointer;
   transition: height 0.5s, box-shadow 0.5s;
