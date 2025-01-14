@@ -134,7 +134,7 @@ main{
 
 .right-buttons{
   display: flex;
-  align-items: end;
+  align-items: start;
   flex-direction: column;
   margin-top: -55px;
 }
