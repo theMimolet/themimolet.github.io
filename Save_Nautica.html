@@ -8,52 +8,25 @@
   <link rel="stylesheet" href="./assets/css/main_style.css">
   <link rel="stylesheet" href="./assets/css/games_style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="./assets/javascript/index_script.js"></script>
+  <script src="./assets/javascript/darkMode_script.js"></script>
   <script src="./assets/javascript/language_script.js"></script>
 </head>
 <body class="dark">
   <main>
     <div class="top-bg save-nautica">
-      <div class="left-buttons">
-        <a href="https://themimolet.github.io/">
-          <div class="menu-buttons" id="return-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <path d="M9 14l-4 -4l4 -4" />
-              <path d="M5 10h11a4 4 0 1 1 0 8h-1" />
-            </svg>
-          </div>
-        </a>
-      </div>
       <div class="right-buttons">
-
+                  
         <!-- Dark mode button -->
 
         <div class="menu-buttons" id="dark-mode-btn">
-          <svg class="icon-light" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon-stars" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
-            <path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
-            <path d="M19 11h2m-1 -1v2" />
-          </svg>  
-          <svg class="icon-dark" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <circle cx="12" cy="12" r="4" />
-              <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
-          </svg>
+          <img src="./assets/icons/lightMode.svg" class="icon-light" alt="light icon">
+          <img src="./assets/icons/darkMode.svg" class="icon-dark" alt="dark icon">
         </div>
 
         <!-- Languages button -->
 
         <div class="menu-buttons" id="languages-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M4 5h7" />
-            <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
-            <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
-            <path d="M12 20l4 -9l4 9" />
-            <path d="M19.1 18h-6.2" />
-          </svg>
+          <img src="./assets/icons/language.svg" alt="language icon">
         </div>
 
         <!-- Languages dropdown -->
@@ -64,8 +37,15 @@
           <div id="german-btn">DE</div>
           <div id="italian-btn">IT</div>
         </div>
-
-      </div>      
+      </div>  
+      
+      <div class="left-buttons">
+        <a href="https://themimolet.github.io/">
+          <div class="menu-buttons" id="return-btn">
+            <img src="./assets/icons/return.svg" alt="language icon">
+          </div>
+        </a>
+      </div>
     </div>        
     <h1>Save Nautica</h1>
 
@@ -290,7 +270,7 @@
 
     <div id="org-gallery">
       <a class="" href="https://ludus-academie.fr/"><img src="./assets/images/logos/ludus.png" alt="Ludus Thumbnail"></a>
-      <a class="far-right-thumbnail" href="https://www.facebook.com/octopus.ntw/"><img src="https://scontent-cdg4-3.xx.fbcdn.net/v/t39.30808-1/245653354_421032116045994_4451995843542348988_n.jpg?stp=dst-jpg_p200x200&_nc_cat=111&ccb=1-7&_nc_sid=596444&_nc_ohc=wkvDKWXZTP8AX8NCaQd&_nc_ht=scontent-cdg4-3.xx&oh=00_AfDhBOx_d0jO54Zc0xmJLsQ2u2XCk7gqViqZC0szwoh5CQ&oe=65CE7169" alt="Octop'us Thumbnail"></a>
+      <a class="far-right-thumbnail" href="https://www.fondationdelamer.org/nos-programmes/un-geste-pour-la-mer/associations/octopus/"><img src="./assets/images/logos/octopus.jpg" alt="Octop'us Thumbnail"></a>
     </div>
 
   </main>

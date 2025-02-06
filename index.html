@@ -8,68 +8,36 @@
   <link rel="stylesheet" href="./assets/css/main_style.css">
   <link rel="stylesheet" href="./assets/css/home_style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="./assets/javascript/index_script.js"></script>
+  <script src="./assets/javascript/darkMode_script.js"></script>
   <script src="./assets/javascript/language_script.js"></script>
 </head>
 <body class="dark">
   <main>
     <div class="top-bg">
       <div class="top-buttons">
+        <div class="right-buttons">
 
-        <!-- Bell button -->
-        <a href="https://themimolet.github.io/news">
-          <div class="menu-buttons" id="news-btn">
-            <svg class="icon-update-false" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
-              <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
-            </svg>
-            <svg class="icon-update-true" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell-exclamation" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <path d="M15 17h-11a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6a2 2 0 1 1 4 0a7 7 0 0 1 4 6v1.5" />
-              <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
-              <path d="M19 16v3" />
-              <path d="M19 22v.01" />
-            </svg>
+          <!-- Dark mode button -->
+
+          <div class="menu-buttons" id="dark-mode-btn">
+            <img src="./assets/icons/lightMode.svg" class="icon-light" alt="light icon">
+            <img src="./assets/icons/darkMode.svg" class="icon-dark" alt="dark icon">
           </div>
-        </a>  
 
-        <!-- Dark mode button -->
+          <!-- Languages button -->
 
-        <div class="menu-buttons" id="dark-mode-btn">
-          <svg class="icon-light" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon-stars" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
-            <path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
-            <path d="M19 11h2m-1 -1v2" />
-          </svg>  
-          <svg class="icon-dark" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <circle cx="12" cy="12" r="4" />
-              <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
-          </svg>
-        </div>
+          <div class="menu-buttons" id="languages-btn">
+            <img src="./assets/icons/language.svg" alt="language icon">
+          </div>
 
-        <!-- Languages button -->
+          <!-- Languages dropdown -->
 
-        <div class="menu-buttons" id="languages-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M4 5h7" />
-            <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
-            <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
-            <path d="M12 20l4 -9l4 9" />
-            <path d="M19.1 18h-6.2" />
-          </svg>
-        </div>
-
-        <!-- Languages dropdown -->
-
-        <div id="languages-dropdown">
-          <div id="english-btn">EN</div>
-          <div id="french-btn">FR</div>
-          <div id="german-btn">DE</div>
-          <div id="italian-btn">IT</div>
+          <div id="languages-dropdown">
+            <div id="english-btn">EN</div>
+            <div id="french-btn">FR</div>
+            <div id="german-btn">DE</div>
+            <div id="italian-btn">IT</div>
+          </div>
         </div>
 
       </div>      
@@ -86,7 +54,7 @@
 
     <!-- Description -->
 
-    <div class="description">
+    <div id="about">
       <div class="english">
         <p>
           Hello, it's me, Mimolet ! I'm an Internet dude who loves video-games, trains and Internet in general. 
@@ -97,10 +65,13 @@
       </div>
       <div class="french">
         <p>
-          Salut, c'est moi, Mimolet ! Je suis un gars sur Internet qui aime les jeux-vidéos, les trains et Internet en général. 
-          Je fais actuellement des études pour devenir un développeur de jeux-vidéos professionnel. 
-          J'aime aussi faire des montages vidéo et photos et juste être un nerd.
-          J'ai conçu ce site pour que ce soit plus simple de voir ce que je fais et où je suis sur Internet.
+          Bienvenue, cher visiteur ! 👋 <br>
+          Je m'appelle Samuel, mais on me connaît sous le nom de Mimolet ! 🎮🚆💻 <br>
+          <br>
+          Passionné de jeux vidéo, de trains et de technologie, j'adore aussi créer des montages photo et vidéo… et, soyons honnêtes, être un nerd à plein temps ! 😆 <br>
+          Actuellement étudiant en informatique, j’ai conçu ce site pour vous permettre de découvrir facilement mes projets et de me retrouver sur Internet. <br>
+          <br>
+          Bonne visite ! 🚀 <br>
         </p>
       </div>
       <div class="german">
@@ -123,18 +94,22 @@
 
     <!-- Links to my socials -->
 
-    <div class="socials">
+    <div id="socials">
+
+        <!-- Bluesky -->
+
+        <div>
+          <a href="https://www.instagram.com/themimolet/">
+            <img src="./assets/icons/socials/bluesky.svg" alt="icon bluesky">
+            Bluesky
+          </a>
+        </div>
 
         <!-- Instagram -->
 
         <div>
           <a href="https://www.instagram.com/themimolet/">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <rect x="4" y="4" width="16" height="16" rx="4" />
-              <circle cx="12" cy="12" r="3" />
-              <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-            </svg>   
+            <img src="./assets/icons/socials/instagram.svg" alt="icon instagram">
             Instagram
           </a>
         </div>
@@ -143,11 +118,7 @@
 
         <div>
           <a href="https://www.youtube.com/@Mimolet">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <rect x="3" y="5" width="18" height="14" rx="4" />
-              <path d="M10 9l5 3l-5 3z" />
-            </svg>
+            <img src="./assets/icons/socials/youtube.svg" alt="icon youtube">
             YouTube
           </a>
         </div>
@@ -156,11 +127,7 @@
 
         <div>
           <a href="https://x.com/themimolet">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-x" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
-            </svg>
+            <img src="./assets/icons/socials/x.svg" alt="icon x">
             X
           </a>
         </div>
@@ -169,12 +136,7 @@
 
         <div>
           <a href="https://www.twitch.tv/themimolet">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitch" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <path d="M4 5v11a1 1 0 0 0 1 1h2v4l4 -4h5.584c.266 0 .52 -.105 .707 -.293l2.415 -2.414c.187 -.188 .293 -.442 .293 -.708v-8.585a1 1 0 0 0 -1 -1h-14a1 1 0 0 0 -1 1z" />
-              <line x1="16" y1="8" x2="16" y2="12" />
-              <line x1="12" y1="8" x2="12" y2="12" />
-            </svg>
+            <img src="./assets/icons/socials/twitch.svg" alt="icon twitch">
             Twitch
           </a>
         </div>
@@ -183,11 +145,7 @@
 
         <div>
           <a href="https://steamcommunity.com/id/Mimolet/">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-steam" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <path d="M16.5 5a4.5 4.5 0 1 1 -.653 8.953l-4.347 3.009l0 .038a3 3 0 0 1 -2.824 2.995l-.176 .005a3 3 0 0 1 -2.94 -2.402l-2.56 -1.098v-3.5l3.51 1.755a2.989 2.989 0 0 1 2.834 -.635l2.727 -3.818a4.5 4.5 0 0 1 4.429 -5.302z" />
-              <circle fill="currentColor" cx="16.5" cy="9.5" r="1" />
-            </svg>
+            <img src="./assets/icons/socials/steam.svg" alt="steam icon">
             Steam
           </a>
         </div>
@@ -196,31 +154,26 @@
 
         <div>
           <a href="https://www.reddit.com/user/theMimolet">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-reddit" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <path d="M12 8c2.648 0 5.028 .826 6.675 2.14a2.5 2.5 0 0 1 2.326 4.36c0 3.59 -4.03 6.5 -9 6.5c-4.875 0 -8.845 -2.8 -9 -6.294l-1 -.206a2.5 2.5 0 0 1 2.326 -4.36c1.646 -1.313 4.026 -2.14 6.674 -2.14z" />
-              <path d="M12 8l1 -5l6 1" />
-              <circle cx="19" cy="4" r="1" />
-              <circle cx="9" cy="13" r=".5" fill="currentColor" />
-              <circle cx="15" cy="13" r=".5" fill="currentColor" />
-              <path d="M10 17c.667 .333 1.333 .5 2 .5s1.333 -.167 2 -.5" />
-            </svg>
+            <img src="./assets/icons/socials/reddit.svg" alt="reddit icon">
             Reddit
           </a>
         </div>
 
-        <!-- Spotify -->
+        <!-- Itch -->
 
         <div>
-          <a href="https://open.spotify.com/user/313letrc55zsllnehrsxiy5rsedm">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-spotify" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--icon)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/> 
-              <circle cx="12" cy="12" r="9" />
-              <path d="M8 11.973c2.5 -1.473 5.5 -.973 7.5 .527" />
-              <path d="M9 15c1.5 -1 4 -1 5 .5" />
-              <path d="M7 9c2 -1 6 -2 10 .5" />
-            </svg> 
-            Spotify
+          <a href="https://themimolet.itch.io/">
+            <img src="./assets/icons/socials/itch.svg" alt="icon itch">
+            Itch
+          </a>
+        </div>
+
+        <!-- Mail -->
+
+        <div>
+          <a href="mailto:mimolet@mailo.com">
+            <img src="./assets/icons/socials/mail.svg" alt="icon mail">
+            Reddit
           </a>
         </div>
     </div>
@@ -228,43 +181,17 @@
 
     <!-- Game section -->
 
-    <div class="section">
-
-      <div id="game-gallery">
-        <a href="https://themimolet.github.io/The_Totem_Of_Destiny">
-          <img id="totem-destiny-thumbnail" src="assets/images/games-thumbnail/ttod-thumbnail.png" alt="The Totem of Destiny Thumbnail">
-        </a>
-        <a href="https://themimolet.github.io/Save_Nautica">
-          <img id="save-nautica-thumbnail" src="/assets/images/games-thumbnail/save-thumbnail.png" alt="Save Nautica Thumbnail">
-        </a>
-        <a href="https://themimolet.github.io/ColourGuess">
-          <img id="colourguess-thumbnail" src="./assets/images/games-thumbnail/colourguess-thumbnail.png" alt="ColourGuess Thumbnail">
-        </a>
-        <a href="https://themimolet.github.io/Upcoming_Project" class="far-right-thumbnail">
-          <img id="colourguess-thumbnail" src="./assets/images/games-thumbnail/huh.png" alt="ColourGuess Thumbnail">
-        </a>        
-      </div>
-      <p>
-        <span class="english">Here's the link to my Itch Account</span>
-        <span class="french">Voici un lien à mon compte Itch</span>
-        <span class="german">Da ist ein Link zu meinem Itch-Konto</span>
-        <span class="italian">Ecco un collegamento al mio account Itch</span>
-         : 
-        <a href="https://themimolet.itch.io/">themimolet.itch.io</a>
-      </p>
+    <div id="game-gallery">
+      <a href="https://themimolet.github.io/TheTotemOfDestiny" class="game-card">
+        <img id="totem-destiny-thumbnail" src="assets/images/games-thumbnail/ttod-thumbnail.png" alt="The Totem of Destiny Thumbnail">
+      </a>
+      <a href="https://themimolet.github.io/SaveNautica" class="game-card">
+        <img id="save-nautica-thumbnail" src="/assets/images/games-thumbnail/save-thumbnail.png" alt="Save Nautica Thumbnail">
+      </a>
+      <a href="https://themimolet.github.io/ColourGuess" class="game-card">
+        <img id="colourguess-thumbnail" src="./assets/images/games-thumbnail/colourguess-thumbnail.png" alt="ColourGuess Thumbnail">
+      </a>
     </div>
-
-    <footer>
-      
-      <p>
-        <hr width="35%">
-        <span class="english">And if you want to contact me, here's my public email address : </span>
-        <span class="french">Et si vous voulez me contacter, voici mon addresse mail publique : </span>
-        <span class="german">Und wenn Sie mich kontaktieren möchten, hier ist meine öffentliche E-Mail-Adresse : </span>
-        <span class="italian">E se vuoi contattarmi, ecco il mio indirizzo email pubblico: </span>
-        <a href="mailto:mimolet@mailo.com">mimolet@mailo.com</a>
-      </p>
-    </footer>
   </main>
 </body>
 </html>

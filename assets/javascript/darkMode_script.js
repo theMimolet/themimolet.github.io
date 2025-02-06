@@ -5,7 +5,6 @@ $(document).ready(function(){
   // Variables
 
   let dark_mode = JSON.parse(localStorage.getItem("dark_mode"));
-  let news_version = 8;  
 
   // Setup 
 
@@ -17,14 +16,6 @@ $(document).ready(function(){
     dark_mode_on();
   } else {
     dark_mode_off();
-  };
-
-  if (localStorage.getItem("newsVer") != news_version){
-    $(".icon-update-false").hide();
-    $(".icon-update-true").show();
-  } else {
-    $(".icon-update-true").hide();
-    $(".icon-update-false").show();
   };
   
 // Button interactions
@@ -63,12 +54,5 @@ $(document).ready(function(){
     }
   });
 
-
-  // Notification
-
-  $("#news-btn").click(function(){
-    localStorage.setItem("newsVer", news_version);
-  });
-
-  console.log("The code has run successfully");
+  console.log("The code has run successfully 👍");
 });

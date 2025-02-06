@@ -79,7 +79,6 @@ h2{
   text-align: left;
 }
 
-
 /* PLAY */
 
 .play{
@@ -122,7 +121,7 @@ h2{
   max-height: 50px;
   
   padding: 5px 15px 5px 15px;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
 
   text-decoration-line: none;
   transition: background 0.2s;
@@ -161,13 +160,13 @@ h2{
 
   background-color: var(--game-gallery);
   box-shadow: 0px 0px 0px black inset;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   transition: background-color 0.5s;
 }
 
 #org-gallery a{
   height: 80%;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   cursor: pointer;
   transition: height 0.5s, box-shadow 0.5s;
   margin-left: 15px;
@@ -176,7 +175,7 @@ h2{
 
 #org-gallery img{
   height: 100%;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
 }
 
 /* Responsive */
