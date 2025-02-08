@@ -51,7 +51,7 @@
   background: var(--accent);
 }
 
-#socials div{
+#socials a{
   font-size: 0;
 
   border-radius: var(--border-radius);
@@ -71,7 +71,7 @@
   transition: background-color 0.5s;
 }
 
-#socials div:hover{
+#socials a:hover{
   background-color: var(--menu-hover);
 }
 
@@ -86,10 +86,6 @@
 
 #socials p {
   color: var(--icon);
-}
-
-.socials div:hover{
-  background-color: var(--menu-hover);
 }
 
 /* Galleries */
