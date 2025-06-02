@@ -1,181 +1,213 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="./assets/images/website-icon.ico">
-  <title>Home - Mimolet</title>
-  <link rel="stylesheet" href="./assets/css/main.css">
-  <link rel="stylesheet" href="./assets/css/home.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="./assets/js/darkMode.js"></script>
-  <script src="./assets/js/language.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/website-icon.ico">
+    <title>Home - Mimolet</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
 </head>
+
 <body class="dark">
-  <main>
-    <div class="top-bg">
-      <div class="top-buttons">
-        <div class="right-buttons">
+    <main>
+        <div class="top-bg">
+            <div class="right-buttons">
 
-          <!-- Dark mode button -->
+                <!-- Dark mode button -->
 
-          <div class="menu-buttons" id="dark-mode-btn">
-            <img src="./assets/icons/lightMode.svg" class="icon-light" alt="light icon">
-            <img src="./assets/icons/darkMode.svg" class="icon-dark" alt="dark icon">
-          </div>
+                <div class="menu-buttons" id="dark-mode-btn" onclick="darkModeButton()">
+                    <img src="./assets/icons/lightMode.svg" class="icon-light" alt="light icon">
+                    <img src="./assets/icons/darkMode.svg" class="icon-dark" alt="dark icon">
+                </div>
 
-          <!-- Languages button -->
+                <!-- Languages button -->
 
-          <div class="menu-buttons" id="languages-btn">
-            <img src="./assets/icons/language.svg" alt="language icon">
-          </div>
+                <div class="menu-buttons" id="languages-btn" onclick="menuToggle(true)">
+                    <img src="./assets/icons/language.svg" alt="language icon">
+                </div>
 
-          <!-- Languages dropdown -->
+                <!-- Languages dropdown -->
 
-          <div id="languages-dropdown">
-            <div id="english-btn">EN</div>
-            <div id="french-btn">FR</div>
-            <div id="german-btn">DE</div>
-            <div id="italian-btn">IT</div>
-          </div>
+                <div id="languages-dropdown">
+                    <div id="english-btn" onclick="changeLanguage('english')">EN</div>
+                    <div id="french-btn" onclick="changeLanguage('french')">FR</div>
+                    <div id="german-btn" onclick="changeLanguage('german')">DE</div>
+                    <div id="italian-btn" onclick="changeLanguage('italian')">IT</div>
+                </div>
+
+            </div>
         </div>
 
-      </div>      
-    </div>    
+        <!-- Main page start -->
 
-    <!-- Main page start -->
+        <div class="header_picture">
+            <img src="assets/images/mimo-pfp.png" alt="Mimolet profile picture">
+        </div>
 
-    <div  class="header_picture">
-      <img src="assets/images/mimo-pfp.png" alt="Mimolet profile picture">
-    </div>
+        <h1>Mimolet</h1>
+        <p id="citation">"Say cheese !"</p>
 
-    <h1>Mimolet</h1>
-    <p id="citation">"Say cheese !"</p>
+        <!-- Description -->
 
-    <!-- Description -->
+        <section id="about">
 
-    <section id="about">
+            <div class="french">
+                <p>Bonjour ! Je m'appelle <span class="bold" title="c'est moi !">Samuel</span>, mais on me connaît sous
+                    le nom de <span class="bold" title="c'est toujours moi !">Mimolet</span> !</p>
+                <p>
+                    Passionné de <span class="bold" title="piou piou ! 🔫">jeux vidéo</span>, <span class="bold"
+                        title="tchou tchou ! 🚂">trains</span> et de <span class="bold"
+                        title="bip boup ! 🤖">technologie</span>,
+                    j'adore aussi créer des <span class="bold">montages photo</span> et <span class="bold">vidéo</span>…
+                    et, soyons honnêtes, <span class="italic" title="et fier de l'être 😎">être un nerd à plein temps
+                        !</span>
+                </p>
+                <p>Actuellement étudiant en <span class="bold" title="chez Ynov Campus">informatique</span>, j’ai conçu
+                    ce site pour vous permettre de découvrir facilement <span class="bold">mes projets</span> et de
+                    <span class="bold">me retrouver</span> sur Internet.
+                </p>
+                <p>Bonne visite ! 🚀 </p>
+            </div>
 
-      <div class="french">
-        <p>Bonjour ! Je m'appelle <span class="bold" title="c'est moi !">Samuel</span>, mais on me connaît sous le nom de <span class="bold" title="c'est toujours moi !">Mimolet</span> !</p>
-        <p>
-          Passionné de <span class="bold" title="piou piou ! 🔫">jeux vidéo</span>, <span class="bold" title="tchou tchou ! 🚂">trains</span> et de <span class="bold" title="bip boup ! 🤖">technologie</span>, 
-          j'adore aussi créer des <span class="bold">montages photo</span> et <span class="bold">vidéo</span>… et, soyons honnêtes, <span class="italic" title="et fier de l'être 😎">être un nerd à plein temps !</span>
-        </p>
-        <p>Actuellement étudiant en <span class="bold" title="chez Ynov Campus">informatique</span>, j’ai conçu ce site pour vous permettre de découvrir facilement <span class="bold">mes projets</span> et de <span class="bold">me retrouver</span> sur Internet.</p>
-        <p>Bonne visite ! 🚀 </p>
-      </div>
+            <div class="english">
+                <p>Hello ! My name is <span class="bold" title="it's me !">Samuel</span>, but I'm known as <span
+                        class="bold" title="that's still me !">Mimolet</span> !</p>
+                <p>
+                    <span class="bold" title="pew pew ! 🔫">Video games</span>, <span class="bold"
+                        title="tchoo tchoo ! 🚂">trains</span> and <span class="bold"
+                        title="bip boop ! 🤖">technology</span> are my passion !
+                    I also like making <span class="bold">montages</span> et <span class="bold">video edits</span>… and,
+                    to be honest, <span class="italic" title="and proud to be one 😎"> I'm a full-time nerd !</span>
+                </p>
+                <p>I'm currently studying <span class="bold" title="at Ynov Campus">informatics</span>, and I've made
+                    this website to make it easier for you to discover <span class="bold">my projects</span> and to
+                    <span class="bold">find me</span> on the Internet.
+                </p>
+                <p>Enjoy your visit ! 🚀 </p>
+            </div>
 
-      <div class="english">
-        <p>Hello ! My name is <span class="bold" title="it's me !">Samuel</span>, but I'm known as <span class="bold" title="that's still me !">Mimolet</span> !</p>
-        <p>
-          <span class="bold" title="pew pew ! 🔫">Video games</span>, <span class="bold" title="tchoo tchoo ! 🚂">trains</span> and <span class="bold" title="bip boop ! 🤖">technology</span> are my passion ! 
-          I also like making <span class="bold">montages</span> et <span class="bold">video edits</span>… and, to be honest, <span class="italic" title="and proud to be one 😎"> I'm a full-time nerd !</span>
-        </p>
-        <p>I'm currently studying <span class="bold" title="at Ynov Campus">informatics</span>, and I've made this website to make it easier for you to discover <span class="bold">my projects</span> and to <span class="bold">find me</span> on the Internet.</p>
-        <p>Enjoy your visit ! 🚀 </p>
-      </div>
+            <div class="german">
+                <p>Hallo ! Ich heiße <span class="bold" title="das bin ich !">Samuel</span>, aber ich bin als <span
+                        class="bold" title="und ich bin's wieder !">Mimolet</span> bekannt !</p>
+                <p>
+                    Ich begeistere mich für <span class="bold" title="pew pew ! 🔫">Videospiele</span>, <span
+                        class="bold" title="tchoo tchoo ! 🚂">Züge</span> und <span class="bold"
+                        title="bip boop ! 🤖">Technologie</span>,
+                    und liebe es <span class="bold">Foto-</span> und <span class="bold">Videomontagen</span> zu machen…
+                    und, seien wir ehrlich, <span class="italic" title="und stoltz darauf 😎"> ich bin ein Vollzeit-Nerd
+                        !</span>
+                </p>
+                <p>Derzeit studiere ich <span class="bold" title="zum Ynov Campus">Informatik</span> und habe diese
+                    Website entworfen, damit Sie <span class="bold">meine Projekte</span> leicht entdecken und mich im
+                    Internet <span class="bold">finden</span> können.</p>
+                <p>Genießen sie ihren Besuch ! 🚀 </p>
+            </div>
 
-      <div class="german">
-        <p>Hallo ! Ich heiße <span class="bold" title="das bin ich !">Samuel</span>, aber ich bin als <span class="bold" title="und ich bin's wieder !">Mimolet</span> bekannt !</p>
-        <p>
-          Ich begeistere mich für <span class="bold" title="pew pew ! 🔫">Videospiele</span>, <span class="bold" title="tchoo tchoo ! 🚂">Züge</span> und <span class="bold" title="bip boop ! 🤖">Technologie</span>, 
-          und liebe es <span class="bold">Foto-</span> und <span class="bold">Videomontagen</span> zu machen… und, seien wir ehrlich, <span class="italic" title="und stoltz darauf 😎"> ich bin ein Vollzeit-Nerd !</span>
-        </p>
-        <p>Derzeit studiere ich <span class="bold" title="zum Ynov Campus">Informatik</span> und habe diese Website entworfen, damit Sie <span class="bold">meine Projekte</span> leicht entdecken und mich im Internet <span class="bold">finden</span> können.</p>
-        <p>Genießen sie ihren Besuch ! 🚀 </p>
-      </div>
+            <div class="italian">
+                <p>Ciao ! Mi chiamo <span class="bold" title="sono io !">Samuel</span>, ma sono conosciuto come <span
+                        class="bold" title="anche sono io !">Mimolet</span> !</p>
+                <p>
+                    Sono appassionato di <span class="bold" title="pew pew ! 🔫">videogiochi</span>, <span class="bold"
+                        title="tchoo tchoo ! 🚂">treni</span> e <span class="bold"
+                        title="bip boop ! 🤖">tecnologia</span>,
+                    e amo creare <span class="bold">montaggi fotografici</span> e <span class="bold">video</span>… e,
+                    siamo onesti, <span class="italic" title="e ne sono orgoglioso 😎"> sono un nerd a tempo pieno
+                        !</span>
+                </p>
+                <p>Attualmente studente di <span class="bold" title="al Ynov Campus">informatica</span> ho progettato
+                    questo sito per rendere facile per te scoprire <span class="bold">i miei progetti</span> e <span
+                        class="bold">trovarmi</span> su Internet.</p>
+                <p>Buona visita ! 🚀 </p>
+            </div>
 
-      <div class="italian">
-        <p>Ciao ! Mi chiamo <span class="bold" title="sono io !">Samuel</span>, ma sono conosciuto come <span class="bold" title="anche sono io !">Mimolet</span> !</p>
-        <p>
-          Sono appassionato di <span class="bold" title="pew pew ! 🔫">videogiochi</span>, <span class="bold" title="tchoo tchoo ! 🚂">treni</span> e <span class="bold" title="bip boop ! 🤖">tecnologia</span>, 
-          e amo creare <span class="bold">montaggi fotografici</span> e <span class="bold">video</span>… e, siamo onesti, <span class="italic" title="e ne sono orgoglioso 😎"> sono un nerd a tempo pieno !</span>
-        </p>
-        <p>Attualmente studente di <span class="bold" title="al Ynov Campus">informatica</span> ho progettato questo sito per rendere facile per te scoprire <span class="bold">i miei progetti</span> e <span class="bold">trovarmi</span> su Internet.</p>
-        <p>Buona visita ! 🚀 </p>
-      </div>
+        </section>
 
-    </section>
+        <!-- Links to my socials -->
 
-    <!-- Links to my socials -->
+        <div id="socials">
 
-    <div id="socials">
+            <!-- Bluesky -->
 
-      <!-- Bluesky -->
+            <a href="https://bsky.app/profile/themimolet.bsky.social" title="Bluesky">
+                <img src="./assets/icons/socials/bluesky.svg" alt="icon bluesky">
+                Bluesky
+            </a>
 
-        <a href="https://bsky.app/profile/themimolet.bsky.social" title="Bluesky">
-          <img src="./assets/icons/socials/bluesky.svg" alt="icon bluesky">
-          Bluesky
-        </a>
+            <!-- Instagram -->
 
-      <!-- Instagram -->
+            <a href="https://www.instagram.com/themimolet/" title="Instagram">
+                <img src="./assets/icons/socials/instagram.svg" alt="icon instagram">
+                Instagram
+            </a>
 
-        <a href="https://www.instagram.com/themimolet/" title="Instagram">
-          <img src="./assets/icons/socials/instagram.svg" alt="icon instagram">
-          Instagram
-        </a>
+            <!-- YouTube -->
 
-      <!-- YouTube -->
+            <a href="https://www.youtube.com/@Mimolet" title="YouTube">
+                <img src="./assets/icons/socials/youtube.svg" alt="icon youtube">
+                YouTube
+            </a>
 
-        <a href="https://www.youtube.com/@Mimolet" title="YouTube">
-          <img src="./assets/icons/socials/youtube.svg" alt="icon youtube">
-          YouTube
-        </a>
+            <!-- X -->
 
-      <!-- X -->
+            <a href="https://x.com/themimolet" title="X/Twitter">
+                <img src="./assets/icons/socials/x.svg" alt="icon x">
+                X
+            </a>
 
-        <a href="https://x.com/themimolet" title="X/Twitter">
-          <img src="./assets/icons/socials/x.svg" alt="icon x">
-          X
-        </a>
-
-      <!-- Twitch -->
+            <!-- Twitch -->
 
 
-        <a href="https://www.twitch.tv/themimolet" title="Twitch">
-          <img src="./assets/icons/socials/twitch.svg" alt="icon twitch">
-          Twitch
-        </a>
+            <a href="https://www.twitch.tv/themimolet" title="Twitch">
+                <img src="./assets/icons/socials/twitch.svg" alt="icon twitch">
+                Twitch
+            </a>
 
-      <!-- Steam -->
+            <!-- Steam -->
 
-        <a href="https://steamcommunity.com/id/Mimolet/" title="Steam">
-          <img src="./assets/icons/socials/steam.svg" alt="steam icon">
-          Steam
-        </a>
+            <a href="https://steamcommunity.com/id/Mimolet/" title="Steam">
+                <img src="./assets/icons/socials/steam.svg" alt="steam icon">
+                Steam
+            </a>
 
-      <!-- Itch -->
+            <!-- Itch -->
 
-        <a href="https://themimolet.itch.io/" title="Itch">
-          <img src="./assets/icons/socials/itch.svg" alt="icon itch">
-          Itch
-        </a>
+            <a href="https://themimolet.itch.io/" title="Itch">
+                <img src="./assets/icons/socials/itch.svg" alt="icon itch">
+                Itch
+            </a>
 
-      <!-- Mail -->
+            <!-- Mail -->
 
-        <a href="mailto:mimolet@mailo.com" title="E-mail">
-          <img src="./assets/icons/socials/mail.svg" alt="icon mail">
-          Reddit
-        </a>
-          
-    </div>
-    
-    <hr width="35%">
+            <a href="mailto:mimolet@mailo.com" title="E-mail">
+                <img src="./assets/icons/socials/mail.svg" alt="icon mail">
+                Reddit
+            </a>
 
-    <!-- Game section -->
+        </div>
 
-    <div id="game-gallery">
-      <a href="https://themimolet.github.io/TheTotemOfDestiny" class="game-card" title="The Totem Of Destiny">
-        <img id="totem-destiny-thumbnail" src="assets/images/games-thumbnail/ttod-thumbnail.png" alt="The Totem of Destiny Thumbnail">
-      </a>
-      <a href="https://themimolet.github.io/SaveNautica" class="game-card" title="Save Nautica">
-        <img id="save-nautica-thumbnail" src="/assets/images/games-thumbnail/save-thumbnail.png" alt="Save Nautica Thumbnail">
-      </a>
-      <a href="https://themimolet.github.io/ColourGuess" class="game-card" title="ColourGuess">
-        <img id="colourguess-thumbnail" src="./assets/images/games-thumbnail/colourguess-thumbnail.png" alt="ColourGuess Thumbnail">
-      </a>
-    </div>
-  </main>
+        <hr width="35%">
+
+        <!-- Game section -->
+
+        <div id="game-gallery">
+            <a href="https://themimolet.github.io/TheTotemOfDestiny" class="game-card" title="The Totem Of Destiny">
+                <img id="totem-destiny-thumbnail" src="assets/images/games-thumbnail/ttod-thumbnail.png"
+                    alt="The Totem of Destiny Thumbnail">
+            </a>
+            <a href="https://themimolet.github.io/SaveNautica" class="game-card" title="Save Nautica">
+                <img id="save-nautica-thumbnail" src="/assets/images/games-thumbnail/save-thumbnail.png"
+                    alt="Save Nautica Thumbnail">
+            </a>
+            <a href="https://themimolet.github.io/ColourGuess" class="game-card" title="ColourGuess">
+                <img id="colourguess-thumbnail" src="./assets/images/games-thumbnail/colourguess-thumbnail.png"
+                    alt="ColourGuess Thumbnail">
+            </a>
+        </div>
+    </main>
 </body>
+<script src="./assets/js/darkMode.js"></script>
+<script src="./assets/js/language.js"></script>
+
 </html>

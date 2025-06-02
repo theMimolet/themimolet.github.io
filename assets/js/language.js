@@ -1,59 +1,60 @@
-$(document).ready(function(){ 
-    $("#languages-dropdown").hide();
+
+// Variables
+
+let currentLanguage = localStorage.getItem("language");
+let languagesDropdown = document.getElementById("languages-dropdown")
+let languagesButton = document.getElementById("languages-btn")
+
+const languages = ["english", "french", "german", "italian"];
+
+languagesDropdown.style.display = "none";
     
-    let currentLanguage = localStorage.getItem("language");
+// Setup
 
-    // Setup
+if (currentLanguage === null) {
+    currentLanguage = "english";
+} else {
+    showLanguage(currentLanguage);
+};
 
-    if (currentLanguage === null) {
-        currentLanguage = "english";
+// Function that shows/hides the menu
+
+function menuToggle(showMenu){
+    if (showMenu){
+        languagesDropdown.style.display = "block";
+        languagesButton.style.display = "none";
     } else {
-        showLanguage(currentLanguage);
-    };
+        languagesDropdown.style.display = "none";
+        languagesButton.style.display = "block";
+    }
+}
 
-    // Languages
+// Function that goes through all the language classes and only shows the selected language
 
-    $("#languages-btn").click(() => menuToggle(true));
-
-    // Language Menu Function
-
-    function menuToggle(showMenu){
-        if (showMenu){
-            $("#languages-dropdown").show();
-            $("#languages-btn").hide();
+function showLanguage(language){
+    for (const lang of languages) {
+        if (lang != language){
+            for (const el of document.getElementsByClassName(lang)) {
+                el.style.display = "none";
+            }
         } else {
-            $("#languages-dropdown").hide();
-            $("#languages-btn").show();
+            for (const el of document.getElementsByClassName(language)) {
+                el.style.display = "block";
+            }
         }
     }
+}
 
-    function showLanguage(language){
-        $(".italian").hide();
-        $(".german").hide();
-        $(".french").hide();
-        $(".english").hide();
-        $("."+language).show();
+// Function that switches languages
+
+function changeLanguage(language){
+    if (currentLanguage != language){
+        showLanguage(language);
+
+        currentLanguage = language;
+        localStorage.setItem("language", language);
+
+        console.log("Language is now set to " +  language);
     }
-
-    // Function that switches languages
-
-    function changeLanguage(language){
-        if (currentLanguage != language){
-            showLanguage(language);
-
-            currentLanguage = language;
-            localStorage.setItem("language", language);
-
-            console.log("Language is now set to " +  language);
-        }
-        menuToggle(false);
-    }
-
-    // Buttons click
-
-    $("#english-btn").click(() => changeLanguage("english"));
-    $("#french-btn").click(() => changeLanguage("french"));
-    $("#german-btn").click(() => changeLanguage("german"));
-    $("#italian-btn").click(() => changeLanguage("italian"));
-
-});
+    menuToggle(false);
+}

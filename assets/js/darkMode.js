@@ -1,42 +1,39 @@
-$(document).ready(function(){
-    
-    // Variables
 
-    let isDarkMode = JSON.parse(localStorage.getItem("dark_mode"));
+// Variables
 
-    // Setup 
+let isDarkMode = JSON.parse(localStorage.getItem("dark_mode"));
+let bodyClasses = document.body.classList
 
-    if (isDarkMode === null) {
-        isDarkMode = false;
-    };
+// Setup 
 
-    darkModeToggle(isDarkMode);
-  
-    // Toggle Function
+if (isDarkMode === null) {
+    isDarkMode = false;
+};
 
-    function darkModeToggle(isDark){
-        if (isDark){
-            $("body").addClass("dark");
-            $("body").removeClass("light");
-            console.log("Dark mode on");
-        } else {
-            $("body").addClass("light");
-            $("body").removeClass("dark");
-            console.log("Dark mode off");
-        }
+darkModeToggle(isDarkMode);
+
+// Toggle Function
+
+function darkModeToggle(isDark){
+    if (isDark){
+        bodyClasses.replace("dark","light");
+        console.log("Dark mode on");
+    } else {
+        bodyClasses.replace("light","dark");
+        console.log("Dark mode off");
     }
+}
 
-  // Button interactions
+// Button interactions
 
-    $("#dark-mode-btn").click(function(){
-        if(isDarkMode === false){
-            darkModeToggle(true);
-            isDarkMode = true;
-            localStorage.setItem("dark_mode", true.toString());
-        } else {
-            darkModeToggle(false); 
-            isDarkMode = false;
-            localStorage.setItem("dark_mode", false.toString());
-        }
-    });
-});
+function darkModeButton(){
+    if(isDarkMode === false){
+        darkModeToggle(true);
+        isDarkMode = true;
+        localStorage.setItem("dark_mode", true.toString());
+    } else {
+        darkModeToggle(false); 
+        isDarkMode = false;
+        localStorage.setItem("dark_mode", false.toString());
+    }
+}
