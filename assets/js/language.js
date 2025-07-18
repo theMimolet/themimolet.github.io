@@ -2,8 +2,8 @@
 // Variables
 
 let currentLanguage = localStorage.getItem("language");
-let languagesDropdown = document.getElementById("languages-dropdown")
-let languagesButton = document.getElementById("languages-btn")
+let languagesDropdown = document.getElementById("languages-dropdown");
+let languagesButton = document.getElementById("languages-btn");
 
 const languages = ["english", "french", "german", "italian"];
 
@@ -13,6 +13,7 @@ languagesDropdown.style.display = "none";
 
 if (currentLanguage === null) {
     currentLanguage = "english";
+    showLanguage(currentLanguage);
 } else {
     showLanguage(currentLanguage);
 };
