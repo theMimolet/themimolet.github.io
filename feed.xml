@@ -3,13 +3,17 @@
     <channel>
         <title>the mimolet updates.</title>
         <atom:link href="https://themimolet.github.io/feed" rel="self" type="application/rss+xml"/>
-        <link>https://themimolet.github.io/feed</link>
+        <link>https://themimolet.github.io</link>
         <description>Recent news and updates from Mimo ! (in english) </description>
         <language>en-us</language>
+        <category>News</category>
+        <ttl>60</ttl>
+        <copyright>© 2025 Mimolet. All rights reserved.</copyright>
+        <lastBuildDate>Sat, 16 Aug 2025 18:26:00 +0200</lastBuildDate>
 
         <image>
             <url>https://themimolet.github.io/assets/images/mimo-pfp.png</url>
-            <title>The Mimolet Website</title>
+            <title>the mimolet updates.</title>
             <link>https://themimolet.github.io</link>
             <width>32</width>
             <height>32</height>
@@ -18,11 +22,10 @@
         <item>
             <title>wild updates are arriving at your location now.</title>
             <author>Mimolet</author>
-            <category>News</category>
-            <link>https://themimolet.github.io</link>
             <guid isPermaLink="false">https://themimolet.github.io/feed#update-2025-08-16</guid>
-            <pubDate>Sat, 16 Aug 2025 18:00:00  UTC+2</pubDate>
+            <pubDate>Sat, 16 Aug 2025 18:00:00  +0200</pubDate>
             <description>
+            <![CDATA[
                 <p>Hey everyone! 👋</p>
                 <p>If you read that message, then you must have found the RSS feed ! </p>
                 <p>Awesome :3</p>
@@ -37,6 +40,7 @@
                 <h2>the end.</h2>
                 <p>That's it for now, I hope you enjoyed this little update!</p>
                 <p>Stay tuned for more updates!</p>
+            ]]>
             </description>
         </item>
     </channel>
