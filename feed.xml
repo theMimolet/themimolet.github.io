@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>the mimolet updates.</title>
+        <atom:link href="https://themimolet.github.io/feed" rel="self" type="application/rss+xml"/>
+        <link>https://themimolet.github.io/feed</link>
+        <description>Recent news and updates from Mimo ! (in english) </description>
+        <language>en-us</language>
+
+        <image>
+            <url>https://themimolet.github.io/assets/images/website-icon.ico</url>
+            <title>The Mimolet Website</title>
+            <link>https://themimolet.github.io</link>
+            <width>32</width>
+            <height>32</height>
+        </image> 
+
+        <item>
+            <title>wild updates are arriving at your location now.</title>
+            <author>Mimolet</author>
+            <description>
+                <p>Hey everyone! 👋</p>
+                <p>If you read that message, then you must have found the RSS feed ! </p>
+                <p>Awesome :3</p>
+                <p>Let's begin !</p>
+                <h2>the website.</h2>
+                <p>I removed the Colourguess Game from the site entirely - It had some quirks I hadn't noticed and I want to port the game on Godot</p>
+                <p>And I fixed a minor bug in the drop-down style.</p>
+                <h2>the projects.</h2>
+                <p>Well I can't promise anything right now - because I'm working on multiple projects and I have a tendency to procrastinate</p>
+                <p>What I can say is that if I keep the momentum with my projects, you might see something soon! (nbtr)</p>
+                <p>And you'll be the first to read it here ! 😉</p>
+                <h2>the end.</h2>
+                <p>That's it for now, I hope you enjoyed this little update!</p>
+                <p>Stay tuned for more updates!</p>
+            </description>
+            <pubDate>Sat, 16 Aug 2025 18:00:00 CEST</pubDate>
+        </item>
+    </channel>
+</rss>
