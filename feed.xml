@@ -8,7 +8,7 @@
         <language>en-us</language>
 
         <image>
-            <url>https://themimolet.github.io/assets/images/website-icon.ico</url>
+            <url>https://themimolet.github.io/assets/images/mimo-pfp.png</url>
             <title>The Mimolet Website</title>
             <link>https://themimolet.github.io</link>
             <width>32</width>
@@ -18,6 +18,10 @@
         <item>
             <title>wild updates are arriving at your location now.</title>
             <author>Mimolet</author>
+            <category>News</category>
+            <link>https://themimolet.github.io</link>
+            <guid isPermaLink="false">https://themimolet.github.io/feed#update-2025-08-16</guid>
+            <pubDate>Sat, 16 Aug 2025 18:00:00 +2000</pubDate>
             <description>
                 <p>Hey everyone! 👋</p>
                 <p>If you read that message, then you must have found the RSS feed ! </p>
@@ -34,7 +38,6 @@
                 <p>That's it for now, I hope you enjoyed this little update!</p>
                 <p>Stay tuned for more updates!</p>
             </description>
-            <pubDate>Sat, 16 Aug 2025 18:00:00 CEST</pubDate>
         </item>
     </channel>
 </rss>
