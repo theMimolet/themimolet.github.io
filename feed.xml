@@ -4,7 +4,7 @@
         <title>the mimolet updates.</title>
         <atom:link href="https://themimolet.github.io/feed" rel="self" type="application/rss+xml"/>
         <link>https://themimolet.github.io</link>
-        <description>Recent news and updates from Mimo ! (in english) </description>
+        <description>recent news and updates from mimo. (in english) </description>
         <language>en-us</language>
         <category>News</category>
         <ttl>60</ttl>
