@@ -8,6 +8,14 @@
     <title>Home - Mimolet</title>
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/home.css">
+    <meta property="og:title" content="Mimolet's Website!">
+    <meta property="og:description" content="Hi ! Come and check out my website :)">
+    <meta property="og:image" content="./assets/images/mimo-pfp.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mimolet's Website!">
+    <meta name="twitter:description" content="Hi ! Come and check out my website :)">
+    <meta name="twitter:image" content="./assets/images/mimo-pfp.png">
 </head>
 
 <body class="dark">
@@ -23,20 +31,21 @@
                 </div>
 
                 <!-- Languages button -->
-
+<!-- 
                 <div class="menu-buttons" id="languages-btn" onclick="menuToggle(true)">
                     <img src="./assets/icons/language.svg" alt="language icon">
-                </div>
+                </div> -->
 
                 <!-- Languages dropdown -->
 
-                <div id="languages-dropdown">
-                    <div id="english-btn" onclick="changeLanguage('english')">EN</div>
-                    <div id="french-btn" onclick="changeLanguage('french')">FR</div>
-                    <div id="german-btn" onclick="changeLanguage('german')">DE</div>
-                    <div id="italian-btn" onclick="changeLanguage('italian')">IT</div>
-                </div>
-
+                <select class="menu-buttons" id="languages-dropdown" >
+                    <option id="english-btn" value="en" onclick="changeLanguage('english')">EN</option>
+                    <option id="french-btn" value="fr" onclick="changeLanguage('french')">FR</option>
+                    <option id="german-btn" value="de" onclick="changeLanguage('german')">DE</option>
+                    <option id="italian-btn" value="it" onclick="changeLanguage('italian')">IT</option>
+                </select>
+                <script src="./assets/js/language.js"></script>
+                
             </div>
         </div>
 
@@ -51,77 +60,24 @@
 
         <!-- Description -->
 
+        <p id="greeting"></p>
+
         <section id="about">
-
-            <div class="french">
-                <p>Bonjour ! Je m'appelle <span class="bold" title="c'est moi !">Samuel</span>, mais on me connaît sous
-                    le nom de <span class="bold" title="c'est toujours moi !">Mimolet</span> !</p>
-                <p>
-                    Passionné de <span class="bold" title="piou piou ! 🔫">jeux vidéo</span>, <span class="bold"
-                        title="tchou tchou ! 🚂">trains</span> et de <span class="bold"
-                        title="bip boup ! 🤖">technologie</span>,
-                    j'adore aussi créer des <span class="bold">montages photo</span> et <span class="bold">vidéo</span>…
-                    et, soyons honnêtes, <span class="italic" title="et fier de l'être 😎">être un nerd à plein temps
-                        !</span>
-                </p>
-                <p>Actuellement étudiant en <span class="bold" title="chez Ynov Campus">informatique</span>, j’ai conçu
-                    ce site pour vous permettre de découvrir facilement <span class="bold">mes projets</span> et de
-                    <span class="bold">me retrouver</span> sur Internet.
-                </p>
-                <p>Bonne visite ! 🚀 </p>
-            </div>
-
-            <div class="english">
-                <p>Hello ! My name is <span class="bold" title="it's me !">Samuel</span>, but I'm known as <span
-                        class="bold" title="that's still me !">Mimolet</span> !</p>
-                <p>
-                    <span class="bold" title="pew pew ! 🔫">Video games</span>, <span class="bold"
-                        title="tchoo tchoo ! 🚂">trains</span> and <span class="bold"
-                        title="bip boop ! 🤖">technology</span> are my passion !
-                    I also like making <span class="bold">montages</span> et <span class="bold">video edits</span>… and,
-                    to be honest, <span class="italic" title="and proud to be one 😎"> I'm a full-time nerd !</span>
-                </p>
-                <p>I'm currently studying <span class="bold" title="at Ynov Campus">informatics</span>, and I've made
-                    this website to make it easier for you to discover <span class="bold">my projects</span> and to
-                    <span class="bold">find me</span> on the Internet.
-                </p>
-                <p>Enjoy your visit ! 🚀 </p>
-            </div>
-
-            <div class="german">
-                <p>Hallo ! Ich heiße <span class="bold" title="das bin ich !">Samuel</span>, aber ich bin als <span
-                        class="bold" title="und ich bin's wieder !">Mimolet</span> bekannt !</p>
-                <p>
-                    Ich begeistere mich für <span class="bold" title="pew pew ! 🔫">Videospiele</span>, <span
-                        class="bold" title="tchoo tchoo ! 🚂">Züge</span> und <span class="bold"
-                        title="bip boop ! 🤖">Technologie</span>,
-                    und liebe es <span class="bold">Foto-</span> und <span class="bold">Videomontagen</span> zu machen…
-                    und, seien wir ehrlich, <span class="italic" title="und stoltz darauf 😎"> ich bin ein Vollzeit-Nerd
-                        !</span>
-                </p>
-                <p>Derzeit studiere ich <span class="bold" title="zum Ynov Campus">Informatik</span> und habe diese
-                    Website entworfen, damit Sie <span class="bold">meine Projekte</span> leicht entdecken und mich im
-                    Internet <span class="bold">finden</span> können.</p>
-                <p>Genießen sie ihren Besuch ! 🚀 </p>
-            </div>
-
-            <div class="italian">
-                <p>Ciao ! Mi chiamo <span class="bold" title="sono io !">Samuel</span>, ma sono conosciuto come <span
-                        class="bold" title="anche sono io !">Mimolet</span> !</p>
-                <p>
-                    Sono appassionato di <span class="bold" title="pew pew ! 🔫">videogiochi</span>, <span class="bold"
-                        title="tchoo tchoo ! 🚂">treni</span> e <span class="bold"
-                        title="bip boop ! 🤖">tecnologia</span>,
-                    e amo creare <span class="bold">montaggi fotografici</span> e <span class="bold">video</span>… e,
-                    siamo onesti, <span class="italic" title="e ne sono orgoglioso 😎"> sono un nerd a tempo pieno
-                        !</span>
-                </p>
-                <p>Attualmente studente di <span class="bold" title="al Ynov Campus">informatica</span> ho progettato
-                    questo sito per rendere facile per te scoprire <span class="bold">i miei progetti</span> e <span
-                        class="bold">trovarmi</span> su Internet.</p>
-                <p>Buona visita ! 🚀 </p>
-            </div>
-
+            <p>Hello ! My name is <span class="bold" title="it's me !">Samuel</span>, but I'm known as <span
+                    class="bold" title="that's still me !">Mimolet</span> !</p>
+            <p>
+                <span class="bold" title="pew pew ! 🔫">Video games</span>, <span class="bold"
+                    title="tchoo tchoo ! 🚂">trains</span> and <span class="bold"
+                    title="bip boop ! 🤖">technology</span> are my passion !
+                I also like making <span class="bold">montages</span> et <span class="bold">video edits</span>… and,
+                to be honest, <span class="italic" title="and proud to be one 😎"> I'm a full-time nerd !</span>
+            </p>
+            <p>I'm currently studying <span class="bold" title="at Ynov Campus">informatics</span>, and I've made
+                this website to make it easier for you to discover <span class="bold">my projects</span> and to
+                <span class="bold">find me</span> on the Internet.
+            </p>
+            <p>Enjoy your visit ! 🚀 </p>
+            <p>⚠️ You are viewing the page without the scripts enabled - some infos may be outdated ⚠️</p>
         </section>
 
         <!-- Links to my socials -->
@@ -215,6 +171,5 @@
     </main>
 </body>
 <script src="./assets/js/darkMode.js"></script>
-<script src="./assets/js/language.js"></script>
 
 </html>

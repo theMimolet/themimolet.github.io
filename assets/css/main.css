@@ -19,6 +19,7 @@
     --icon-dark: none;
     --icon-filter: invert(0%);
     --accent: linear-gradient(300deg, rgb(255, 94, 0), rgb(228, 153, 41));
+    --accent-simple: rgb(255, 94, 0);
     --scroll: rgb(255, 136, 0);
     --scroll-hover: rgba(255, 136, 0, 0.363);
     --itch: linear-gradient(90deg, rgba(255, 91, 91, 0.7), rgba(153, 21, 43, 0.7));
@@ -196,16 +197,28 @@ main {
 #languages-dropdown {
     border-radius: var(--border-radius);
     box-shadow: 0px 0px 3px 0px black;
+    font-size: 1em;
     width: 50px;
+    height: 50px;
     height: min-content;
-    margin: 5px;
+    /* margin: 5px; */
     -webkit-user-select: none;
     user-select: none;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    appearance: none; /* Removes default arrow */
+    /* background-image: url('../icons/language.svg');
+    background-repeat: no-repeat; */
 }
 
-#languages-dropdown div {
+#languages-dropdown option {
 
     width: 100%;
     height: min-content;
@@ -213,24 +226,20 @@ main {
     background-color: var(--menu);
     transition: background-color 0.2s;
 
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-
     border-radius: 0px;
     border-bottom: var(--border);
 }
 
-#languages-dropdown div:hover {
-    background-color: var(--menu-hover);
+#languages-dropdown option:hover {
+    cursor: pointer;
+    background-color: var(--accent-simple);
 }
 
-#languages-dropdown div:first-child {
+#languages-dropdown option:first-child {
     border-radius: var(--border-radius) var(--border-radius) 0px 0px;
 }
 
-#languages-dropdown div:last-child {
+#languages-dropdown option:last-child {
     border-radius: 0px 0px var(--border-radius) var(--border-radius);
     border-bottom: 0px;
 }

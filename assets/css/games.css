@@ -66,6 +66,7 @@ h2{
 
 .game-info td, .game-info td span, .game-info td a{
   color: white;
+  width:50%
 }
 
 .game-info td:first-child{

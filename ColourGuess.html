@@ -22,128 +22,60 @@
                     <img src="./assets/icons/darkMode.svg" class="icon-dark" alt="dark icon">
                 </div>
 
-                <!-- Languages button -->
-
-                <div class="menu-buttons" id="languages-btn" onclick="menuToggle(true)">
-                    <img src="./assets/icons/language.svg" alt="language icon">
-                </div>
-
                 <!-- Languages dropdown -->
 
-                <div id="languages-dropdown">
-                    <div id="english-btn" onclick="changeLanguage('english')">EN</div>
-                    <div id="french-btn" onclick="changeLanguage('french')">FR</div>
-                    <div id="german-btn" onclick="changeLanguage('german')">DE</div>
-                    <div id="italian-btn" onclick="changeLanguage('italian')">IT</div>
-                </div>
-            </div>
-
-            <div class="left-buttons">
-                <a href="https://themimolet.github.io/">
-                    <div class="menu-buttons" id="return-btn">
-                        <img src="./assets/icons/return.svg" alt="language icon">
-                    </div>
-                </a>
+                <select class="menu-buttons" id="languages-dropdown" >
+                    <option id="english-btn" value="en" onclick="changeLanguage('english')">EN</option>
+                    <option id="french-btn" value="fr" onclick="changeLanguage('french')">FR</option>
+                    <option id="german-btn" value="de" onclick="changeLanguage('german')">DE</option>
+                    <option id="italian-btn" value="it" onclick="changeLanguage('italian')">IT</option>
+                </select>
+                <script src="./assets/js/language.js"></script>
             </div>
         </div>
         <h1>ColourGuess</h1>
 
-        <!-- Save Nautica's Presentation -->
+        <!-- Colourguess' Presentation -->
 
         <div class="presentation">
-            <!-- Save Nautica's Description -->
-            <div class="description">
-                <p class="english">
+            <!-- Colourguess' Description -->
+            <div class="description" >
+                <p id="colourguess-description">
                     ColourGuess is an online MasterMind trying to produce a decent gaming experience. You have a 4 color
                     code to
                     find, but you only have 12 attempts to crack it!
                 </p>
-                <p class="french">
-                    ColourGuess est un MasterMind en ligne essayant de produire une expérience de jeu convenable. Vous
-                    avez un
-                    code de 4 couleurs à trouver, mais vous n'avez que 12 tentatives pour le déchiffrer !
-                </p>
-                <p class="german">
-                    ColourGuess ist ein Online-MasterMind, der versucht, ein anständiges Spielerlebnis zu schaffen. Sie
-                    müssen
-                    einen 4-Farben-Code finden, haben aber nur 12 Versuche, ihn zu knacken!
-                </p>
-                <p class="italian">
-                    ColourGuess è un MasterMind online che cerca di produrre un'esperienza di gioco decente. Devi
-                    trovare un
-                    codice a 4 colori, ma hai solo 12 tentativi per decifrarlo!
-                </p>
             </div>
+
             <table class="game-info">
                 <tr>
-                    <td>
-                        <span class="english">Developers</span>
-                        <span class="french">Développeurs</span>
-                        <span class="german">Entwickler</span>
-                        <span class="italian">Sviluppatori</span>
-                    </td>
+                    <td id="game-dev">Developers</td>
                     <td class="left">Mimolet</td>
                 </tr>
                 <tr>
-                    <td>
-                        <span class="english">Start of project</span>
-                        <span class="french">Début de projet</span>
-                        <span class="german">Anfang des projects</span>
-                        <span class="italian">Inizio del progetto</span>
-                    </td>
-                    <td>
-                        <span class="english">August 2023</span>
-                        <span class="french">Août 2023</span>
-                        <span class="german">August 2023</span>
-                        <span class="italian">Agosto 2023</span>
-                    </td>
+                    <td id="game-start-date">Start of project</td>
+                    <td id="colourguess-debut">August 2023</td>
                 </tr>
                 <tr>
-                    <td>
-                        <span class="english">Languages</span>
-                        <span class="french">Langues</span>
-                        <span class="german">Sprachen</span>
-                        <span class="italian">Lingue</span>
-                    </td>
-                    <td>
-                        <span class="english">French, German, English, Italian</span>
-                        <span class="french">Français, Allemand, Anglais, Italien</span>
-                        <span class="german">Französisch, Deutsch, Englisch, Italienisch</span>
-                        <span class="italian">Francese, Tedesco, Inglese, Italiano</span>
-                    </td>
+                    <td id="game-languages">Languages</td>
+                    <td id="colourguess-languages">French, German, English, Italian</td>
                 </tr>
                 <tr>
-                    <td>
-                        <span class="english">Platforms</span>
-                        <span class="french">Plateformes</span>
-                        <span class="german">Plattformen</span>
-                        <span class="italian">Piattaforme</span>
-                    </td>
+                    <td id="game-platforms">Platforms</td>
                     <td>HTML 5</td>
                 </tr>
                 <tr>
-                    <td>
-                        <span class="english">Engine</span>
-                        <span class="french">Moteur</span>
-                        <span class="german">Motor</span>
-                        <span class="italian">Motore</span>
-                    </td>
+                    <td id="game-engine">Engine</td>
                     <td>Web</td>
+                </tr>
+                <tr>
+                    <td id="game-status">Engine</td>
+                    <td id="colourguess-status">Currently being ported to Godot 4</td>
                 </tr>
             </table>
 
             <!-- Play button -->
 
-        </div>
-
-        <div class="play">
-            <p>
-                <span class="french">⚠️ Le jeu est en cours de port sur Godot, dû à certains soucis, je préfère l'enlever du site pour le moment</span>
-                <span class="english">⚠️ The game is being ported to Godot, due to some issues, I prefer to remove it from the site for now</span>
-                <span class="german">⚠️ Das Spiel wird auf Godot portiert, aufgrund einiger Probleme ziehe ich es vor, es vorerst von der Seite zu entfernen</span>
-                <span class="italian">⚠️ Il gioco è in fase di porting su Godot, a causa di alcuni problemi, preferisco rimuoverlo dal sito per ora</span>
-            </p>
-            
         </div>
 
         <!-- <div class="play">
@@ -167,57 +99,15 @@
 
         <hr width="35%">
 
-        <div>
-            <h2>
-                <span class="english">The Little Story™</span>
-                <span class="french">La Petite Histoire™</span>
-                <span class="german">Die kleine Geschichte™</span>
-                <span class="italian">La Piccola Storia™</span>
-            </h2>
-
-            <div class="english">
-                <p>
-                    My girlfriend at the time introduced me to the game MasterMind
-                    and I quickly became good at the game and I really liked it and we played games over and over again.
-                    However, after a while, she got fed up (normal, she's human) and as I wanted to continue playing,
-                    even when I was at home, I then decided to program my own MasterMind.
-                </p>
-            </div>
-            <div class="french">
-                <p>
-                    Ma copine de l'époque m'a fait découvrir le jeu MasterMind
-                    et je suis rapidement devenu fort au jeu et ça me plaisait beaucoup et on faisait des parties en
-                    boucle.
-                    Cependant, au bout d'un moment, elle en avait marre (normal, elle est humaine) et comme je voulais
-                    continuer à
-                    jouer,
-                    même lorsque j'étais chez moi, j'ai alors décidé de programmer mon propre MasterMind.
-                </p>
-            </div>
-            <div class="german">
-                <p>
-                    Meine damalige Freundin machte mich mit dem Spiel MasterMind bekannt
-                    und ich wurde schnell gut in dem Spiel und es gefiel mir sehr gut und wir spielten immer und immer
-                    wieder
-                    Spiele.
-                    Nach einer Weile hatte sie jedoch die Nase voll (normal, sie ist ein Mensch) und da ich
-                    weiterspielen wollte,
-                    Schon zu Hause beschloss ich dann, meinen eigenen MasterMind zu programmieren.
-                </p>
-            </div>
-            <div class="italian">
-                <p>
-                    La mia ragazza dell'epoca mi fece conoscere il gioco MasterMind
-                    e sono diventato subito bravo nel gioco e mi è piaciuto molto e abbiamo giocato ancora e ancora.
-                    Tuttavia, dopo un po' si è stancata (è normale, è umana) e poiché volevo continuare a giocare,
-                    anche quando ero a casa, ho poi deciso di programmare il mio MasterMind.
-                </p>
-            </div>
-
-        </div>
+        <h2 id="colourguess-little-story-title">The Little Story™</h2>
+        <p id="colourguess-little-story">
+            My girlfriend at the time introduced me to the game MasterMind
+            and I quickly became good at the game and I really liked it and we played games over and over again.
+            However, after a while, she got fed up (normal, she's human) and as I wanted to continue playing,
+            even when I was at home, I then decided to program my own MasterMind.
+        </p>
     </main>
 </body>
 <script src="./assets/js/darkMode.js"></script>
-<script src="./assets/js/language.js"></script>
 
 </html>

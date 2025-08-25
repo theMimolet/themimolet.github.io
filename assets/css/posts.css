@@ -1,0 +1,29 @@
+/* Styles for the feed container */
+
+body{
+    margin: 5%;
+}
+
+.feed-item {
+    margin: 10px 0;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feed-title {
+    font-size: 2em;
+    margin: 0 0 5px 0;
+    color: rgb(255, 94, 0);
+}
+
+.feed-date {
+    color: #666;
+    font-style: italic;
+}
+
+#links {
+    margin: 35px auto;
+    font-size: 1.2em;
+}

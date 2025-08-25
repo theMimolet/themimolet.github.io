@@ -22,20 +22,15 @@
                     <img src="./assets/icons/darkMode.svg" class="icon-dark" alt="dark icon">
                 </div>
 
-                <!-- Languages button -->
-
-                <div class="menu-buttons" id="languages-btn" onclick="menuToggle(true)">
-                    <img src="./assets/icons/language.svg" alt="language icon">
-                </div>
-
                 <!-- Languages dropdown -->
 
-                <div id="languages-dropdown">
-                    <div id="english-btn" onclick="changeLanguage('english')">EN</div>
-                    <div id="french-btn" onclick="changeLanguage('french')">FR</div>
-                    <div id="german-btn" onclick="changeLanguage('german')">DE</div>
-                    <div id="italian-btn" onclick="changeLanguage('italian')">IT</div>
-                </div>
+                <select class="menu-buttons" id="languages-dropdown" >
+                    <option id="english-btn" value="en" onclick="changeLanguage('english')">EN</option>
+                    <option id="french-btn" value="fr" onclick="changeLanguage('french')">FR</option>
+                    <option id="german-btn" value="de" onclick="changeLanguage('german')">DE</option>
+                    <option id="italian-btn" value="it" onclick="changeLanguage('italian')">IT</option>
+                </select>
+                <script src="./assets/js/language.js"></script>
             </div>
 
             <div class="left-buttons">
@@ -48,90 +43,45 @@
         </div>
         <h1>The Totem Of Destiny</h1>
 
-        <!-- Save Nautica's Presentation -->
+        <!-- Totem of Destiny's Presentation -->
 
         <div class="presentation">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Pn7HpcD6eu0?si=ROl6ml4a5X92RGQx"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
-            <!-- Save Nautica's Description -->
+            <!-- Totem of Destiny's Description -->
             <div class="description">
-                <p class="english">
+                <p id="totemdestiny-description">
                     The Totem of Destiny is a game in which you play a secret agent who tries to infiltrate a base full
                     of capybaras in order to recover the Golden Totem, an artifact that holds a mysterious power.
                 </p>
-                <p class="french">
-                    The Totem of Destiny est un jeu, on incarne un agent secret qui essaie de s'infiltrer dans une base
-                    remplie de capybaras dans le but de récupérer le Totem d'or, un artefact qui détiendrait un
-                    mystérieux pouvoir.
-                </p>
-                <p class="german">
-                    The Totem of Destiny ist ein Spiel, in dem Sie einen Geheimagenten spielen, der versucht, eine Basis
-                    voller Capybaras zu infiltrieren, um das Goldene Totem zu bergen, ein Artefakt, das eine mysteriöse
-                    Macht besitzt.
-                </p>
-                <p class="italian">
-                    The Totem of Destiny è un gioco in cui vesti i panni di un agente segreto che cerca di infiltrarsi
-                    in una base piena di capibara per recuperare il Totem d'Oro, un artefatto dotato di un potere
-                    misterioso.
-                </p>
             </div>
+
             <table class="game-info">
                 <tr>
-                    <td>
-                        <span class="english">Developers</span>
-                        <span class="french">Développeurs</span>
-                        <span class="german">Entwickler</span>
-                        <span class="italian">Sviluppatori</span>
-                    </td>
+                    <td id="game-dev">Developers</td>
                     <td class="left">Team UI</td>
                 </tr>
                 <tr>
-                    <td>
-                        <span class="english">Start of project</span>
-                        <span class="french">Début de projet</span>
-                        <span class="german">Anfang des projects</span>
-                        <span class="italian">Inizio del progetto</span>
-                    </td>
-                    <td>
-                        <span class="english">January 2023</span>
-                        <span class="french">Janvier 2023</span>
-                        <span class="german">Januar 2023</span>
-                        <span class="italian">Gennaio 2023</span>
-                    </td>
+                    <td id="game-start-date">Start of project</td>
+                    <td id="totemdestiny-debut">March 2023</td>
                 </tr>
                 <tr>
-                    <td>
-                        <span class="english">Languages</span>
-                        <span class="french">Langues</span>
-                        <span class="german">Sprachen</span>
-                        <span class="italian">Lingue</span>
-                    </td>
-                    <td>
-                        <span class="english">French</span>
-                        <span class="french">Français</span>
-                        <span class="german">Französich</span>
-                        <span class="italian">Francese</span>
-                    </td>
+                    <td id="game-languages">Languages</td>
+                    <td id="totemdestiny-languages">French</td>
                 </tr>
                 <tr>
-                    <td>
-                        <span class="english">Platforms</span>
-                        <span class="french">Plateformes</span>
-                        <span class="german">Plattformen</span>
-                        <span class="italian">Piattaforme</span>
-                    </td>
+                    <td id="game-platforms">Platforms</td>
                     <td>Windows</td>
                 </tr>
                 <tr>
-                    <td>
-                        <span class="english">Engine</span>
-                        <span class="french">Moteur</span>
-                        <span class="german">Motor</span>
-                        <span class="italian">Motore</span>
-                    </td>
-                    <td>Construct 3 </td>
+                    <td id="game-engine">Engine</td>
+                    <td>Construct 3</td>
+                </tr>
+                <tr>
+                    <td id="game-status">Engine</td>
+                    <td id="totemdestiny-status">Stopped</td>
                 </tr>
             </table>
 
@@ -140,39 +90,18 @@
         </div>
 
         <div class="play">
-            <p>
-                <span class="english">Play</span>
-                <span class="french">Jouer à </span>
-                <span class="italian">Gioca a</span>
-                The Totem Of Destiny
-                <span class="german">spielen</span>
-            </p>
+            <p>The Totem Of Destiny (Demo)</p>
             <div class="play-list">
-                <a href="https://themimolet.itch.io/the-totem-of-destiny/purchase" class="game-link-btn download-btn">
-                    <span class="english">Download Demo</span>
-                    <span class="french">Télécharger la démo</span>
-                    <span class="german">Demo herunterladen</span>
-                    <span class="italian">Scarica demo</span>
-                </a>
-                <a href="https://themimolet.itch.io/the-totem-of-destiny" class="game-link-btn itch-btn">
-                    <span class="english">See the Itch page</span>
-                    <span class="french">Voir la page Itch</span>
-                    <span class="german">Siehe die Itch-Seite</span>
-                    <span class="italian">Giocare su Itch</span>
-                </a>
+                <a href="https://themimolet.itch.io/the-totem-of-destiny/purchase" class="game-link-btn download-btn" id="game-play-download">Download</a>
+                <a href="https://themimolet.itch.io/the-totem-of-destiny" class="game-link-btn itch-btn" id="game-play-itch-page">See the Itch page</a>
             </div>
         </div>
 
         <hr width="35%">
 
         <div>
-            <h2>
-                <span class="english">About this game</span>
-                <span class="french">À propos de ce jeu</span>
-                <span class="german">Über dieses Spiel</span>
-                <span class="italian">Informazioni sul gioco</span>
-            </h2>
-            <div class="english">
+            <h2 id="game-about-title">About this game</h2>
+            <div id="totemdestiny-about">
                 <p>
                     In the near future, you are a secret agent and your mission is as follows:
                     you must infiltrate the secret W.I.C.K.E.D. base. in the Amazon to recover the artifact
@@ -185,59 +114,11 @@
                     This game was created as part of a group project for Ludus Académie.
                 </p>
             </div>
-            <div class="french">
-                <p>
-                    Dans un futur proche, vous êtes un agent secret et votre mission est la suivante :
-                    vous devez vous infiltrer dans la base secrète des M.E.C.H.A.N.T. en Amazonie pour récupérer
-                    l’artéfact
-                    qui a permis à leur chef de contrôler les capybaras et pourrait donner à une personne un mystérieux
-                    pouvoir.
-                </p>
-                <p>
-                    Allez-vous réussir votre mission ?
-                </p>
-                <p>
-                    Ce jeu a été réalisé dans le cadre d'un projet de groupe pour Ludus Académie.
-                </p>
-            </div>
-            <div class="german">
-                <p>
-                    In naher Zukunft sind Sie ein Geheimagent und Ihre Mission ist wie folgt:
-                    Sie müssen die geheime B.Ö.S.E.-Basis infiltrieren. im Amazonas, um das Artefakt zu bergen
-                    Dies ermöglichte es ihrem Anführer, die Wasserschweine zu kontrollieren und einer Person eine
-                    mysteriöse Macht zu verleihen.
-                </p>
-                <p>
-                    Wird Ihnen Ihre Mission gelingen?
-                </p>
-                <p>
-                    Dieses Spiel wurde im Rahmen eines Gruppenprojekts für Ludus Académie erstellt.
-                </p>
-            </div>
-            <div class="italian">
-                <p>
-                    Nel prossimo futuro sarai un agente segreto e la tua missione sarà la seguente:
-                    devi infiltrarti nella base segreta M.A.L.V.A.G.I.O. in Amazzonia per recuperare il manufatto
-                    che permetteva al loro capo di controllare i capibara e poteva conferire a una persona un potere
-                    misterioso.
-                </p>
-                <p>
-                    Riuscirai nella tua missione?
-                </p>
-                <p>
-                    Questo gioco è stato creato come parte di un progetto di gruppo per Ludus Académie.
-                </p>
-            </div>
         </div>
 
         <div>
-            <h2>
-                <span class="english">How to play</span>
-                <span class="french">Comment jouer</span>
-                <span class="german">Wie spielen</span>
-                <span class="italian">Come giocare</span>
-            </h2>
-            <div class="english">
+            <h2 id="game-controls-title">How to play</h2>
+            <div id="totemdestiny-controls">
                 <ul>
                     <li>Use the directional arrows or ZSQD (or WASD) to move</li>
                     <li>Orient the agent by moving the cursor</li>
@@ -246,47 +127,16 @@
                 </ul>
                 <p>Infiltrate the secret base and find the Golden Totem! </p>
             </div>
-            <div class="french">
-                <ul>
-                    <li>Utilisez les flèches directionnelles ou ZSQD pour vous déplacer</li>
-                    <li>Orientez l'agent en bougeant le curseur</li>
-                    <li>Appuyez sur le clic gauche pour interagir/taper</li>
-                    <li>Appuyez sur le clic droit ou CTRL pour vous accroupir</li>
-                </ul>
-                <p>Infiltrez-vous dans la base secrète et trouvez le Totem d'or ! </p>
-            </div>
-            <div class="german">
-                <ul>
-                    <li>Verwenden Sie die Richtungspfeile oder ZSQD (oder WASD) zum Bewegen</li>
-                    <li>Orientieren Sie den Agenten, indem Sie den Cursor bewegen</li>
-                    <li>Drücken Sie die linke Maustaste, um zu interagieren/einzugeben</li>
-                    <li>Drücken Sie die rechte Maustaste oder die STRG-Taste, um sich zu ducken</li>
-                </ul>
-                <p>Infiltrieren Sie die geheime Basis und finden Sie das Goldene Totem! </p>
-            </div>
-            <div class="italian">
-                <ul>
-                    <li>Utilizza le frecce direzionali o ZSQD (o WASD) per muoverti</li>
-                    <li>Orienta l'agente spostando il cursore</li>
-                    <li>Premi il clic sinistro per interagire/digitare</li>
-                    <li>Premi il tasto destro o CTRL per accovacciarti</li>
-                </ul>
-                <p>Infiltrati nella base segreta e trova il Totem d'oro! </p>
-            </div>
         </div>
-
         <div>
-            <h2>
-                <span class="english">Credits</span>
-                <span class="french">Crédits</span>
-                <span class="german">Krediten</span>
-                <span class="italian">Crediti</span>
-            </h2>
-            <ul>
-                <li>Mimolet : Game Design, Programming & Art</li>
-                <li><a href="https://enzor68.itch.io/">enzor68</a> : Game Design, Programming</li>
-                <li><a href="https://phileas0408.itch.io/">phileas0408</a> : Game Design, Programming</li>
-            </ul>
+            <h2 id="game-credits-title">Credits</h2>
+            <div id="totemdestiny-credits">
+                <ul>
+                    <li>Mimolet : Game Design, Programming & Art</li>
+                    <li><a href="https://gaetan-piou.itch.io/">Gaëtan Piou</a> : Game Design, Programming, Music</li>
+                    <li><a href="https://kurozo.itch.io/">Kurozo</a> : Game Design, Programming</li>
+                </ul>    
+            </div>
         </div>
 
         <div id="org-gallery">

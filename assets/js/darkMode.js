@@ -16,10 +16,10 @@ darkModeToggle(isDarkMode);
 
 function darkModeToggle(isDark){
     if (isDark){
-        bodyClasses.replace("dark","light");
+        bodyClasses.replace("light","dark");
         console.log("Dark mode on");
     } else {
-        bodyClasses.replace("light","dark");
+        bodyClasses.replace("dark","light");
         console.log("Dark mode off");
     }
 }

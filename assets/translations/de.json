@@ -1,0 +1,40 @@
+{
+    "about":"<div><p>Hallo ! Ich heiße <span class=\"bold\" title=\"das bin ich !\">Samuel</span>, aber ich bin als <span class=\"bold\" title=\"und ich bin's wieder !\">Mimolet</span> bekannt !</p><p>Ich begeistere mich für <span class=\"bold\" title=\"pew pew ! 🔫\">Videospiele</span>, <span class=\"bold\" title=\"tchoo tchoo ! 🚂\">Züge</span> und <span class=\"bold\" title=\"bip boop ! 🤖\">Technologie</span>, und liebe es <span class=\"bold\">Foto-</span> und <span class=\"bold\">Videomontagen</span> zu machen… und, seien wir ehrlich, <span class=\"italic\" title=\"und stolz darauf 😎\"> ich bin ein Vollzeit-Nerd !</span></p><p>Derzeit studiere ich <span class=\"bold\" title=\"zum Ynov Campus\">Informatik</span> und habe diese Website entworfen, damit Sie <span class=\"bold\">meine Projekte</span> leicht entdecken und mich im Internet <span class=\"bold\">finden</span> können.</p><p>Genießen Sie Ihren Besuch ! 🚀 </p></div>",
+    
+    "game-dev": "Entwickler",
+    "game-start-date": "Anfang des projects",
+    "game-languages": "Sprache(n)",
+    "game-platforms": "Plateform(en)",
+    "game-engine": "Motor",
+    "game-status": "Status",
+    "game-play": "Spielen",
+    "game-play-itch": "Auf Itch.io spielen",
+    "game-play-itch-page": "Siehe die Itch.io Seite",
+    "game-play-download": "Herunterladen",
+    "game-about-title": "Über dieses Spiel",
+    "game-controls-title": "Wie spielen",
+    "game-credits-title": "Credits",
+
+    "colourguess-description": "ColourGuess ist ein Online-MasterMind, der versucht, ein anständiges Spielerlebnis zu schaffen. Sie müssen einen 4-Farben-Code finden, haben aber nur 12 Versuche, ihn zu knacken!",
+    "colourguess-debut": "August 2023",
+    "colourguess-languages": "Französisch, Deutsch, Englisch, Italienisch",
+    "colourguess-status": "Derzeit portiert auf Godot 4",
+    "colourguess-little-story-title": "Die kleine Geschichte™",
+    "colourguess-little-story": "Meine damalige Freundin machte mich mit dem Spiel MasterMind bekannt und ich wurde schnell gut in dem Spiel und es gefiel mir sehr gut und wir spielten immer und immer wieder Spiele. Nach einer Weile hatte sie jedoch die Nase voll (normal, sie ist ein Mensch) und da ich weiterspielen wollte, Schon zu Hause beschloss ich dann, meinen eigenen MasterMind zu programmieren.",
+
+    "savenautica-description": "Save Nautica ist ein Spiel, in dem Sie Trashbot steuern, einen Roboter, dessen Mission es ist, allen Müll zu sammeln, der in den Ozean geworfen wird. Aber Vorsicht, Trashbot hat eine begrenzte Zeit, in der er unter Wasser sein kann.",
+    "savenautica-debut": "März 2023",
+    "savenautica-languages": "Französisch",
+    "savenautica-status": "Angehalten",
+    "savenautica-about": "<p>\"Wir präsentieren Ihnen TrashBot™, einen kleinen Roboter, der beste darin, Müll aus dem Ozean aufzusaugen, den Sie bequem von zu Hause aus steuern können! Er ist schnell, effizient und genau das, was wir brauchen, um die Verschmutzung der Ozeane zu bekämpfen! Und ich hätte es fast vergessen, ich bin verpflichtet, Ihnen mitzuteilen, dass die Akkulaufzeit relativ gering ist.. Und saugen Sie auch keine Fische auf, das versteht sich von selbst.\"</p><p>Dieses Spiel wurde für den Ludus Octopus Jam 2023 erstellt. Dieses hatte zum Thema Der Schutz der Ozeane. Das Spiel musste sich mit der Meeresfauna und ihrer Umwelt befassen.</p>",
+    "savenautica-controls": "<ul><li>Verwenden Sie die Pfeile oder Q/D, um sich umzudrehen</li><li>Drücken Sie W oder Z, um vorwärts zu gehen</li><li>Drücken Sie X oder LEERTASTE, um TrashBot™ zu öffnen/schließen</li></ul><p>Sammeln Sie so viel Müll wie möglich und kommen Sie zurück an die Oberfläche, bevor die Zeit abläuft!</p>",
+    "savenautica-credits": "<ul><li>Mimolet : Game Design, Programmierung & Grafik</li><li><a href='https://gaetan-piou.itch.io/'>Gaëtan Piou</a> : Game Design, Programmierung & Musik</li><li><a href='https://kurozo.itch.io/'>Kurozo</a> : Game Design & Programmierung</li></ul>",
+
+    "totemdestiny-description": "The Totem of Destiny ist ein Spiel, in dem wir als Geheimagent spielen, der versucht, in eine Basis voller Capybaras einzudringen, um das Goldene Totem zu bergen, ein Artefakt, das eine mysteriöse Macht besitzen soll.",
+    "totemdestiny-debut": "Januar 2023",
+    "totemdestiny-languages": "Französisch",
+    "totemdestiny-status": "Angehalten",
+    "totemdestiny-about": "<p>In naher Zukunft sind Sie ein Geheimagent und Ihre Mission ist wie folgt: Sie müssen in die geheime Basis der M.E.C.H.A.N.T. im Amazonas eindringen, um das Artefakt zu bergen, das ihrem Anführer ermöglichte, die Capybaras zu kontrollieren und einer Person eine mysteriöse Macht verleihen könnte.</p><p>Wird es Ihnen gelingen, Ihre Mission zu erfüllen?</p><p>Dieses Spiel wurde im Rahmen eines Gruppenprojekts für Ludus Académie erstellt.</p>",
+    "totemdestiny-controls": "<ul><li>Verwenden Sie die Richtungspfeile oder ZSQD (oder WASD), um sich zu bewegen</li><li>Richten Sie den Agenten aus, indem Sie den Cursor bewegen</li><li>Drücken Sie die linke Maustaste, um zu interagieren/zu tippen</li><li>Drücken Sie die rechte Maustaste oder STRG, um in die Hocke zu gehen</li></ul><p>Schleichen Sie sich in die geheime Basis ein und finden Sie das Goldene Totem! </p>",
+    "totemdestiny-credits": "<ul><li>Mimolet : Game Design, Programmierung & Grafik</li><li><a href='https://enzor68.itch.io/'>enzor68</a> : Game Design, Programmierung</li><li><a href='https://phileas0408.itch.io/'>phileas0408</a> : Game Design, Programmierung</li></ul>"
+}

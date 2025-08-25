@@ -9,7 +9,7 @@
         <category>News</category>
         <ttl>60</ttl>
         <copyright>© 2025 Mimolet. All rights reserved.</copyright>
-        <lastBuildDate>Sat, 16 Aug 2025 18:26:00 +0200</lastBuildDate>
+        <lastBuildDate>Mon, 25 Aug 2025 22:30:00  +0200</lastBuildDate>
 
         <image>
             <url>https://themimolet.github.io/assets/images/mimo-pfp.png</url>
@@ -18,6 +18,38 @@
             <width>32</width>
             <height>32</height>
         </image> 
+
+        <item>
+            <title>translations and progress.</title>
+            <author>Mimolet</author>
+            <guid isPermaLink="false">https://themimolet.github.io/feed#update-2025-08-25</guid>
+            <pubDate>Mon, 25 Aug 2025 22:30:00  +0200</pubDate>
+            <description>
+            <![CDATA[
+                <p>Hey everyone! 👋</p>
+                <p>I'm trying a bit more of control over my life, and focus on projets - It's hard, but I'll get there eventually</p>
+                <p>Let's begin with the news!</p>
+                >h2>colourguess.</h2>
+                <p>I made some progress, the core game has successfully been ported to Godot (and even optimised), but all the user interface needs to be done (oh boy)</p>
+                <h2>kindsun.</h2>
+                <p>"But Mimolet, what is this ?"</p>
+                <p>It's a discord bot on which my boyfriend has been working on. I'm trying to help him as much as can, mostly by doing all the website for it.</p>
+                <p>Its planned release date is September 1st - there's still a lot to be done, I'll keep working on that this week</p>
+                <h2>the website.</h2>
+                <p>I implemented a new translation system for the website, it's way cleaner now - that very system is being also going to be used for the KindSun website and that's the main reason of why I made that new system in the first place</p>
+                <p>I also created a page for the posts on the website, so you can now read the posts directly on the website - I'm not sure about it's implementation yet, but it exists at this address : <a href="https://themimolet.github.io/posts">themimolet.github.io/posts</a> </a></p>
+                <p>I also fixed a minor issue where the tables were not perfectly centered</p>
+                <h2>i left some places.</h2>
+                <p>Recently I uninstalled Roblox because of all the drama that has been going on recently. To summarize, Roblox has never really done anything against child predators and strange meetup places on their platform. 
+                And worst they even banned people that were actually doing their job of arresting those pedophiles - 
+                and.. to add a bit more fun to the joke.. some people noticed that the chief of security of Roblox might visit those strange places on the platform.. mmh..</p>
+                <p>I'm also getting less and less active on X - still getting on there to have some news about people I care about, but I don't think i'll stay there that much</p>
+                <h2>the end.</h2>
+                <p>That's it for now, I hope you enjoyed this little update!</p>
+                <p>Stay tuned for more updates!</p>
+            ]]>
+            </description>
+        </item>
 
         <item>
             <title>wild updates are arriving at your location now.</title>

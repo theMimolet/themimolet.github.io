@@ -1,0 +1,40 @@
+{
+    "about": "<div><p>Hello ! My name is <span class=\"bold\" title=\"it's me !\">Samuel</span>, but I'm known as <span class=\"bold\" title=\"that's still me !\">Mimolet</span> !</p><p><span class=\"bold\" title=\"pew pew ! 🔫\">Video games</span>, <span class=\"bold\" title=\"tchoo tchoo ! 🚂\">trains</span> and <span class=\"bold\" title=\"bip boop ! 🤖\">technology</span> are my passion ! I also like making <span class=\"bold\">montages</span> et <span class=\"bold\">video edits</span>… and, to be honest, <span class=\"italic\" title=\"and proud to be one 😎\"> I'm a full-time nerd !</span></p><p>I'm currently studying <span class=\"bold\" title=\"at Ynov Campus\">informatics</span>, and I've made this website to make it easier for you to discover <span class=\"bold\">my projects</span> and to <span class=\"bold\">find me</span> on the Internet.</p><p>Enjoy your visit ! 🚀 </p></div>",
+    
+    "game-dev": "Developer(s)",
+    "game-start-date": "Start of project",
+    "game-languages": "Language(s)",
+    "game-platforms": "Plateform(s)",
+    "game-engine": "Engine",
+    "game-status": "Status",
+    "game-play": "Play",
+    "game-play-itch": "Play on Itch.io",
+    "game-play-itch-page": "See the Itch.io page",
+    "game-play-download": "Download",
+    "game-about-title": "About this game",
+    "game-controls-title": "How to play",
+    "game-credits-title": "Credits",
+
+    "colourguess-description": "ColourGuess is an online MasterMind trying to produce a decent gaming experience. You have a 4 color code to find, but you only have 12 attempts to crack it!",
+    "colourguess-debut": "August 2023",
+    "colourguess-languages": "French, German, English, Italian",
+    "colourguess-status": "Currently being ported to Godot 4",
+    "colourguess-little-story-title": "The Little Story™",
+    "colourguess-little-story": "My girlfriend at the time introduced me to the game MasterMind and I quickly became good at the game and I really liked it and we played games over and over again. However, after a while, she got fed up (normal, she's human) and as I wanted to continue playing, even when I was at home, I then decided to program my own MasterMind.",
+
+    "savenautica-description": "Save Nautica is a game where you control Trashbot, a robot whose mission is to collect all the trash thrown into the ocean. But be careful, Trashbot has a limited time where it can be underwater.",
+    "savenautica-debut": "March 2023",
+    "savenautica-languages": "French",
+    "savenautica-status": "Stopped",
+    "savenautica-about": "<p>\"We present you TrashBot™, a little robot, the best at sucking up trash from the ocean, that you can control from the comfort of your home! It's fast, efficient and it's all we need to fight pollution in the oceans! And I almost forgot, I'm obliged to tell you that the battery life is relatively low.. And also don't suck up the fish, that's a given.\"</p><p>This game was made for the Ludus Octopus Jam 2023. This one had for theme The Protection of the Oceans. The game had to be about marine fauna and its environment.</p>",
+    "savenautica-controls": "<ul><li>Use the arrows or Q/D to turn around</li><li>Press W or Z to move forward</li><li>Press X or SPACE to open/close TrashBot™</li></ul><p>Collect as much trash as possible and get back to the surface before time runs out!</p>",
+    "savenautica-credits": "<ul><li>Mimolet : Game Design, Programming & Graphics</li><li><a href='https://gaetan-piou.itch.io/'>Gaëtan Piou</a> : Game Design, Programming & Music</li><li><a href='https://kurozo.itch.io/'>Kurozo</a> : Game Design & Programming</li></ul>",
+
+    "totemdestiny-description": "The Totem of Destiny is a game, we play as a secret agent trying to infiltrate a base full of capybaras in order to retrieve the Golden Totem, an artifact that would hold a mysterious power.",
+    "totemdestiny-debut": "January 2023",
+    "totemdestiny-languages": "French",
+    "totemdestiny-status": "Stopped",
+    "totemdestiny-about": "<p>In the near future, you are a secret agent and your mission is as follows: you must infiltrate the secret base of the M.E.C.H.A.N.T. in the Amazon to retrieve the artifact that allowed their leader to control the capybaras and could give a person a mysterious power.</p><p>Will you succeed in your mission?</p><p>This game was made as part of a group project for Ludus Académie.</p>",
+    "totemdestiny-controls": "<ul><li>Use the directional arrows or ZSQD (or WASD) to move</li><li>Orient the agent by moving the cursor</li><li>Press left click to interact/type</li><li>Press right click or CTRL to crouch</li></ul><p>Infiltrate the secret base and find the Golden Totem! </p>",
+    "totemdestiny-credits": "<ul><li>Mimolet : Game Design, Programming & Graphics</li><li><a href='https://enzor68.itch.io/'>enzor68</a> : Game Design, Programming</li><li><a href='https://phileas0408.itch.io/'>phileas0408</a> : Game Design, Programming</li></ul>"
+}

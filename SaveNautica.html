@@ -22,20 +22,15 @@
                     <img src="./assets/icons/darkMode.svg" class="icon-dark" alt="dark icon">
                 </div>
 
-                <!-- Languages button -->
-
-                <div class="menu-buttons" id="languages-btn" onclick="menuToggle(true)">
-                    <img src="./assets/icons/language.svg" alt="language icon">
-                </div>
-
                 <!-- Languages dropdown -->
 
-                <div id="languages-dropdown">
-                    <div id="english-btn" onclick="changeLanguage('english')">EN</div>
-                    <div id="french-btn" onclick="changeLanguage('french')">FR</div>
-                    <div id="german-btn" onclick="changeLanguage('german')">DE</div>
-                    <div id="italian-btn" onclick="changeLanguage('italian')">IT</div>
-                </div>
+                <select class="menu-buttons" id="languages-dropdown" >
+                    <option id="english-btn" value="en" onclick="changeLanguage('english')">EN</option>
+                    <option id="french-btn" value="fr" onclick="changeLanguage('french')">FR</option>
+                    <option id="german-btn" value="de" onclick="changeLanguage('german')">DE</option>
+                    <option id="italian-btn" value="it" onclick="changeLanguage('italian')">IT</option>
+                </select>
+                <script src="./assets/js/language.js"></script>
             </div>
 
             <div class="left-buttons">
@@ -56,85 +51,39 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <!-- Save Nautica's Description -->
-            <div class="description">
-                <p class="english">
-                    Save Nautica is a game where you control Trashbot, a robot whose mission is to collect all trash
-                    dumped into the ocean.
-                    But beware, Trashbot got a limited amount of time where he can be underwater.
-                </p>
 
-                <p class="french">
-                    Save Nautica est un jeu dans lequel vous contrôlez Trashbot, un robot dont la mission est de
-                    collecter tous les déchets jetés dans l'océan.
-                    Mais attention, Trashbot a un temps limité où il peut être sous l'eau.
-                </p>
-                <p class="german">
-                    Save Nautica ist ein Spiel, in dem Sie Trashbot steueren, einen Roboter, dessen Mission es ist, den
-                    ganzen Müll einzusammeln, der ins Meer geworfen wird.
-                    Aber seien Sie vorsichtig, Trashbot hat eine begrenzte Zeit, in der er unter Wasser sein kann.
-                </p>
-                <p class="italian">
-                    Save Nautica è un gioco in cui controlli Trashbot, un robot la cui missione è raccogliere tutta la
-                    spazzatura gettata nell'oceano.
-                    Ma fai attenzione, Trashbot ha un tempo limitato in cui può stare sott'acqua.
+            <div class="description" >
+                <p id="savenautica-description">
+                    ColourGuess is an online MasterMind trying to produce a decent gaming experience. You have a 4 color
+                    code to
+                    find, but you only have 12 attempts to crack it!
                 </p>
             </div>
+            
             <table class="game-info">
                 <tr>
-                    <td>
-                        <span class="english">Developers</span>
-                        <span class="french">Développeurs</span>
-                        <span class="german">Entwickler</span>
-                        <span class="italian">Sviluppatori</span>
-                    </td>
-                    <td class="left"><a href="https://gaetan-piou.itch.io/">Gaëtan Piou</a>, <a
-                            href="https://kurozo.itch.io/">Kurozo</a> & Mimolet</td>
+                    <td id="game-dev">Developers</td>
+                    <td class="left"><a href="https://gaetan-piou.itch.io/">Gaëtan Piou</a>, <a href="https://kurozo.itch.io/">Kurozo</a> & Mimolet</td>
                 </tr>
                 <tr>
-                    <td>
-                        <span class="english">Start of project</span>
-                        <span class="french">Début de projet</span>
-                        <span class="german">Anfang des projects</span>
-                        <span class="italian">Inizio del progetto</span>
-                    </td>
-                    <td>
-                        <span class="english">March 2023</span>
-                        <span class="french">Mars 2023</span>
-                        <span class="german">März 2023</span>
-                        <span class="italian">Marzo 2023</span>
-                    </td>
+                    <td id="game-start-date">Start of project</td>
+                    <td id="savenautica-debut">March 2023</td>
                 </tr>
                 <tr>
-                    <td>
-                        <span class="english">Languages</span>
-                        <span class="french">Langues</span>
-                        <span class="german">Sprachen</span>
-                        <span class="italian">Lingue</span>
-                    </td>
-                    <td>
-                        <span class="english">French</span>
-                        <span class="french">Français</span>
-                        <span class="german">Französich</span>
-                        <span class="italian">Francese</span>
-                    </td>
+                    <td id="game-languages">Languages</td>
+                    <td id="savenautica-languages">French</td>
                 </tr>
                 <tr>
-                    <td>
-                        <span class="english">Platforms</span>
-                        <span class="french">Plateformes</span>
-                        <span class="german">Plattformen</span>
-                        <span class="italian">Piattaforme</span>
-                    </td>
+                    <td id="game-platforms">Platforms</td>
                     <td>HTML 5</td>
                 </tr>
                 <tr>
-                    <td>
-                        <span class="english">Engine</span>
-                        <span class="french">Moteur</span>
-                        <span class="german">Motor</span>
-                        <span class="italian">Motore</span>
-                    </td>
-                    <td>Construct 3 </td>
+                    <td id="game-engine">Engine</td>
+                    <td>Construct 3</td>
+                </tr>
+                <tr>
+                    <td id="game-status">Engine</td>
+                    <td id="savenautica-status">Stopped</td>
                 </tr>
             </table>
 
@@ -143,39 +92,18 @@
         </div>
 
         <div class="play">
-            <p>
-                <span class="english">Play</span>
-                <span class="french">Jouer à </span>
-                <span class="italian">Gioca a</span>
-                Save Nautica
-                <span class="german">spielen</span>
-            </p>
+            <p>Save Nautica</p>
             <div class="play-list">
-                <!-- <a href="https://themimolet.itch.io/save-nautica" class="game-link-btn download-btn">
-          <span class="english">Download</span>
-          <span class="french">Télécharger</span>
-          <span class="german">Herunterladen</span>
-          <span class="italian">Scaricamento</span>
-        </a> -->
-                <a href="https://themimolet.itch.io/save-nautica" class="game-link-btn itch-btn">
-                    <span class="english">Play on Itch</span>
-                    <span class="french">Jouer sur Itch</span>
-                    <span class="german">Spielen auf Itch</span>
-                    <span class="italian">Giocare su Itch</span>
-                </a>
+                <!-- <a href="https://themimolet.itch.io/save-nautica" class="game-link-btn download-btn" id="game-play-download">Download</a> -->
+                <a href="https://themimolet.itch.io/save-nautica" class="game-link-btn itch-btn" id="game-play-itch">Play on Itch</a>
             </div>
         </div>
 
         <hr width="35%">
 
         <div>
-            <h2>
-                <span class="english">About this game</span>
-                <span class="french">À propos de ce jeu</span>
-                <span class="german">Über dieses Spiel</span>
-                <span class="italian">Informazioni sul gioco</span>
-            </h2>
-            <div class="english">
+            <h2 id="game-about-title">About this game</h2>
+            <div id="savenautica-about">
                 <p>
                     "We present you TrashBot™, a little robot, the best at sucking up trash from the ocean, that you can
                     control from the comfort of your home !
@@ -189,60 +117,11 @@
                     So the game had to be about sea fauna and its environment.
                 </p>
             </div>
-            <div class="french">
-                <p>
-                    "Nous vous présentons TrashBot™, un petit robot, le meilleur pour aspirer les déchets des océans,
-                    que vous pourrez contrôler à distance depuis le confort de chez vous !
-                    C'est rapide, efficace et c'est tout ce dont nous avons besoin pour combattre la pollution dans les
-                    océans ! Et j'ai faillis oublier, je suis dans l'obligation de vous dire que l'autonomie de la
-                    batterie est relativement faible..
-                    Et aussi n'aspirez pas les poissons, cela va de soi."
-                </p>
-                <p>
-                    Ce jeu a été réalisé pour la Ludus Octopus Jam 2023. Cette dernière avait pour thème La Protection
-                    des Océans.
-                    Le jeu devait donc porter sur la faune marine et son environnement.
-                </p>
-            </div>
-            <div class="german">
-                <p>
-                    „Wir präsentieren Ihnen TrashBot™, einen kleinen Roboter, der sich am besten zum Aufsaugen von
-                    Meeresmüll eignet und den Sie bequem von zu Hause aus fernsteuern können!“
-                    Es ist schnell, effektiv und das ist alles, was wir brauchen, um die Verschmutzung der Ozeane zu
-                    bekämpfen! Und fast hätte ich es vergessen, ich muss euch sagen, dass die Akkulaufzeit relativ
-                    gering ist.
-                    Und den Fisch auch nicht aufsaugen, das versteht sich von selbst.“
-                </p>
-                <p>
-                    Dieses Spiel wurde für den Ludus Octopus Jam 2023 entwickelt. Das Thema des letzteren war Schutz der
-                    Ozeane.
-                    Das Spiel musste sich daher auf die Meeresfauna und ihre Umwelt konzentrieren.
-                </p>
-            </div>
-            <div class="italian">
-                <p>
-                    "Ti presentiamo TrashBot™, un piccolo robot, il migliore per aspirare i rifiuti oceanici, che potrai
-                    controllare a distanza comodamente da casa tua!
-                    È veloce, efficace ed è tutto ciò di cui abbiamo bisogno per combattere l'inquinamento degli oceani!
-                    E quasi dimenticavo, devo dirvi che la durata della batteria è relativamente bassa..
-                    E poi non aspirare il pesce, questo è ovvio."
-                </p>
-                <p>
-                    Questo gioco è stato realizzato per la Ludus Octopus Jam 2023. Il tema di quest'ultima era la
-                    Protezione degli Oceani.
-                    Il gioco doveva quindi concentrarsi sulla fauna marina e sul suo ambiente.
-                </p>
-            </div>
         </div>
 
         <div>
-            <h2>
-                <span class="english">How to play</span>
-                <span class="french">Comment jouer</span>
-                <span class="german">Wie spielen</span>
-                <span class="italian">Come giocare</span>
-            </h2>
-            <div class="english">
+            <h2 id="game-controls-title">How to play</h2>
+            <div id="savenautica-controls">
                 <ul>
                     <li>Use the arrows or Q/D to turn around</li>
                     <li>Press W or Z to move forward</li>
@@ -250,45 +129,16 @@
                 </ul>
                 <p>Get a maximum of trash et go back to the surface before the timer ends !</p>
             </div>
-            <div class="french">
-                <ul>
-                    <li>Utilisez les flèches directionnelles ou Q/D pour tourner</li>
-                    <li>Appuyez sur W ou Z pour avancer</li>
-                    <li>Appuyez sur X ou ESPACE pour ouvrir/fermer TrashBot™</li>
-                </ul>
-                <p>Récupérez un maximum de déchets et remontez à la surface avant la fin du temps imparti !</p>
-            </div>
-            <div class="german">
-                <ul>
-                    <li>Verwenden Sie die Richtungspfeile oder Q/D zum Drehen</li>
-                    <li>Drücken Sie W oder Z, um vorwärts zu gehen</li>
-                    <li>Drücken Sie X oder die LEERTASTE, um TrashBot™ zu öffnen/schließen</li>
-                </ul>
-                <p>Sammeln Sie so viel Müll wie möglich und kehren Sie an die Oberfläche zurück, bevor die Zeit abläuft!
-                </p>
-            </div>
-            <div class="italian">
-                <ul>
-                    <li>Utilizza le frecce direzionali o Q/D per girare</li>
-                    <li>Premi W o Z per andare avanti</li>
-                    <li>Premi X o SPAZIO per aprire/chiudere TrashBot™</li>
-                </ul>
-                <p>Raccogli quanta più spazzatura possibile e torna in superficie prima che scada il tempo!</p>
-            </div>
         </div>
-
         <div>
-            <h2>
-                <span class="english">Credits</span>
-                <span class="french">Crédits</span>
-                <span class="german">Krediten</span>
-                <span class="italian">Crediti</span>
-            </h2>
-            <ul>
-                <li>Mimolet : Game Design, Programming & Art</li>
-                <li><a href="https://gaetan-piou.itch.io/">Gaëtan Piou</a> : Game Design, Programming, Music</li>
-                <li><a href="https://kurozo.itch.io/">Kurozo</a> : Game Design, Programming</li>
-            </ul>
+            <h2 id="game-credits-title">Credits</h2>
+            <div id="savenautica-credits">
+                <ul>
+                    <li>Mimolet : Game Design, Programming & Art</li>
+                    <li><a href="https://gaetan-piou.itch.io/">Gaëtan Piou</a> : Game Design, Programming, Music</li>
+                    <li><a href="https://kurozo.itch.io/">Kurozo</a> : Game Design, Programming</li>
+                </ul>    
+            </div>
         </div>
 
         <div id="org-gallery">

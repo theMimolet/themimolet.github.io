@@ -5,57 +5,83 @@ let currentLanguage = localStorage.getItem("language");
 let languagesDropdown = document.getElementById("languages-dropdown");
 let languagesButton = document.getElementById("languages-btn");
 
-const languages = ["english", "french", "german", "italian"];
+// Translation system
 
-languagesDropdown.style.display = "none";
-    
-// Setup
+let translations = {};
 
-if (currentLanguage === null) {
-    currentLanguage = "english";
-    showLanguage(currentLanguage);
-} else {
-    showLanguage(currentLanguage);
-};
+// Load the translations from the JSON file
 
-// Function that shows/hides the menu
-
-function menuToggle(showMenu){
-    if (showMenu){
-        languagesDropdown.style.display = "block";
-        languagesButton.style.display = "none";
-    } else {
-        languagesDropdown.style.display = "none";
-        languagesButton.style.display = "block";
+async function loadTranslations(lang) {
+  try {
+    const response = await fetch(`../assets/translations/${lang}.json`);
+    if (!response.ok) {
+      throw new Error(`Failed to load translations for ${lang}`);
     }
+    translations = await response.json();
+    translatePage();
+  } catch (error) {
+    console.error(error);
+  }
 }
 
-// Function that goes through all the language classes and only shows the selected language
+// Translate the page content
 
-function showLanguage(language){
-    for (const lang of languages) {
-        if (lang != language){
-            for (const el of document.getElementsByClassName(lang)) {
-                el.style.display = "none";
-            }
-        } else {
-            for (const el of document.getElementsByClassName(language)) {
-                el.style.display = "block";
-            }
+function translatePage() {
+    for (const translation in translations) {
+        if (document.getElementById(translation) != null){
+            document.getElementById(translation).innerHTML = translations[translation];
         }
     }
 }
 
-// Function that switches languages
+// Get the user's browser language
 
-function changeLanguage(language){
-    if (currentLanguage != language){
-        showLanguage(language);
-
-        currentLanguage = language;
-        localStorage.setItem("language", language);
-
-        console.log("Language is now set to " +  language);
-    }
-    menuToggle(false);
+function getUserLanguage() {
+    const lang = navigator.language || navigator.languages[0];
+    return lang.split("-")[0];
 }
+
+// Initial setup on page load
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Retrocompatibility with old variables stored & initial language setup
+
+    if (currentLanguage === null){
+        currentLanguage = getUserLanguage();
+    } else if (currentLanguage.length > 2) {
+        switch (currentLanguage) {
+            case "english":
+                currentLanguage = "en";
+                break;
+            case "french":
+                currentLanguage = "fr";
+                break;
+            case "german":
+                currentLanguage = "de";
+                break;
+            case "italian":
+                currentLanguage = "it";
+                break;
+            default:
+                currentLanguage = getUserLanguage();
+                break;
+        }
+        loadTranslations(currentLanguage);
+    };
+
+    // Load the translations and set the dropdown value
+
+    console.log("User language detected as: " + currentLanguage);
+    loadTranslations(currentLanguage);
+    document.getElementById("languages-dropdown").value = currentLanguage;
+
+    // Dropdown interactions
+
+    document.getElementById("languages-dropdown").addEventListener("change", (e) => {
+        loadTranslations(e.target.value);
+        localStorage.setItem("language", e.target.value);
+        console.log("New user language set: " + e.target.value);
+    });
+});
+
