@@ -29,7 +29,7 @@
                 <p>Hey everyone! 👋</p>
                 <p>I'm trying a bit more of control over my life, and focus on projets - It's hard, but I'll get there eventually</p>
                 <p>Let's begin with the news!</p>
-                >h2>colourguess.</h2>
+                <h2>colourguess.</h2>
                 <p>I made some progress, the core game has successfully been ported to Godot (and even optimised), but all the user interface needs to be done (oh boy)</p>
                 <h2>kindsun.</h2>
                 <p>"But Mimolet, what is this ?"</p>
