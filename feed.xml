@@ -9,7 +9,7 @@
         <category>News</category>
         <ttl>60</ttl>
         <copyright>© 2025 Mimolet. All rights reserved.</copyright>
-        <lastBuildDate>Mon, 25 Aug 2025 22:30:00  +0200</lastBuildDate>
+        <lastBuildDate>Tue, 26 Aug 2025 23:40:00 +0200</lastBuildDate>
 
         <image>
             <url>https://themimolet.github.io/assets/images/mimo-pfp.png</url>
@@ -20,10 +20,34 @@
         </image> 
 
         <item>
+            <title>the tuesday update.</title>
+            <author>Mimolet</author>
+            <guid isPermaLink="false">https://themimolet.github.io/feed#update-2025-08-26</guid>
+            <pubDate>Tue, 26 Aug 2025 23:40:00 +0200</pubDate>
+            <description>
+            <![CDATA[
+                <p>Hey everyone! 👋</p>
+                <p>I've progressed on my Website and KindSun's website design 👀</p>
+                <p>Let's begin with what changed!</p>
+                <h2>the website.</h2>
+                <p>I have reworked some parts of the dark theme and translation systems of my website, now they adapt to the user's client (finally)</p>
+                <p>That means, now, if the options are not set manually by the user, it will pick automatically the language/theme of the user's browser 😎</p>
+                <p>I also made the theme change snappier so it doesn't flashbang dark theme users when loading the page (i used to fix it by defaulting to the dark theme but it's cleaner now)</p>                
+                <h2>kindsun.</h2>
+                <p>I continued working on the figma and... oh well.. I still got some work to do on it 😅</p>
+                <h2>the end.</h2>
+                <p>That's it for now, I hope you enjoyed this itsy bity tiny update!</p>
+                <p>I'll stick to weekly updates from now on - but I was too excited to tell you the parts I've reworked 😁</p>
+                <p>Stay tuned for more updates!</p>
+            ]]>
+            </description>
+        </item>
+
+        <item>
             <title>translations and progress.</title>
             <author>Mimolet</author>
             <guid isPermaLink="false">https://themimolet.github.io/feed#update-2025-08-25</guid>
-            <pubDate>Mon, 25 Aug 2025 22:30:00  +0200</pubDate>
+            <pubDate>Mon, 25 Aug 2025 22:30:00 +0200</pubDate>
             <description>
             <![CDATA[
                 <p>Hey everyone! 👋</p>

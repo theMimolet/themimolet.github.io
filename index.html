@@ -18,34 +18,23 @@
     <meta name="twitter:image" content="./assets/images/mimo-pfp.png">
 </head>
 
-<body class="dark">
+<body>
     <main>
         <div class="top-bg">
             <div class="right-buttons">
 
-                <!-- Dark mode button -->
+                <!-- Dark theme button -->
 
-                <div class="menu-buttons" id="dark-mode-btn" onclick="darkModeButton()">
-                    <img src="./assets/icons/lightMode.svg" class="icon-light" alt="light icon">
-                    <img src="./assets/icons/darkMode.svg" class="icon-dark" alt="dark icon">
+                <div class="menu-buttons" id="dark-mode-btn" onclick="darkThemeButton()">
+                    <img src="./assets/icons/lightTheme.svg" class="icon-light" alt="light icon">
+                    <img src="./assets/icons/darkTheme.svg" class="icon-dark" alt="dark icon">
                 </div>
 
-                <!-- Languages button -->
-<!-- 
-                <div class="menu-buttons" id="languages-btn" onclick="menuToggle(true)">
-                    <img src="./assets/icons/language.svg" alt="language icon">
-                </div> -->
+                <!-- Languages select -->
 
-                <!-- Languages dropdown -->
-
-                <select class="menu-buttons" id="languages-dropdown" >
-                    <option id="english-btn" value="en" onclick="changeLanguage('english')">EN</option>
-                    <option id="french-btn" value="fr" onclick="changeLanguage('french')">FR</option>
-                    <option id="german-btn" value="de" onclick="changeLanguage('german')">DE</option>
-                    <option id="italian-btn" value="it" onclick="changeLanguage('italian')">IT</option>
-                </select>
+                <select class="menu-buttons" id="languages-select"></select>
                 <script src="./assets/js/language.js"></script>
-                
+
             </div>
         </div>
 
@@ -63,8 +52,10 @@
         <p id="greeting"></p>
 
         <section id="about">
-            <p>Hello ! My name is <span class="bold" title="it's me !">Samuel</span>, but I'm known as <span
-                    class="bold" title="that's still me !">Mimolet</span> !</p>
+            <p>
+                Hello ! My name is <span class="bold" title="it's me !">Samuel</span>, but I'm known as
+                <span class="bold" title="that's still me !">Mimolet</span> !
+            </p>
             <p>
                 <span class="bold" title="pew pew ! 🔫">Video games</span>, <span class="bold"
                     title="tchoo tchoo ! 🚂">trains</span> and <span class="bold"
@@ -72,7 +63,8 @@
                 I also like making <span class="bold">montages</span> et <span class="bold">video edits</span>… and,
                 to be honest, <span class="italic" title="and proud to be one 😎"> I'm a full-time nerd !</span>
             </p>
-            <p>I'm currently studying <span class="bold" title="at Ynov Campus">informatics</span>, and I've made
+            <p>
+                I'm currently studying <span class="bold" title="at Ynov Campus">informatics</span>, and I've made
                 this website to make it easier for you to discover <span class="bold">my projects</span> and to
                 <span class="bold">find me</span> on the Internet.
             </p>
@@ -138,19 +130,19 @@
 
             <a href="https://themimolet.github.io/feed" title="RSS Feed">
                 <img src="./assets/icons/socials/rss.svg" alt="icon rss">
-                Reddit
+                RSS Feed
             </a>
 
             <!-- Mail -->
 
             <a href="mailto:mimolet@mailo.com" title="E-mail">
                 <img src="./assets/icons/socials/mail.svg" alt="icon mail">
-                Reddit
+                E-mail
             </a>
 
         </div>
 
-        <hr width="35%">
+        <hr>
 
         <!-- Game section -->
 
@@ -170,6 +162,5 @@
         </div>
     </main>
 </body>
-<script src="./assets/js/darkMode.js"></script>
-
+<script src="./assets/js/darkTheme.js"></script>
 </html>

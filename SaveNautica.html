@@ -15,22 +15,18 @@
         <div class="top-bg save-nautica">
             <div class="right-buttons">
 
-                <!-- Dark mode button -->
+                <!-- Dark theme button -->
 
-                <div class="menu-buttons" id="dark-mode-btn" onclick="darkModeButton()">
-                    <img src="./assets/icons/lightMode.svg" class="icon-light" alt="light icon">
-                    <img src="./assets/icons/darkMode.svg" class="icon-dark" alt="dark icon">
+                <div class="menu-buttons" id="dark-mode-btn" onclick="darkThemeButton()">
+                    <img src="./assets/icons/lightTheme.svg" class="icon-light" alt="light icon">
+                    <img src="./assets/icons/darkTheme.svg" class="icon-dark" alt="dark icon">
                 </div>
 
-                <!-- Languages dropdown -->
+                <!-- Languages select -->
 
-                <select class="menu-buttons" id="languages-dropdown" >
-                    <option id="english-btn" value="en" onclick="changeLanguage('english')">EN</option>
-                    <option id="french-btn" value="fr" onclick="changeLanguage('french')">FR</option>
-                    <option id="german-btn" value="de" onclick="changeLanguage('german')">DE</option>
-                    <option id="italian-btn" value="it" onclick="changeLanguage('italian')">IT</option>
-                </select>
+                <select class="menu-buttons" id="languages-select"></select>
                 <script src="./assets/js/language.js"></script>
+
             </div>
 
             <div class="left-buttons">
@@ -153,7 +149,5 @@
 
     </main>
 </body>
-<script src="./assets/js/darkMode.js"></script>
-<script src="./assets/js/language.js"></script>
-
+<script src="./assets/js/darkTheme.js"></script>
 </html>

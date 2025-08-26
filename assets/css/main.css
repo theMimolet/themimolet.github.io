@@ -6,7 +6,7 @@
 
 /* Variables */
 
-.light {
+.light-theme {
     --text: black;
     --body: rgb(221, 218, 216);
     --main: rgb(240, 240, 240);
@@ -29,7 +29,7 @@
     --border-radius: 10px;
 }
 
-.dark {
+.dark-theme {
     --text: rgb(220, 220, 220);
     --body: rgb(26, 24, 23);
     --main: rgb(46, 46, 46);
@@ -56,7 +56,6 @@
 * {
     font-family: 'Mukta', sans-serif;
     color: var(--text);
-    transition: color 0.5s;
 }
 
 h1 {
@@ -70,12 +69,8 @@ p {
     margin-right: 15px;
 }
 
-svg path {
-    transition: stroke 0.2s;
-}
-
-img {
-    transition: filter 0.5s;
+hr {
+    width: 35%;
 }
 
 .bold {
@@ -90,7 +85,6 @@ img {
 
 body {
     margin: 0px;
-    transition: background-color 0.5s;
     background-color: var(--body);
 }
 
@@ -109,7 +103,6 @@ main {
     margin-top: 10px;
     margin-bottom: 20px;
 
-    transition: background-color 0.5s;
     background-color: var(--main);
 }
 
@@ -137,7 +130,6 @@ main {
 .header_picture img {
     margin-top: -100px;
     border: solid var(--main) 5px;
-    transition: width 1s, border 0.5s;
 }
 
 /* Buttons */
@@ -170,7 +162,6 @@ main {
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
 
-    transition: background-color 0.2s;
     background-color: var(--menu);
 }
 
@@ -194,14 +185,12 @@ main {
 
 /* Languages Dropdown */
 
-#languages-dropdown {
+#languages-select {
     border-radius: var(--border-radius);
     box-shadow: 0px 0px 3px 0px black;
     font-size: 1em;
     width: 50px;
-    height: 50px;
     height: min-content;
-    /* margin: 5px; */
     -webkit-user-select: none;
     user-select: none;
     -webkit-backdrop-filter: blur(20px);
@@ -214,32 +203,29 @@ main {
     text-align: center;
 
     appearance: none; /* Removes default arrow */
-    /* background-image: url('../icons/language.svg');
-    background-repeat: no-repeat; */
 }
 
-#languages-dropdown option {
+#languages-select option {
 
     width: 100%;
     height: min-content;
     cursor: pointer;
     background-color: var(--menu);
-    transition: background-color 0.2s;
 
     border-radius: 0px;
     border-bottom: var(--border);
 }
 
-#languages-dropdown option:hover {
+#languages-select option:hover {
     cursor: pointer;
     background-color: var(--accent-simple);
 }
 
-#languages-dropdown option:first-child {
+#languages-select option:first-child {
     border-radius: var(--border-radius) var(--border-radius) 0px 0px;
 }
 
-#languages-dropdown option:last-child {
+#languages-select option:last-child {
     border-radius: 0px 0px var(--border-radius) var(--border-radius);
     border-bottom: 0px;
 }
@@ -261,7 +247,7 @@ main {
         border-radius: 0px;
     }
 
-    #languages-dropdown div {
+    #languages-select option {
         height: 50px;
         font-size: 1.5em;
     }
@@ -285,7 +271,7 @@ main {
         border-radius: 0px;
     }
 
-    #languages-dropdown div {
+    #languages-select option {
         height: 50px;
         font-size: 1.5em;
     }
