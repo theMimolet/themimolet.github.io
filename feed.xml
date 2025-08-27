@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>the mimolet updates.</title>
-        <atom:link href="https://themimolet.github.io/feed" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://themimolet.github.io/posts" rel="self" type="application/rss+xml"/>
         <link>https://themimolet.github.io</link>
         <description>recent news and updates from mimo. (in english) </description>
         <language>en-us</language>
         <category>News</category>
         <ttl>60</ttl>
         <copyright>© 2025 Mimolet. All rights reserved.</copyright>
-        <lastBuildDate>Wed, 27 Aug 2025 23:40:00 +0200</lastBuildDate>
+        <lastBuildDate>Thu, 28 Aug 2025 00:40:00 +0200</lastBuildDate>
 
         <image>
             <url>https://themimolet.github.io/assets/images/mimo-pfp.png</url>
@@ -20,10 +20,10 @@
         </image> 
 
         <item>
-            <title>the tuesday update.</title>
+            <title>small kindsun update.</title>
             <author>Mimolet</author>
-            <guid isPermaLink="false">https://themimolet.github.io/feed#update-2025-08-26</guid>
-            <pubDate>Wed, 27 Aug 2025 23:40:00 +0200</pubDate>
+            <guid isPermaLink="false">https://themimolet.github.io/feed#update-2025-08-28</guid>
+            <pubDate>Thu, 28 Aug 2025 00:40:00 +0200</pubDate>
             <description>
             <![CDATA[
                 <p>Hey everyone! 👋</p>
@@ -34,7 +34,7 @@
                 <p>I just started to code the website into reality and here's an early screenshot of it, I hope you like it ! 😁</p>
                 <img src="./assets/images/posts/270825_kindsun_wip.png" alt="screenshot of that said website - hopefully you can see it">
                 <h2>the end.</h2>
-                <p>That's it for now, I hope you enjoyed this even smaller update !</p>
+                <p>That's it for now, I hope you liked this even smaller update !</p>
                 <p>Stay tuned for more updates!</p>
             ]]>
             </description>
