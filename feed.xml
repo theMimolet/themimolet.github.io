@@ -9,7 +9,7 @@
         <category>News</category>
         <ttl>60</ttl>
         <copyright>© 2025 Mimolet. All rights reserved.</copyright>
-        <lastBuildDate>Tue, 26 Aug 2025 23:40:00 +0200</lastBuildDate>
+        <lastBuildDate>Wed, 27 Aug 2025 23:40:00 +0200</lastBuildDate>
 
         <image>
             <url>https://themimolet.github.io/assets/images/mimo-pfp.png</url>
@@ -18,6 +18,27 @@
             <width>32</width>
             <height>32</height>
         </image> 
+
+        <item>
+            <title>the tuesday update.</title>
+            <author>Mimolet</author>
+            <guid isPermaLink="false">https://themimolet.github.io/feed#update-2025-08-26</guid>
+            <pubDate>Wed, 27 Aug 2025 23:40:00 +0200</pubDate>
+            <description>
+            <![CDATA[
+                <p>Hey everyone! 👋</p>
+                <p>This is getting ridiculous, I know, but I have something important to tell you 👉👈</p>
+                <p>Here are the news !</p>             
+                <h2>kindsun.</h2>
+                <p>So the release date has been postponed due to some technical problems - but I continued working on the website's design today and it's starting to look really nice 😎👍</p>
+                <p>I just started to code the website into reality and here's an early screenshot of it, I hope you like it ! 😁</p>
+                <img src="./assets/images/posts/270825_kindsun_wip.png" alt="screenshot of that said website - hopefully you can see it">
+                <h2>the end.</h2>
+                <p>That's it for now, I hope you enjoyed this even smaller update !</p>
+                <p>Stay tuned for more updates!</p>
+            ]]>
+            </description>
+        </item>
 
         <item>
             <title>the tuesday update.</title>
