@@ -16,6 +16,7 @@ fetch(rssUrl)
             const pubDate = item.querySelector('pubDate').textContent;
 
             const itemDiv = document.createElement('div');
+            itemDiv.id = "update-" + formatDateID(pubDate);
             itemDiv.className = 'feed-item';
 
             const titleElement = document.createElement('h2');
@@ -41,6 +42,7 @@ fetch(rssUrl)
     });
 
 // Format the date for display
+
 function formatDate(dateString) {
     const date = new Date(dateString);
     return date.toLocaleDateString('en-US', {
@@ -50,4 +52,15 @@ function formatDate(dateString) {
         hour: '2-digit',
         minute: '2-digit'
     });
+}
+
+// Format the date for ID
+
+function formatDateID(dateString) {
+    const date = new Date(dateString);
+    return date.getUTCFullYear() +
+        "-" +
+        (date.getUTCMonth() + 1) +
+        "-" +
+        date.getUTCDate();
 }

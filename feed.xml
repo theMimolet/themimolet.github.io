@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"
+    xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>the mimolet updates.</title>
-        <atom:link href="https://themimolet.github.io/posts" rel="self" type="application/rss+xml"/>
         <link>https://themimolet.github.io</link>
-        <description>recent news and updates from mimo. (in english) </description>
-        <language>en-us</language>
+        <atom:link href="https://themimolet.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+        <description>recent news and updates from mimo.</description>
+        <language>en</language>
         <category>News</category>
         <ttl>60</ttl>
         <copyright>© 2025 Mimolet. All rights reserved.</copyright>
@@ -17,60 +18,55 @@
             <link>https://themimolet.github.io</link>
             <width>32</width>
             <height>32</height>
-        </image> 
+        </image>
 
         <item>
             <title>small kindsun update.</title>
             <author>Mimolet</author>
-            <guid isPermaLink="false">https://themimolet.github.io/feed#update-2025-08-28</guid>
+            <guid isPermaLink="false">https://themimolet.github.io/posts#update-2025-8-27</guid>
             <pubDate>Thu, 28 Aug 2025 00:40:00 +0200</pubDate>
             <description>
-            <![CDATA[
                 <p>Hey everyone! 👋</p>
                 <p>This is getting ridiculous, I know, but I have something important to tell you 👉👈</p>
-                <p>Here are the news !</p>             
+                <p>Here are the news !</p>
                 <h2>kindsun.</h2>
                 <p>So the release date has been postponed due to some technical problems - but I continued working on the website's design today and it's starting to look really nice 😎👍</p>
                 <p>I just started to code the website into reality and here's an early screenshot of it, I hope you like it ! 😁</p>
-                <img src="./assets/images/posts/270825_kindsun_wip.png" alt="screenshot of that said website - hopefully you can see it">
+                <img src="https://themimolet.github.io/assets/images/posts/270825_kindsun_wip.png" alt="screenshot of that said website - hopefully you can see it"></img>
                 <h2>the end.</h2>
                 <p>That's it for now, I hope you liked this even smaller update !</p>
                 <p>Stay tuned for more updates!</p>
-            ]]>
             </description>
         </item>
 
         <item>
             <title>the tuesday update.</title>
             <author>Mimolet</author>
-            <guid isPermaLink="false">https://themimolet.github.io/feed#update-2025-08-26</guid>
+            <guid isPermaLink="false">https://themimolet.github.io/posts#update-2025-8-26</guid>
             <pubDate>Tue, 26 Aug 2025 23:40:00 +0200</pubDate>
             <description>
-            <![CDATA[
                 <p>Hey everyone! 👋</p>
                 <p>I've progressed on my Website and KindSun's website design 👀</p>
                 <p>Let's begin with what changed!</p>
                 <h2>the website.</h2>
                 <p>I have reworked some parts of the dark theme and translation systems of my website, now they adapt to the user's client (finally)</p>
                 <p>That means, now, if the options are not set manually by the user, it will pick automatically the language/theme of the user's browser 😎</p>
-                <p>I also made the theme change snappier so it doesn't flashbang dark theme users when loading the page (i used to fix it by defaulting to the dark theme but it's cleaner now)</p>                
+                <p>I also made the theme change snappier so it doesn't flashbang dark theme users when loading the page (i used to fix it by defaulting to the dark theme but it's cleaner now)</p>
                 <h2>kindsun.</h2>
                 <p>I continued working on the figma and... oh well.. I still got some work to do on it 😅</p>
                 <h2>the end.</h2>
                 <p>That's it for now, I hope you enjoyed this itsy bity tiny update!</p>
                 <p>I'll stick to weekly updates from now on - but I was too excited to tell you the parts I've reworked 😁</p>
                 <p>Stay tuned for more updates!</p>
-            ]]>
             </description>
         </item>
 
         <item>
             <title>translations and progress.</title>
             <author>Mimolet</author>
-            <guid isPermaLink="false">https://themimolet.github.io/feed#update-2025-08-25</guid>
+            <guid isPermaLink="false">https://themimolet.github.io/posts#update-2025-8-25</guid>
             <pubDate>Mon, 25 Aug 2025 22:30:00 +0200</pubDate>
             <description>
-            <![CDATA[
                 <p>Hey everyone! 👋</p>
                 <p>I'm trying a bit more of control over my life, and focus on projets - It's hard, but I'll get there eventually</p>
                 <p>Let's begin with the news!</p>
@@ -82,27 +78,26 @@
                 <p>Its planned release date is September 1st - there's still a lot to be done, I'll keep working on that this week</p>
                 <h2>the website.</h2>
                 <p>I implemented a new translation system for the website, it's way cleaner now - that very system is being also going to be used for the KindSun website and that's the main reason of why I made that new system in the first place</p>
-                <p>I also created a page for the posts on the website, so you can now read the posts directly on the website - I'm not sure about it's implementation yet, but it exists at this address : <a href="https://themimolet.github.io/posts">themimolet.github.io/posts</a> </a></p>
+                <p>I also created a page for the posts on the website, so you can now read the posts directly on the website - I'm not sure about it's implementation yet, but it exists at this address : <a href="https://themimolet.github.io/posts">themimolet.github.io/posts</a>
+                </p>
                 <p>I also fixed a minor issue where the tables were not perfectly centered</p>
                 <h2>i left some places.</h2>
                 <p>Recently I uninstalled Roblox because of all the drama that has been going on recently. To summarize, Roblox has never really done anything against child predators and strange meetup places on their platform. 
-                And worst they even banned people that were actually doing their job of arresting those pedophiles - 
-                and.. to add a bit more fun to the joke.. some people noticed that the chief of security of Roblox might visit those strange places on the platform.. mmh..</p>
+            And worst they even banned people that were actually doing their job of arresting those pedophiles - 
+            and.. to add a bit more fun to the joke.. some people noticed that the chief of security of Roblox might visit those strange places on the platform.. mmh..</p>
                 <p>I'm also getting less and less active on X - still getting on there to have some news about people I care about, but I don't think i'll stay there that much</p>
                 <h2>the end.</h2>
                 <p>That's it for now, I hope you enjoyed this little update!</p>
                 <p>Stay tuned for more updates!</p>
-            ]]>
             </description>
         </item>
 
         <item>
             <title>wild updates are arriving at your location now.</title>
             <author>Mimolet</author>
-            <guid isPermaLink="false">https://themimolet.github.io/feed#update-2025-08-16</guid>
+            <guid isPermaLink="false">https://themimolet.github.io/posts#update-2025-8-16</guid>
             <pubDate>Sat, 16 Aug 2025 18:00:00  +0200</pubDate>
             <description>
-            <![CDATA[
                 <p>Hey everyone! 👋</p>
                 <p>If you read that message, then you must have found the RSS feed ! </p>
                 <p>Awesome :3</p>
@@ -117,8 +112,7 @@
                 <h2>the end.</h2>
                 <p>That's it for now, I hope you enjoyed this little update!</p>
                 <p>Stay tuned for more updates!</p>
-            ]]>
             </description>
         </item>
     </channel>
-</rss>
+</rss>>
