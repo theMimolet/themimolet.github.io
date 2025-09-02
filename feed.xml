@@ -10,7 +10,7 @@
         <category>News</category>
         <ttl>60</ttl>
         <copyright>© 2025 Mimolet. All rights reserved.</copyright>
-        <lastBuildDate>Thu, 28 Aug 2025 00:40:00 +0200</lastBuildDate>
+        <lastBuildDate>Tue, 02 Aug 2025 22:30:00 +0200</lastBuildDate>
 
         <image>
             <url>https://themimolet.github.io/assets/images/mimo-pfp.png</url>
@@ -21,11 +21,36 @@
         </image>
 
         <item>
+            <title>first september update.</title>
+            <author>Mimolet</author>
+            <guid isPermaLink="false">https://themimolet.github.io/posts#update-2025-9-2</guid>
+            <pubDate>Tue, 02 Aug 2025 22:30:00 +0200</pubDate>
+            <description>
+                <![CDATA[
+                <p>Hey everyone! 👋</p>
+                <p>Finally another update - you must have questions !</p>
+                <p>And here are the news !</p>
+                <h2>the website.</h2>
+                <p>So I tried to make improvements to the feed, but it broke everything instead, hehe 😅 (so I fixed it)</p>
+                <p>And another major thing : I'm currently learning NextJS to improve the website !</p>
+                <p>That will include features to make the posts accessible and powered by markdown instead of whatever this is - same for my projects pages</p>
+                <p>You will probably have to change the URL of that feed at some point, but I'll probably tell you the new URL in advance.</p>
+                <h2>the end.</h2>
+                <p>I've been distracted by some Linux related solutions I needed to find suddenly (mostly for a 32-bit laptop we rediscovered)</p>
+                <p>But here I am again ! My mind full of projects ! Can't wait to work on them and tell you about them 😁</p>
+                <p>That's it for now !</p>
+                <p>Stay tuned for more updates!</p>
+                ]]>
+            </description>
+        </item>
+
+        <item>
             <title>small kindsun update.</title>
             <author>Mimolet</author>
             <guid isPermaLink="false">https://themimolet.github.io/posts#update-2025-8-27</guid>
             <pubDate>Thu, 28 Aug 2025 00:40:00 +0200</pubDate>
             <description>
+                <![CDATA[
                 <p>Hey everyone! 👋</p>
                 <p>This is getting ridiculous, I know, but I have something important to tell you 👉👈</p>
                 <p>Here are the news !</p>
@@ -36,6 +61,7 @@
                 <h2>the end.</h2>
                 <p>That's it for now, I hope you liked this even smaller update !</p>
                 <p>Stay tuned for more updates!</p>
+                ]]>
             </description>
         </item>
 
@@ -45,6 +71,7 @@
             <guid isPermaLink="false">https://themimolet.github.io/posts#update-2025-8-26</guid>
             <pubDate>Tue, 26 Aug 2025 23:40:00 +0200</pubDate>
             <description>
+                <![CDATA[
                 <p>Hey everyone! 👋</p>
                 <p>I've progressed on my Website and KindSun's website design 👀</p>
                 <p>Let's begin with what changed!</p>
@@ -58,6 +85,7 @@
                 <p>That's it for now, I hope you enjoyed this itsy bity tiny update!</p>
                 <p>I'll stick to weekly updates from now on - but I was too excited to tell you the parts I've reworked 😁</p>
                 <p>Stay tuned for more updates!</p>
+                ]]>
             </description>
         </item>
 
@@ -67,6 +95,7 @@
             <guid isPermaLink="false">https://themimolet.github.io/posts#update-2025-8-25</guid>
             <pubDate>Mon, 25 Aug 2025 22:30:00 +0200</pubDate>
             <description>
+                <![CDATA[
                 <p>Hey everyone! 👋</p>
                 <p>I'm trying a bit more of control over my life, and focus on projets - It's hard, but I'll get there eventually</p>
                 <p>Let's begin with the news!</p>
@@ -89,6 +118,7 @@
                 <h2>the end.</h2>
                 <p>That's it for now, I hope you enjoyed this little update!</p>
                 <p>Stay tuned for more updates!</p>
+                ]]>
             </description>
         </item>
 
@@ -98,6 +128,7 @@
             <guid isPermaLink="false">https://themimolet.github.io/posts#update-2025-8-16</guid>
             <pubDate>Sat, 16 Aug 2025 18:00:00  +0200</pubDate>
             <description>
+                <![CDATA[
                 <p>Hey everyone! 👋</p>
                 <p>If you read that message, then you must have found the RSS feed ! </p>
                 <p>Awesome :3</p>
@@ -112,7 +143,8 @@
                 <h2>the end.</h2>
                 <p>That's it for now, I hope you enjoyed this little update!</p>
                 <p>Stay tuned for more updates!</p>
+                ]]>
             </description>
         </item>
     </channel>
-</rss>>
+</rss>
