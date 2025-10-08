@@ -113,11 +113,11 @@
 #game-gallery::-webkit-scrollbar {
   height: 0.5em;
 }
- 
+
 #game-gallery::-webkit-scrollbar-track {
   background: var(--menu)
 }
- 
+
 #game-gallery::-webkit-scrollbar-thumb {
   background-color: var(--scroll);
   border-radius: var(--border-radius);

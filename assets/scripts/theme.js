@@ -32,9 +32,9 @@ function setDarkTheme(isDark) {
     isDarkTheme = isDark;
     let newTheme = isDark ? "dark" : "light";
 
-    documentClasses.add(newTheme+"-theme");
-    document.documentElement.classList.add(newTheme+'-theme');
-    console.log(newTheme+" theme on");
+    documentClasses.add(newTheme + "-theme");
+    document.documentElement.classList.add(newTheme + '-theme');
+    console.log("Switching to " + newTheme + " theme");
 }
 
 // Toggle the theme when the button is clicked
@@ -49,7 +49,7 @@ function darkThemeButton() {
 colorSchemeQuery.addEventListener('change', (event) => {
     if (event.matches) {
         setDarkTheme(true);
-    } else {    
+    } else {
         setDarkTheme(false);
     }
 });

@@ -1,0 +1,9 @@
+{
+    "name": "rss-generator",
+    "version": "1.0.0",
+    "type": "module",
+    "dependencies": {
+        "markdown-it": "^14.0.0",
+        "js-yaml": "^4.1.0"
+    }
+}

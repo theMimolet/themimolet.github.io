@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./assets/images/website-icon.ico">
     <title>Home - Mimolet</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="/assets/style/main.css">
+    <link rel="stylesheet" href="/assets/style/home.css">
     <meta property="og:title" content="Mimolet's Website!">
     <meta property="og:description" content="Hi ! Come and check out my website :)">
-    <meta property="og:image" content="./assets/images/mimo-pfp.png">
+    <meta property="og:image" content="/assets/images/mimo-pfp.png">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mimolet's Website!">
     <meta name="twitter:description" content="Hi ! Come and check out my website :)">
-    <meta name="twitter:image" content="./assets/images/mimo-pfp.png">
+    <meta name="twitter:image" content="/assets/images/mimo-pfp.png">
+    <script src="/assets/scripts/theme.js"></script>
 </head>
 
 <body>
@@ -25,15 +26,15 @@
 
                 <!-- Dark theme button -->
 
-                <div class="menu-buttons" id="dark-mode-btn" onclick="darkThemeButton()">
-                    <img src="./assets/icons/lightTheme.svg" class="icon-light" alt="light icon">
-                    <img src="./assets/icons/darkTheme.svg" class="icon-dark" alt="dark icon">
-                </div>
+                <button type="button" class="menu-buttons" id="dark-mode-btn" onclick="darkThemeButton()">
+                    <img src="/assets/icons/lightTheme.svg" class="icon-light" alt="light icon">
+                    <img src="/assets/icons/darkTheme.svg" class="icon-dark" alt="dark icon">
+                </button>
 
                 <!-- Languages select -->
 
                 <select class="menu-buttons" id="languages-select"></select>
-                <script src="./assets/js/language.js"></script>
+                <script src="/assets/scripts/language.js"></script>
 
             </div>
         </div>
@@ -41,7 +42,7 @@
         <!-- Main page start -->
 
         <div class="header_picture">
-            <img src="assets/images/mimo-pfp.png" alt="Mimolet profile picture">
+            <img src="/assets/images/mimo-pfp.png" alt="Mimolet profile picture">
         </div>
 
         <h1>Mimolet</h1>
@@ -147,20 +148,20 @@
         <!-- Game section -->
 
         <div id="game-gallery">
-            <a href="https://themimolet.github.io/TheTotemOfDestiny" class="game-card" title="The Totem Of Destiny">
+            <a href="/projects/TheTotemOfDestiny" class="game-card" title="The Totem Of Destiny">
                 <img id="totem-destiny-thumbnail" src="assets/images/games-thumbnail/ttod-thumbnail.png"
                     alt="The Totem of Destiny Thumbnail">
             </a>
-            <a href="https://themimolet.github.io/SaveNautica" class="game-card" title="Save Nautica">
-                <img id="save-nautica-thumbnail" src="/assets/images/games-thumbnail/save-thumbnail.png"
+            <a href="/projects/SaveNautica" class="game-card" title="Save Nautica">
+                <img id="save-nautica-thumbnail" src="assets/images/games-thumbnail/save-thumbnail.png"
                     alt="Save Nautica Thumbnail">
             </a>
-            <a href="https://themimolet.github.io/ColourGuess" class="game-card" title="ColourGuess">
-                <img id="colourguess-thumbnail" src="./assets/images/games-thumbnail/colourguess-thumbnail.png"
+            <a href="/projects/ColourGuess" class="game-card" title="ColourGuess">
+                <img id="colourguess-thumbnail" src="assets/images/games-thumbnail/colourguess-thumbnail.png"
                     alt="ColourGuess Thumbnail">
             </a>
         </div>
     </main>
 </body>
-<script src="./assets/js/darkTheme.js"></script>
+
 </html>

@@ -1,40 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./assets/images/website-icon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/images/website-icon.ico">
     <title>Save Nautica - Mimolet</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/games.css">
+    <link rel="stylesheet" href="/assets/style/main.css">
+    <link rel="stylesheet" href="/assets/style/projects.css">
+    <script src="/assets/scripts/theme.js"></script>
 </head>
 
-<body class="dark">
+<body>
     <main>
         <div class="top-bg save-nautica">
             <div class="right-buttons">
 
                 <!-- Dark theme button -->
 
-                <div class="menu-buttons" id="dark-mode-btn" onclick="darkThemeButton()">
-                    <img src="./assets/icons/lightTheme.svg" class="icon-light" alt="light icon">
-                    <img src="./assets/icons/darkTheme.svg" class="icon-dark" alt="dark icon">
-                </div>
+                <button type="button" class="menu-buttons" id="dark-mode-btn" onclick="darkThemeButton()">
+                    <img src="/assets/icons/lightTheme.svg" class="icon-light" alt="light icon">
+                    <img src="/assets/icons/darkTheme.svg" class="icon-dark" alt="dark icon">
+                </button>
 
                 <!-- Languages select -->
 
                 <select class="menu-buttons" id="languages-select"></select>
-                <script src="./assets/js/language.js"></script>
+                <script src="/assets/scripts/language.js"></script>
 
             </div>
 
             <div class="left-buttons">
-                <a href="https://themimolet.github.io/">
-                    <div class="menu-buttons" id="return-btn">
-                        <img src="./assets/icons/return.svg" alt="language icon">
-                    </div>
-                </a>
+                <button type="button" class="menu-buttons" id="return-btn" onclick="location.href = '/'">
+                    <img src="/assets/icons/return.svg" alt="language icon">
+                </button>
             </div>
         </div>
         <h1>Save Nautica</h1>
@@ -43,44 +42,46 @@
 
         <div class="presentation">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/N1d5eWZLMTc?si=V6dnzckwPQ28fSsG"
-                title="YouTube video player" frameborder="0"
+                title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <!-- Save Nautica's Description -->
 
-            <div class="description" >
+            <div class="description">
                 <p id="savenautica-description">
                     ColourGuess is an online MasterMind trying to produce a decent gaming experience. You have a 4 color
                     code to
                     find, but you only have 12 attempts to crack it!
                 </p>
             </div>
-            
             <table class="game-info">
-                <tr>
-                    <td id="game-dev">Developers</td>
-                    <td class="left"><a href="https://gaetan-piou.itch.io/">Gaëtan Piou</a>, <a href="https://kurozo.itch.io/">Kurozo</a> & Mimolet</td>
-                </tr>
-                <tr>
-                    <td id="game-start-date">Start of project</td>
-                    <td id="savenautica-debut">March 2023</td>
-                </tr>
-                <tr>
-                    <td id="game-languages">Languages</td>
-                    <td id="savenautica-languages">French</td>
-                </tr>
-                <tr>
-                    <td id="game-platforms">Platforms</td>
-                    <td>HTML 5</td>
-                </tr>
-                <tr>
-                    <td id="game-engine">Engine</td>
-                    <td>Construct 3</td>
-                </tr>
-                <tr>
-                    <td id="game-status">Engine</td>
-                    <td id="savenautica-status">Stopped</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td id="game-dev">Developers</td>
+                        <td class="left"><a href="https://gaetan-piou.itch.io/">Gaëtan Piou</a>, <a
+                                href="https://kurozo.itch.io/">Kurozo</a> &amp; Mimolet</td>
+                    </tr>
+                    <tr>
+                        <td id="game-start-date">Start of project</td>
+                        <td id="savenautica-debut">March 2023</td>
+                    </tr>
+                    <tr>
+                        <td id="game-languages">Languages</td>
+                        <td id="savenautica-languages">French</td>
+                    </tr>
+                    <tr>
+                        <td id="game-platforms">Platforms</td>
+                        <td>HTML 5</td>
+                    </tr>
+                    <tr>
+                        <td id="game-engine">Engine</td>
+                        <td>Construct 3</td>
+                    </tr>
+                    <tr>
+                        <td id="game-status">Engine</td>
+                        <td id="savenautica-status">Stopped</td>
+                    </tr>
+                </tbody>
             </table>
 
             <!-- Play button -->
@@ -91,11 +92,12 @@
             <p>Save Nautica</p>
             <div class="play-list">
                 <!-- <a href="https://themimolet.itch.io/save-nautica" class="game-link-btn download-btn" id="game-play-download">Download</a> -->
-                <a href="https://themimolet.itch.io/save-nautica" class="game-link-btn itch-btn" id="game-play-itch">Play on Itch</a>
+                <a href="https://themimolet.itch.io/save-nautica" class="game-link-btn itch-btn"
+                    id="game-play-itch">Play on Itch</a>
             </div>
         </div>
 
-        <hr width="35%">
+        <hr>
 
         <div>
             <h2 id="game-about-title">About this game</h2>
@@ -130,24 +132,24 @@
             <h2 id="game-credits-title">Credits</h2>
             <div id="savenautica-credits">
                 <ul>
-                    <li>Mimolet : Game Design, Programming & Art</li>
+                    <li>Mimolet : Game Design, Programming &amp; Art</li>
                     <li><a href="https://gaetan-piou.itch.io/">Gaëtan Piou</a> : Game Design, Programming, Music</li>
                     <li><a href="https://kurozo.itch.io/">Kurozo</a> : Game Design, Programming</li>
-                </ul>    
+                </ul>
             </div>
         </div>
 
         <div id="org-gallery">
             <a href="https://ludus-academie.fr/" title="Ludus Académie">
-                <img src="./assets/images/logos/ludus.png" alt="Ludus Thumbnail">
+                <img src="/assets/images/logos/ludus.png" alt="Ludus Thumbnail">
             </a>
             <a href="https://www.fondationdelamer.org/nos-programmes/un-geste-pour-la-mer/associations/octopus/"
                 title="Octop'us">
-                <img src="./assets/images/logos/octopus.jpg" alt="Octop'us Thumbnail">
+                <img src="/assets/images/logos/octopus.jpg" alt="Octop'us Thumbnail">
             </a>
         </div>
 
     </main>
 </body>
-<script src="./assets/js/darkTheme.js"></script>
+
 </html>

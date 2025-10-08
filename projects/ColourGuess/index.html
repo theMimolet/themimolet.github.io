@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/images/website-icon.ico">
+    <title>ColourGuess - Mimolet</title>
+    <link rel="stylesheet" href="/assets/style/main.css">
+    <link rel="stylesheet" href="/assets/style/projects.css">
+    <script src="/assets/scripts/theme.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="top-bg colourguess">
+            <div class="right-buttons">
+
+                <!-- Dark theme button -->
+
+                <button type="button" class="menu-buttons" id="dark-mode-btn" onclick="darkThemeButton()">
+                    <img src="/assets/icons/lightTheme.svg" class="icon-light" alt="light icon">
+                    <img src="/assets/icons/darkTheme.svg" class="icon-dark" alt="dark icon">
+                </button>
+
+                <!-- Languages select -->
+
+                <select class="menu-buttons" id="languages-select"></select>
+                <script src="/assets/scripts/language.js"></script>
+
+            </div>
+
+            <div class="left-buttons">
+                <button type="button" class="menu-buttons" id="return-btn" onclick="location.href = '/'">
+                    <img src="/assets/icons/return.svg" alt="language icon">
+                </button>
+            </div>
+        </div>
+        <h1>ColourGuess</h1>
+
+        <!-- Colourguess' Presentation -->
+
+        <div class="presentation">
+            <!-- Colourguess' Description -->
+            <div class="description">
+                <p id="colourguess-description">
+                    ColourGuess is an online MasterMind trying to produce a decent gaming experience. You have a 4 color
+                    code to
+                    find, but you only have 12 attempts to crack it!
+                </p>
+            </div>
+
+            <table class="game-info">
+                <tbody>
+                    <tr>
+                        <td id="game-dev">Developers</td>
+                        <td class="left">Mimolet</td>
+                    </tr>
+                    <tr>
+                        <td id="game-start-date">Start of project</td>
+                        <td id="colourguess-debut">August 2023</td>
+                    </tr>
+                    <tr>
+                        <td id="game-languages">Languages</td>
+                        <td id="colourguess-languages">French, German, English, Italian</td>
+                    </tr>
+                    <tr>
+                        <td id="game-platforms">Platforms</td>
+                        <td>HTML 5</td>
+                    </tr>
+                    <tr>
+                        <td id="game-engine">Engine</td>
+                        <td>Web</td>
+                    </tr>
+                    <tr>
+                        <td id="game-status">Engine</td>
+                        <td id="colourguess-status">Currently being ported to Godot 4</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Play button -->
+
+        </div>
+
+        <hr>
+
+        <h2 id="colourguess-little-story-title">The Little Story™</h2>
+        <p id="colourguess-little-story">
+            My girlfriend at the time introduced me to the game MasterMind
+            and I quickly became good at the game and I really liked it and we played games over and over again.
+            However, after a while, she got fed up (normal, she's human) and as I wanted to continue playing,
+            even when I was at home, I then decided to program my own MasterMind.
+        </p>
+    </main>
+</body>
+
+</html>

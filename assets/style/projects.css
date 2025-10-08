@@ -80,6 +80,15 @@ h2{
   text-align: left;
 }
 
+iframe{
+  border: 0;
+  border-radius: var(--border-radius);
+}
+
+hr{
+  width: 35%;
+}
+
 /* PLAY */
 
 .play{

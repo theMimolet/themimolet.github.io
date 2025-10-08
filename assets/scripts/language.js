@@ -30,7 +30,7 @@ function loadLanguageOptions() {
 
 async function loadTranslations(lang) {
     try {
-        const response = await fetch(`../assets/translations/${lang}.json`);
+        const response = await fetch(`/assets/translations/${lang}.json`);
         if (!response.ok) {
             throw new Error(`Failed to load translations for ${lang}`);
         }
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // See of the browser language is supported, otherwise fallback to English
 
     if (currentLanguage === null) {
-        if (languages.includes(getUserLanguage())){
+        if (languages.includes(getUserLanguage())) {
             console.log("No user language set, using browser language.");
             currentLanguage = getUserLanguage();
         } else {

@@ -1,6 +1,5 @@
 {
-    "about":"<p>Bonjour ! Je m'appelle <span class='bold' title=\"c'est moi !\">Samuel</span>, mais on me connaît sous le nom de <span class='bold' title=\"c'est toujours moi !\">Mimolet</span> !</p><p>Passionné de <span class='bold' title='piou piou ! 🔫'>jeux vidéo</span>, <span class='bold' title='tchou tchou ! 🚂'>trains</span> et de <span class='bold' title='bip boup ! 🤖'>technologie</span>, j'adore aussi créer des <span class='bold'>montages photo</span> et <span class='bold'>vidéo</span>… et, soyons honnêtes, <span class='italic' title='et fier de l'être 😎'>être un nerd à plein temps !</span></p><p>Actuellement étudiant en <span class='bold' title='chez Ynov Campus'>informatique</span>, j'ai conçu ce site pour vous permettre de découvrir facilement <span class='bold'>mes projets</span> et de <span class='bold'>me retrouver</span> sur Internet.</p><p>Bonne visite ! 🚀 </p>",
-    
+    "about": "<p>Bonjour ! Je m'appelle <span class='bold' title=\"c'est moi !\">Samuel</span>, mais on me connaît sous le nom de <span class='bold' title=\"c'est toujours moi !\">Mimolet</span> !</p><p>Passionné de <span class='bold' title='piou piou ! 🔫'>jeux vidéo</span>, <span class='bold' title='tchou tchou ! 🚂'>trains</span> et de <span class='bold' title='bip boup ! 🤖'>technologie</span>, j'adore aussi créer des <span class='bold'>montages photo</span> et <span class='bold'>vidéo</span>… et, soyons honnêtes, <span class='italic' title=\"et fier de l'être 😎\">être un nerd à plein temps !</span></p><p>Actuellement étudiant en <span class='bold' title='chez Ynov Campus'>informatique</span>, j'ai conçu ce site pour vous permettre de découvrir facilement <span class='bold'>mes projets</span> et de <span class='bold'>me retrouver</span> sur Internet.</p><p>Bonne visite ! 🚀 </p>",
     "game-dev": "Développeur(s)",
     "game-start-date": "Début de projet",
     "game-languages": "Langue(s)",
@@ -14,14 +13,12 @@
     "game-about-title": "À propos de ce jeu",
     "game-controls-title": "Comments jouer",
     "game-credits-title": "Crédits",
-
     "colourguess-description": "ColourGuess est un MasterMind en ligne essayant de produire une expérience de jeu convenable. Vous avez un code de 4 couleurs à trouver, mais vous n'avez que 12 tentatives pour le déchiffrer !",
     "colourguess-debut": "Août 2023",
     "colourguess-languages": "Français, Allemand, Anglais, Italien",
     "colourguess-status": "En cours de port sur Godot 4",
     "colourguess-little-story-title": "La Petite Histoire™",
     "colourguess-little-story": "L'idée de ColourGuess m'est venue en jouant à MasterMind avec ma copine de l'époque. Je suis rapidement devenu fort au jeu et ça me plaisait beaucoup et on faisait des parties en boucle. Cependant, au bout d'un moment, elle en avait marre (normal, elle est humaine) et comme je voulais continuer à jouer, même lorsque j'étais chez moi, j'ai alors décidé de programmer mon propre MasterMind.",
-
     "savenautica-description": "Save Nautica est un jeu dans lequel vous contrôlez Trashbot, un robot dont la mission est de collecter tous les déchets jetés dans l'océan. Mais attention, Trashbot a un temps limité où il peut être sous l'eau.",
     "savenautica-debut": "Mars 2023",
     "savenautica-languages": "Français",
@@ -29,7 +26,6 @@
     "savenautica-about": "<p>\"Nous vous présentons TrashBot™, un petit robot, le meilleur pour aspirer les déchets des océans, que vous pourrez contrôler à distance depuis le confort de chez vous ! C'est rapide, efficace et c'est tout ce dont nous avons besoin pour combattre la pollution dans les océans ! Et j'ai faillis oublier, je suis dans l'obligation de vous dire que l'autonomie de la batterie est relativement faible.. Et aussi n'aspirez pas les poissons, cela va de soi.\"</p><p>Ce jeu a été réalisé pour la Ludus Octopus Jam 2023. Cette dernière avait pour thème La Protection des Océans. Le jeu devait donc porter sur la faune marine et son environnement.</p>",
     "savenautica-controls": "<ul><li>Utilisez les flèches directionnelles ou Q/D pour tourner</li><li>Appuyez sur W ou Z pour avancer</li><li>Appuyez sur X ou ESPACE pour ouvrir/fermer TrashBot™</li></ul><p>Récupérez un maximum de déchets et remontez à la surface avant la fin du temps imparti !</p>",
     "savenautica-credits": "<ul><li>Mimolet : Game Design, Programmation & Graphismes</li><li><a href='https://gaetan-piou.itch.io/'>Gaëtan Piou</a> : Game Design, Programmation & Musique</li><li><a href='https://kurozo.itch.io/'>Kurozo</a> : Game Design & Programmation</li></ul>",
-
     "totemdestiny-description": "The Totem of Destiny est un jeu, on incarne un agent secret qui essaie de s'infiltrer dans une base remplie de capybaras dans le but de récupérer le Totem d'or, un artefact qui détiendrait un mystérieux pouvoir.",
     "totemdestiny-debut": "Janvier 2023",
     "totemdestiny-languages": "Français",
