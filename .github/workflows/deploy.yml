@@ -28,7 +28,7 @@ jobs:
 
       - name: Generate RSS feed and posts
         working-directory: ./assets/scripts
-        run: node generate-feed.js
+        run: node generateFeed.js
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
