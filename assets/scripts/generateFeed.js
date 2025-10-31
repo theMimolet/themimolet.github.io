@@ -3,6 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import MarkdownIt from 'markdown-it';
 import yaml from 'js-yaml';
+import { error } from 'console';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -139,11 +140,16 @@ function generatePostHTML(post) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${frontmatter.title} - Mimolet</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/assets/style/posts.css">
 </head>
 <body>
     <main>
-        <article>
+        <h1>the mimolet updates.</h1>
+        <div id="links">
+            <a href="/" rel="noopener noreferrer">Home</a><br>
+            <a href="/feed.xml" target="_blank" rel="noopener noreferrer">Subscribe (RSS)</a>
+        </div>
+        <article class="feed-item">
             <h1>${frontmatter.title}</h1>
             <p class="post-meta">
                 <time datetime="${frontmatter.date}">${new Date(frontmatter.date).toLocaleDateString('en-US', {
@@ -154,7 +160,6 @@ function generatePostHTML(post) {
             </p>
             ${html}
         </article>
-        <a href="../index.html">← Retour à l'accueil</a>
     </main>
 </body>
 </html>`;
@@ -162,8 +167,8 @@ function generatePostHTML(post) {
 
 // Fonction principale
 function main() {
-    const postsDir = path.join(__dirname, '../posts');
-    const outputDir = path.join(__dirname, '../../posts');
+    const markdownDir = path.join(__dirname, '/posts/md');
+    const outputDir = path.join(__dirname, '/posts');
 
     // Créer le dossier posts s'il n'existe pas
     if (!fs.existsSync(outputDir)) {
@@ -171,22 +176,27 @@ function main() {
     }
 
     // Lire tous les fichiers markdown
-    const files = fs.readdirSync(postsDir)
+    const files = fs.readdirSync(markdownDir)
         .filter(file => file.endsWith('.md'))
         .sort()
         .reverse(); // Les plus récents en premier
 
     // Parser tous les posts
     const posts = files.map(file => {
-        const content = fs.readFileSync(path.join(postsDir, file), 'utf-8');
+        const content = fs.readFileSync(path.join(markdownDir, file), 'utf-8');
         const parsed = parseMarkdown(content);
         return { ...parsed, filename: file };
     });
 
     // Générer le RSS
     const rss = generateRSS(posts);
-    fs.writeFileSync(path.join(__dirname, '../../feed.xml'), rss);
-    console.log('✅ feed.xml généré');
+    try {
+        fs.writeFileSync(path.join(__dirname, '/feed.xml'), rss);
+    } catch (e) {
+        print.error(e.message)
+    } finally {
+        console.log('✅ feed.xml généré');
+    }
 
     // Générer les pages HTML individuelles
     posts.forEach(post => {
