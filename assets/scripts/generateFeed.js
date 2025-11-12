@@ -166,7 +166,7 @@ function generatePostHTML(post) {
 
 // Fonction principale
 function main() {
-    const markdownDir = path.join(__dirname, '../posts/md');
+    const markdownDir = path.join(__dirname, '../../posts/md');
     const outputDir = path.join(__dirname, '../../posts');
 
     // Créer le dossier posts s'il n'existe pas
