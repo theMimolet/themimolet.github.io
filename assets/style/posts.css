@@ -4,6 +4,10 @@ body{
     margin: 5%;
 }
 
+a {
+    text-decoration: none;
+}
+
 .feed-item {
     margin: 10px 0;
     padding: 25px;
@@ -26,6 +30,7 @@ body{
 #links {
     margin: 35px auto;
     font-size: 1.2em;
+    text-decoration: underline;
 }
 
 img{

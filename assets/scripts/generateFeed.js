@@ -138,29 +138,36 @@ function generatePostHTML(post) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${frontmatter.title} - Mimolet</title>
+    <title>${frontmatter.title} - the mimolet updates.</title>
     <link rel="stylesheet" href="/assets/style/main.css">
     <link rel="stylesheet" href="/assets/style/posts.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/website-icon.ico">
+    <meta property="og:title" content="${frontmatter.title} - the mimolet updates.">
+    <meta property="og:description" content="recent news and updates from mimo.">
+    <meta property="og:image" content="../assets/images/posts/themimoletupdates.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${frontmatter.title} - the mimolet updates.">
+    <meta name="twitter:description" content="recent news and updates from mimo.">
+    <meta name="twitter:image" content="../assets/images/posts/themimoletupdates.png">
 </head>
 <body>
-    <main>
-        <h1>the mimolet updates.</h1>
-        <div id="links">
-            <a href="/" rel="noopener noreferrer">Home</a><br>
-            <a href="/feed.xml" target="_blank" rel="noopener noreferrer">Subscribe (RSS)</a>
-        </div>
-        <article class="feed-item">
-            <h1>${frontmatter.title}</h1>
-            <p class="feed-date">
-                <time datetime="${frontmatter.date}">${new Date(frontmatter.date).toLocaleDateString('en-US', {
+    <h1>the mimolet updates.</h1>
+    <div id="links">
+        <a href="/" rel="noopener noreferrer">Home</a><br>
+        <a href="/feed.xml" target="_blank" rel="noopener noreferrer">Subscribe (RSS)</a>
+    </div>
+    <article class="feed-item">
+        <h1>${frontmatter.title}</h1>
+        <p class="feed-date">
+            <time datetime="${frontmatter.date}">${new Date(frontmatter.date).toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'long',
         day: 'numeric'
     })}</time>
-            </p>
-            ${html}
-        </article>
-    </main>
+        </p>
+        ${html}
+    </article>
 </body>
 </html>`;
 }

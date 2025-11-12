@@ -19,9 +19,11 @@ fetch(rssUrl)
             itemDiv.id = "update-" + formatDateID(pubDate);
             itemDiv.className = 'feed-item';
 
+            const titleLink = document.createElement('a');
             const titleElement = document.createElement('h2');
             titleElement.textContent = title;
             titleElement.className = 'feed-title';
+            titleLink.href = "./" + formatDateID(pubDate);
 
             const contentElement = document.createElement('p');
             contentElement.className = 'content';
@@ -31,7 +33,8 @@ fetch(rssUrl)
             dateElement.className = 'feed-date';
             dateElement.textContent = formatDate(pubDate);
 
-            itemDiv.appendChild(titleElement);
+            titleLink.appendChild(titleElement)
+            itemDiv.appendChild(titleLink);
             itemDiv.appendChild(contentElement);
             itemDiv.appendChild(dateElement);
             container.appendChild(itemDiv);
@@ -58,9 +61,9 @@ function formatDate(dateString) {
 
 function formatDateID(dateString) {
     const date = new Date(dateString);
-    return date.getUTCFullYear() +
+    return date.getFullYear() +
         "-" +
-        (date.getUTCMonth() + 1) +
+        (date.getMonth().toString().padStart(2, '0') + 1) +
         "-" +
-        date.getUTCDate();
+        date.getDate().toString().padStart(2, '0');
 }
