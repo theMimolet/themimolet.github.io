@@ -154,8 +154,7 @@ function generatePostHTML(post) {
 <body>
     <h1>the mimolet updates.</h1>
     <div id="links">
-        <a href="/" rel="noopener noreferrer">Home</a><br>
-        <a href="/feed.xml" target="_blank" rel="noopener noreferrer">Subscribe (RSS)</a>
+        <a href="../" target="_blank" rel="noopener noreferrer">All Posts</a>
     </div>
     <article class="feed-item">
         <h1>${frontmatter.title}</h1>
