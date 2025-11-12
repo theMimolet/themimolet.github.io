@@ -139,6 +139,7 @@ function generatePostHTML(post) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${frontmatter.title} - Mimolet</title>
+    <link rel="stylesheet" href="/assets/style/main.css">
     <link rel="stylesheet" href="/assets/style/posts.css">
 </head>
 <body>
@@ -150,7 +151,7 @@ function generatePostHTML(post) {
         </div>
         <article class="feed-item">
             <h1>${frontmatter.title}</h1>
-            <p class="post-meta">
+            <p class="feed-date">
                 <time datetime="${frontmatter.date}">${new Date(frontmatter.date).toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'long',
