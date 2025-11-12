@@ -3,7 +3,6 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import MarkdownIt from 'markdown-it';
 import yaml from 'js-yaml';
-import { error } from 'console';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -167,8 +166,8 @@ function generatePostHTML(post) {
 
 // Fonction principale
 function main() {
-    const markdownDir = path.join(__dirname, '/posts/md');
-    const outputDir = path.join(__dirname, '/posts');
+    const markdownDir = path.join(__dirname, '../posts/md');
+    const outputDir = path.join(__dirname, '../../posts');
 
     // Créer le dossier posts s'il n'existe pas
     if (!fs.existsSync(outputDir)) {
@@ -191,7 +190,7 @@ function main() {
     // Générer le RSS
     const rss = generateRSS(posts);
     try {
-        fs.writeFileSync(path.join(__dirname, '/feed.xml'), rss);
+        fs.writeFileSync(path.join(__dirname, '../../feed.xml'), rss);
     } catch (e) {
         print.error(e.message)
     } finally {
