@@ -16,7 +16,8 @@ a {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.feed-title {
+.feed-title,
+h1 {
     font-size: 2em;
     margin: 0 0 5px 0;
     color: rgb(255, 94, 0);
