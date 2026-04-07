@@ -25,7 +25,8 @@ layout: default
     {% for social in site.data.home.socials %}
     <a href="{{ social.url }}" title="{{ social.name }}">
         <img src="{{ site.icons_path }}/socials/{{ social.name | downcase }}.svg"
-            alt="{{ site.data.locales[page.lang].social }} {{ social.name }}">
+            alt="{{ site.data.locales[page.lang].social }} {{ social.name }}"
+            target="_blank" rel="noopener noreferrer">
     </a>
     {% endfor %}
 </div>

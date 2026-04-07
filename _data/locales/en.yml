@@ -6,6 +6,7 @@ profiles:
   birthday: Birthday icon
   location: Location icon
   email: Email icon
+subscribe: RSS feed
 social: Icon of
 badge: Badge of
 date_format: "%B %d, %Y"

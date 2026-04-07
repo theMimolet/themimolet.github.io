@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+<section class="top-buttons">
+    <a href="{% if page.lang == 'fr' %}/fr{% endif %}/feed.xml" target="_blank"
+        rel="noopener noreferrer">{{ site.data.locales[page.lang].subscribe }}</a>
+</section>
 
 <section class="post-grid">
     {% for post in site.posts %}

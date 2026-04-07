@@ -22,6 +22,27 @@
     box-shadow: var(--shadow-hover);
 }
 
+.top-buttons{
+    display: flex;
+    justify-content: start;
+    margin: 10px;
+}
+
+.top-buttons a{
+    padding: 0.5em 1em;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-color: var(--menu);
+    text-decoration: none;
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-buttons a:hover{
+    background-color: var(--accent-simple);
+    color: var(--text-on-accent);
+}
+
 @media screen and (max-width: 830px) and (min-width: 500px) {
     .post-grid {
         grid-template-columns: 1fr ;
