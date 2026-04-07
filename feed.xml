@@ -34,7 +34,7 @@ layout: null
             <link>{{ site.url }}{{ post.url }}</link>
             <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
             <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-            <description><![CDATA[{{ post_html }}]]></description>
+            <description>{{ post.summary | default: post.excerpt | strip_html | normalize_whitespace | xml_escape }}</description>
             <content:encoded><![CDATA[{{ post_html }}]]></content:encoded>
         </item>
 {% endfor %}

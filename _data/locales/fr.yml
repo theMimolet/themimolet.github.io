@@ -7,6 +7,8 @@ profiles:
   location: Icône de localisation
   email: Icône d'email
 subscribe: Flux RSS
+subscribe_copy: Copier l'URL du flux
+subscribe_copied: Copie faite !
 social: Icône de
 badge: Badge de
 date_format: "%e %B %Y"

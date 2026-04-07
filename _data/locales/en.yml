@@ -7,6 +7,8 @@ profiles:
   location: Location icon
   email: Email icon
 subscribe: RSS feed
+subscribe_copy: Copy feed URL
+subscribe_copied: Copied!
 social: Icon of
 badge: Badge of
 date_format: "%B %e, %Y"

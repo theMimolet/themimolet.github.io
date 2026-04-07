@@ -24,23 +24,35 @@
 
 .top-buttons {
     display: flex;
+    gap: 0.6em;
+    flex-wrap: wrap;
     justify-content: start;
     margin-top: 20px;
 }
 
-.top-buttons a {
+.top-buttons a,
+.top-buttons .rss-copy-button {
     padding: 0.5em 1em;
     border: var(--border);
     border-radius: var(--border-radius);
     background-color: var(--menu);
     text-decoration: none;
     color: var(--text);
+    font: inherit;
+    cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.top-buttons a:hover {
+.top-buttons a:hover,
+.top-buttons .rss-copy-button:hover,
+.top-buttons .rss-copy-button:focus-visible {
     background-color: var(--accent-simple);
     color: var(--text-on-accent);
+}
+
+.top-buttons .rss-copy-button:disabled {
+    cursor: default;
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 830px) {
