@@ -1,0 +1,21 @@
+nav:
+  home: Accueil
+  projects: Projets
+  posts: Articles
+profiles:
+  birthday: Icône d'anniversaire
+  location: Icône de localisation
+  email: Icône d'email
+social: Icône de
+badge: Badge de
+date_format: "%d %B %Y"
+friends:
+  title: Des gens sympas :)
+  subtitle: (jetez un œil !)
+  addme: Ajoutez-moi à votre site !
+post_section:
+  published: Publié le
+  title: Derniers articles
+  see_all: Voir tous les articles
+mobile:
+  close: Fermer

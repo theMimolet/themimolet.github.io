@@ -1,0 +1,23 @@
+pseudo: Mimolet
+
+profiles:
+  - type: Birthday
+    value: 08/06/2004
+  - type: Location
+    value: Strasbourg, France
+  - type: Email
+    value: themimolet@proton.me
+
+friends:
+  - name: "HappySunnySun"
+    image: "/assets/images/friends/nametag.png"
+    url: "https://happysunnysun.github.io/SunWebsite/"
+  - name: "Kolunmi"
+    image: "https://kolunmi.net/kolunmi88x31.png"
+    url: "https://www.kolunmi.net/"
+  - name: "Lumaeris"
+    image: "https://lumaeris.com/assets/img/88x31.png"
+    url: "https://lumaeris.com/"
+  - name: "libffi"
+    image: "https://ffi.lol/88x31@1x.png"
+    url: "https://ffi.lol/"

@@ -1,0 +1,38 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Mimolet's Blog</title>
+        <link>{{ site.url }}/</link>
+        <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml"/>
+        <description>Mimolet's blog, a place where I share my thoughts and experiences.</description>
+        <language>en-us</language>
+        <copyright>Copyright {{ site.time | date: '%Y' }} Mimolet. All rights reserved.</copyright>
+        <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+        <managingEditor>{{ site.email }} (Mimolet)</managingEditor>
+        <webMaster>{{ site.email }} (Mimolet)</webMaster>
+        <docs>https://www.rssboard.org/rss-specification</docs>
+        <generator>Jekyll</generator>
+        <category>News</category>
+        <ttl>60</ttl>
+        <image>
+            <url>{{ site.url }}{{ site.images_path }}/favicon.ico</url>
+            <title>Mimolet's Blog</title>
+            <link>{{ site.url }}/</link>
+            <width>32</width>
+            <height>32</height>
+        </image>
+{% assign en_posts = site.posts | where: "lang", "en" | sort: "date" | reverse %}
+{% for post in en_posts %}
+        <item>
+            <title>{{ post.title | xml_escape }}</title>
+            <link>{{ site.url }}{{ post.url }}</link>
+            <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+            <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+            <description>{{ post.content | strip_html | normalize_whitespace | xml_escape }}</description>
+        </item>
+{% endfor %}
+    </channel>
+</rss>

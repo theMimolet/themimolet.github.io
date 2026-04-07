@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<section>
+    <!-- Description -->
+
+    <div id="welcome">
+        {{ content }}
+    </div>
+
+    <!-- Pfp + Citation -->
+
+    <div id="pfp-container">
+        <img src="{{ site.images_path }}/mimo-pfp.png" class="pfp"
+            alt="{{ site.data.locales[page.lang].profile_picture_alt }}">
+        <p id="citation">"Say cheese !"</p>
+    </div>
+</section>
+
+
+<!-- Links to my socials -->
+
+<div id="socials" aria-label="Social links">
+    {% for social in site.data.home.socials %}
+    <a href="{{ social.url }}" title="{{ social.name }}">
+        <img src="{{ site.icons_path }}/socials/{{ social.name | downcase }}.svg"
+            alt="{{ site.data.locales[page.lang].social }} {{ social.name }}">
+    </a>
+    {% endfor %}
+</div>

@@ -1,0 +1,21 @@
+nav:
+  home: Home
+  projects: Projects
+  posts: Posts
+profiles:
+  birthday: Birthday icon
+  location: Location icon
+  email: Email icon
+social: Icon of
+badge: Badge of
+date_format: "%B %d, %Y"
+friends:
+  title: Da gud guys :)
+  subtitle: (check them out !)
+  addme: Add me to your website !
+post_section:
+  published: Published on
+  title: Latest posts
+  see_all: See all posts
+mobile:
+  close: Close

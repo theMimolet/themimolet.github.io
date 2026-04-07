@@ -1,0 +1,21 @@
+{% if include.mobile %}
+{% assign link_class = 'menu-button mobile-menu-link' %}
+{% else %}
+{% assign link_class = 'menu-button' %}
+{% endif %}
+
+<a href="/{% if page.lang == 'fr' %}fr{% endif %}"
+    class="{{ link_class }} {% if page.layout == 'home' %}active{% endif %}"
+    aria-label="{{ site.data.locales[page.lang].nav.home }}">
+    <span class="bookmark-label">{{ site.data.locales[page.lang].nav.home }}</span>
+</a>
+<a href="{% if page.lang == 'fr' %}/fr{% endif %}/projects/"
+    class="{{ link_class }} {% if page.layout == 'projects' %}active{% endif %}"
+    aria-label="{{ site.data.locales[page.lang].nav.projects }}">
+    <span class="bookmark-label">{{ site.data.locales[page.lang].nav.projects }}</span>
+</a>
+<a href="{% if page.lang == 'fr' %}/fr{% endif %}/posts/"
+    class="{{ link_class }} {% if page.layout == 'posts' or page.layout == 'post' %}active{% endif %}"
+    aria-label="{{ site.data.locales[page.lang].nav.posts }}">
+    <span class="bookmark-label">{{ site.data.locales[page.lang].nav.posts }}</span>
+</a>

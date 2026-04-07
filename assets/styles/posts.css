@@ -1,0 +1,37 @@
+/* Posts Grid */
+
+.post-grid{
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+}
+
+.post{
+    padding: 0.5em 1.5em;
+    gap: 0.5em;
+    text-decoration: none;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-color: var(--menu);
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+}
+
+.post:hover{
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+@media screen and (max-width: 830px) and (min-width: 500px) {
+    .post-grid {
+        grid-template-columns: 1fr ;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .post-grid {
+        grid-template-columns: 1fr ;
+        margin: 10px;
+    }
+}

@@ -1,0 +1,22 @@
+domain: themimolet.github.io
+url: "https://themimolet.github.io"
+baseurl: ""
+
+title: "Mimolet"
+email: themimolet@proton.me
+description: "Website of Mimolet, a student in software engineering and indie creation."
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+plugins:
+  - jekyll-seo-tag
+
+include: ["feed.xml"]
+
+styles_path: /assets/styles
+images_path: /assets/images
+icons_path: /assets/icons
+scripts_path: /assets/scripts
