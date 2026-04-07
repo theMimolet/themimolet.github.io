@@ -2,4 +2,5 @@
 layout: posts
 lang: en
 title: "Posts"
+permalink: /posts/
 ---

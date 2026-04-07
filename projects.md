@@ -2,6 +2,7 @@
 layout: projects
 lang: en
 title: "Projects"
+permalink: /projects/
 projects:
   - name: "Bazaar (French Translation)"
     description: "Bazaar is a friendly and accessible Linux app store. It has some features that make it stand out from other app stores, such as a transparency when it comes to app permissions, a tab for apps curated by distributors, and a focus on a simple and elegant user experience.
