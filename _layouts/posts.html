@@ -11,7 +11,7 @@ layout: default
     {% if post.lang == page.lang %}
     <a href="{{ post.url }}" class="post">
         <h3>{{ post.title }}</h3>
-        {{ post.date | date: site.data.locales[page.lang].date_format }}
+        {% include localized-date.html date=post.date lang=page.lang %}
         <p>{{ post.summary }}</p>
     </a>
     {% endif %}

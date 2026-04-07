@@ -9,7 +9,20 @@ profiles:
 subscribe: RSS feed
 social: Icon of
 badge: Badge of
-date_format: "%B %d, %Y"
+date_format: "%B %e, %Y"
+months:
+  - January
+  - February
+  - March
+  - April
+  - May
+  - June
+  - July
+  - August
+  - September
+  - October
+  - November
+  - December
 friends:
   title: Da gud guys :)
   subtitle: (check them out !)

@@ -2,8 +2,8 @@
 layout: default
 ---
 <article class="content">
-    <h2>{{ page.title }}</h2>
-    <p class="meta">{{ site.data.locales[page.lang].post_section.published }} {{ page.date | date: site.data.locales[page.lang].date_format }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="meta">{{ site.data.locales[page.lang].post_section.published }} {% include localized-date.html date=page.date lang=page.lang %}</p>
     {{ content }}
 </article>
 <script src="{{ site.scripts_path | append: '/post-images.js' | relative_url }}" defer></script>

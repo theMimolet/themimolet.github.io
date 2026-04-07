@@ -1,6 +1,7 @@
 domain: themimolet.github.io
 url: "https://themimolet.github.io"
 baseurl: ""
+timezone: Europe/Paris
 
 title: "Mimolet"
 email: themimolet@proton.me

@@ -9,7 +9,20 @@ profiles:
 subscribe: Flux RSS
 social: Icône de
 badge: Badge de
-date_format: "%d %B %Y"
+date_format: "%e %B %Y"
+months:
+  - janvier
+  - février
+  - mars
+  - avril
+  - mai
+  - juin
+  - juillet
+  - août
+  - septembre
+  - octobre
+  - novembre
+  - décembre
 friends:
   title: Des gens sympas :)
   subtitle: (jetez un œil !)

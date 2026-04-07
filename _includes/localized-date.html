@@ -1,0 +1,10 @@
+{% assign lang = include.lang | default: page.lang | default: site.lang | default: 'en' %}
+{% assign locale = site.data.locales[lang] %}
+{% assign month_index = include.date | date: "%-m" | minus: 1 %}
+{% assign month_name = locale.months[month_index] %}
+
+{% if lang == 'fr' %}
+{{ include.date | date: "%-d" }} {{ month_name }} {{ include.date | date: "%Y" }}
+{% else %}
+{{ month_name }} {{ include.date | date: "%-d" }}, {{ include.date | date: "%Y" }}
+{% endif %}
