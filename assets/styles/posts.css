@@ -1,13 +1,13 @@
 /* Posts Grid */
 
-.post-grid{
+.post-grid {
     display: grid;
     margin: 20px auto;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1em;
 }
 
-.post{
+.post {
     padding: 0.5em 1.5em;
     gap: 0.5em;
     text-decoration: none;
@@ -17,18 +17,18 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease
 }
 
-.post:hover{
+.post:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
 }
 
-.top-buttons{
+.top-buttons {
     display: flex;
     justify-content: start;
-    margin: 10px;
+    margin-top: 20px;
 }
 
-.top-buttons a{
+.top-buttons a {
     padding: 0.5em 1em;
     border: var(--border);
     border-radius: var(--border-radius);
@@ -38,21 +38,18 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.top-buttons a:hover{
+.top-buttons a:hover {
     background-color: var(--accent-simple);
     color: var(--text-on-accent);
 }
 
-@media screen and (max-width: 830px) and (min-width: 500px) {
+@media screen and (max-width: 830px) {
     .post-grid {
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         margin: 10px;
     }
-}
 
-@media screen and (max-width: 500px) {
-    .post-grid {
-        grid-template-columns: 1fr ;
+    .top-buttons {
         margin: 10px;
     }
 }

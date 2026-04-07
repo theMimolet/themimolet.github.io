@@ -118,6 +118,7 @@ section {
 @media screen and (max-width: 500px) {
     section{
         flex-direction: column;
+        margin: 25px 10px;
     }
 
     /* Socials*/
