@@ -14,13 +14,4 @@ projects:
             caption: "Visiter le site officiel"
          -  url: "https://github.com/bazaar-org"
             caption: "Jeter un coup d'œil à l'organisation GitHub"
-  - name: "Project Haven"
-    description: "Haven est un projet personnel et qui est devenu une sorte d'obsession récemment. C'est un système d'exploitation Linux que j'aimerais rendre aussi convivial que possible. Je veux qu'il soit un excellent choix pour les personnes qui souhaitent un système qui marche sans avoir besoin de connaissances techniques poussées pour être utilisé (comme mes parents).
-
-    C'est encore assez expérimental, mais j'ai hâte à l'idée de pouvoir partager cet OS avec vous bientôt !
-    "
-    icon: "/assets/images/projects/haven-yellow.png"
-    links:
-         -  url: "https://github.com/theMimolet/haven"
-            caption: "Jeter un coup d'œil au répo GitHub"
 ---

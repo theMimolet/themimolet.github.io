@@ -23,17 +23,10 @@ I have a few critics regarding how the school is organized and how they teach us
 
 I does make me want to do more on the side, including...
 
-## Haven
+## Side Projects
 
-![yellow variant of the Haven logo - might change in the future]({{ '/assets/images/projects/haven-yellow.png' | relative_url }})
-
-Introducing Haven - a personal project of mine that has been kind of an obsession recently. It's a Linux Operating System that I want to be as user-friendly as possible. I want it to be a great choice for people who wants a system that just works and that doesn't require a lot of technical knowledge to use (like my parents).
-
-More technically, it's based on Fedora-Bootc, with the CachyOS Kernel and a customized Gnome desktop. It will also come with the same software management as Bazzite or Bluefin - so Homebrew for terminal applications and Bazaar (Flatpak) for desktop applications. It will also feature automatic system updates, so you won't have to worry about keeping your system up to date!
-
-I will also try to implement a way to manage system extensions, for Docker especially.
-
-It's still very much experimental, and the current project featured on Github is a previous attempt based on Arch Linux. But I'm really excited about it and I hope I'll be able to share an .iso so you can try it soon !
+Custom Linux Images !
+I'll tell you more about it in a future post, but I'm currently working on a project to create custom Linux images for different use cases, such as using Linux on MS Surface laptops, maybe a personal one for my development needs, etc. I'm really excited about this project and I hope to share it with you soon !
 
 ## We'll meet again...
 

@@ -24,17 +24,10 @@ J'ai quelques critiques concernant la manière dont l'école est organisée et c
 
 Ce climat me donne surtout envie de faire plus de choses à côté, y compris...
 
-## Haven
+## Projets en parallèle
 
-![variante jaune du logo de Haven - peut changer dans le futur]({{ '/assets/images/projects/haven-yellow.png' | relative_url }})
-
-Et voici Haven - un projet personnel qui m'a un peu obsédé récemment. C'est un système d'exploitation Linux que je veux rendre aussi convivial que possible. Je veux qu'il soit un excellent choix pour les personnes qui veulent un système qui fonctionne bien et qui ne nécessite pas beaucoup de connaissances techniques pour l'utiliser (comme mes parents).
-
-Techniquement, il est basé sur Fedora-Bootc, avec le noyau CachyOS et un bureau Gnome personnalisé. Il viendra également avec la même gestion des logiciels que Bazzite ou Bluefin - donc Homebrew pour les applications de terminal et Bazaar (Flatpak) pour les applications de bureau. Il comportera également des mises à jour automatiques du système, donc on n'a même pas besoin de se soucier si le système est à jour !
-
-Je vais aussi tenter d'implémenter une manière de gérer les extensions du système (sysext), en particulier pour Docker.
-
-C'est encore très expérimental, et le projet actuel présenté sur Github est une tentative précédente basée sur Arch Linux. Mais tout ça est vraiment très passionnant et j'espère pouvoir partager un .iso prochainement pour que vous puissiez l'essayer !
+Des images Linux personnalisées !
+Je vous en parlerai plus dans un futur post, mais je travaille actuellement sur un projet pour créer des images Linux personnalisées pour différents cas d'utilisation, comme faire un système Linux pour les ordinateurs MS Surface, peut-être une image personnelle pour mes besoins de développement, etc. J'ai vraiment hâte de vous en parler et j'espère pouvoir le partager avec vous bientôt !
 
 ## We'll meet again...
 
