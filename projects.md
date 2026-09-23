@@ -4,6 +4,11 @@ lang: en
 title: "Projects"
 permalink: /projects/
 projects:
+  - name: "Umotd"
+    description: "Umotd is a translatable and configurable Linux \"Message Of The Day\" utility. It can display custom tips and welcome messages to users."
+    links:
+         -  url: "https://github.com/theMimolet/umotd"
+            caption: "Visit the GitHub repository"
   - name: "Bazaar (French Translation)"
     description: "Bazaar is a friendly and accessible Linux app store. It has some features that make it stand out from other app stores, such as a transparency when it comes to app permissions, a tab for apps curated by distributors, and a focus on a simple and elegant user experience.
 

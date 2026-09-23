@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="generator" content="Eleventy">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:locale" content="{{ lang }}">
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <meta property="og:url" content="https://themimolet.github.io/">
+    <meta property="og:site_name" content="Mimolet">
+    <meta property="og:type" content="website">
+    <meta property="twitter:title" content="{{ title }}">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebSite","description":"Website of Mimolet, a student in software engineering and indie creation.","headline":"Home","name":"Mimolet","url":"https://themimolet.github.io/"}
+    </script>
+
+    <title>{{ title }} - {{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ site.styles_path }}/main.css">
+    <link rel="stylesheet" href="{{ site.styles_path }}/{{ layout }}.css">
+    <link rel="icon" href="{{ site.images_path }}/favicon.ico" type="image/x-icon">
+    {% if lang == 'fr' %}
+    <link rel="alternate" type="application/rss+xml" title="Le Blog de Mimolet" href="/fr/feed.xml">
+    {% else %}
+    <link rel="alternate" type="application/rss+xml" title="Mimolet's blog" href="/feed.xml">
+    {% endif %}
+    {% set englishUrl = page.url | replace('/fr/', '/') if lang == 'fr' else page.url %}
+    {% set frenchUrl = page.url if lang == 'fr' else '/fr' + page.url %}
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ englishUrl }}" />
+    <link rel="alternate" hreflang="fr" href="{{ site.url }}{{ frenchUrl }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ englishUrl }}" />
+    <script src="{{ site.scripts_path }}/lang-first-visit.js" defer></script>
+    <script src="{{ site.scripts_path }}/lang-switch.js" defer></script>
+    <script src="{{ site.scripts_path }}/mobile-menu.js" defer></script>
+</head>
+
+<body>
+    {% set targetUrl = page.url | replace('/fr/', '/') if lang == 'fr' else '/fr' + page.url %}
+    {% set label = 'FR' if lang == 'en' else 'EN' %}
+
+    <header>
+        <div id="logo">
+            <a href="/{% if lang == 'fr' %}fr{% endif %}">
+                <h1>Mimolet</h1>
+                {# <img src="{{ site.images_path }}/mimo-pfp.png" alt="Mimolet logo" class="logo-image"> #}
+            </a>
+        </div>
+        <nav aria-label="Primary navigation">
+            {% include "nav-links.html" %}
+        </nav>
+        <div id="lang">
+            <a href="{{ targetUrl }}" id="language-switcher" data-language-switcher class="menu-button"
+                style="display: none;">
+                {{ label }}
+            </a>
+        </div>
+        <button type="button" id="mobile-menu-toggle" class="menu-button burger-menu" aria-controls="mobile-menu"
+            aria-expanded="false" aria-label="Open menu">
+            <img src="{{ site.icons_path }}/menu.svg" alt="Menu">
+        </button>
+    </header>
+    <div id="mobile-menu" class="mobile-menu" hidden>
+        <div class="mobile-menu-panel">
+            <div class="mobile-menu-top">
+                <button type="button" id="mobile-menu-close" class="menu-button"
+                    aria-label="{{ i18n[lang].mobile.close }}">{{ i18n[lang].mobile.close }}</button>
+            </div>
+            <nav class="mobile-nav" aria-label="Mobile navigation">
+                {% set mobile = true %}{% include "nav-links.html" %}
+            </nav>
+            <div class="mobile-menu-lang">
+                <a href="{{ targetUrl }}" id="language-switcher-mobile" data-language-switcher class="menu-button"
+                    style="display: none;">
+                    {{ label }}
+                </a>
+            </div>
+        </div>
+    </div>
+    <main>
+        {{ content | safe }}
+    </main>
+</body>
+
+</html>

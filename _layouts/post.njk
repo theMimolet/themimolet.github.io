@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<article class="content">
+    <h1>{{ title }}</h1>
+    <p class="meta">{{ i18n[lang].post_section.published }} {{ page.date | localizedDate(lang) }}</p>
+    {{ content | safe }}
+</article>
+<script src="{{ site.scripts_path }}/post-images.js" defer></script>

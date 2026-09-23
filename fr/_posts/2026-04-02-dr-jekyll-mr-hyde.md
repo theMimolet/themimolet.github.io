@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Dr. Jekyll et Mr. Hyde"
-date: 2026-04-03 11:42
 lang: fr
 summary: "Petit article sur l'état du site - migration vers Jekyll et un nouveau design !"
 ---

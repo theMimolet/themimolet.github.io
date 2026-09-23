@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "The Captain is back to Haven !"
-date: 2026-04-07 16:00
 lang: en
 summary: "Post about the website update, school and a brand new project..."
 ---

@@ -1,0 +1,26 @@
+---
+layout: default
+---
+{% set feedPath = '/fr/feed.xml' if lang == 'fr' else '/feed.xml' %}
+{% set feedUrl = site.url + feedPath %}
+<section class="top-buttons">
+    <a href="{{ feedPath }}" target="_blank" rel="noopener noreferrer">{{ i18n[lang].subscribe }}</a>
+    <button type="button" class="rss-copy-button" data-copy-rss data-feed-url="{{ feedUrl }}"
+        data-default-label="{{ i18n[lang].subscribe_copy }}"
+        data-copied-label="{{ i18n[lang].subscribe_copied }}">{{ i18n[lang].subscribe_copy }}</button>
+</section>
+
+<section class="post-grid">
+    {% set posts = collections.frenchPosts if lang == 'fr' else collections.englishPosts %}
+    {% set posts = posts | reverse %}
+    {% for post in posts %}
+    <a href="{{ post.url }}" class="post">
+        <h3>{{ post.data.title }}</h3>
+        {{ post.date | localizedDate(lang) }}
+        <p>{{ post.data.summary }}</p>
+    </a>
+    {% endfor %}
+
+</section>
+{{ content | safe }}
+<script src="{{ site.scripts_path }}/rss-subscribe.js" defer></script>

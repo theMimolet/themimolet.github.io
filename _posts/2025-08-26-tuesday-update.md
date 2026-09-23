@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "the tuesday update."
-date: 2025-08-26 23:40
 lang: en
 summary: "Quick update on the main website and the KindSun project."
 ---

@@ -6,14 +6,14 @@ layout: default
     <!-- Description -->
 
     <div id="welcome">
-        {{ content }}
+        {{ content | safe }}
     </div>
 
     <!-- Pfp + Citation -->
 
     <div id="pfp-container">
         <img src="{{ site.images_path }}/mimo-pfp.png" class="pfp"
-            alt="{{ site.data.locales[page.lang].profile_picture_alt }}">
+            alt="{{ i18n[lang].profile_picture_alt }}">
         <p id="citation">"Say cheese !"</p>
     </div>
 </section>
@@ -22,10 +22,10 @@ layout: default
 <!-- Links to my socials -->
 
 <div id="socials" aria-label="Social links">
-    {% for social in site.data.home.socials %}
+    {% for social in home.socials %}
     <a href="{{ social.url }}" title="{{ social.name }}">
-        <img src="{{ site.icons_path }}/socials/{{ social.name | downcase }}.svg"
-            alt="{{ site.data.locales[page.lang].social }} {{ social.name }}"
+        <img src="{{ site.icons_path }}/socials/{{ social.name | lower }}.svg"
+            alt="{{ i18n[lang].social }} {{ social.name }}"
             target="_blank" rel="noopener noreferrer">
     </a>
     {% endfor %}

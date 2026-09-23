@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "wild updates are arriving at your location now."
-date: 2025-08-16 18:00
 lang: en
 summary: "First post ! About the website and the projects I'm working on."
 ---

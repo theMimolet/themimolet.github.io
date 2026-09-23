@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "translations and progress."
-date: 2025-08-25 22:30
 lang: en
 summary: "Quick update on life, numerous projects and leaving Roblox."
 ---

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Projects, improvements and a dinosaur"
-date: 2025-11-13 00:15
 lang: en
 summary: "A big update on the website, the distro I'm using and school."
 ---

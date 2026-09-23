@@ -1,0 +1,29 @@
+{
+  "name": "themimolet.github.io",
+  "version": "1.0.0",
+  "description": "Mimolet's personal website",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx @11ty/eleventy --serve",
+    "build-ghpages": "npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theMimolet/themimolet.github.io.git"
+  },
+  "keywords": [],
+  "author": "theMimolet",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/theMimolet/themimolet.github.io/issues"
+  },
+  "homepage": "https://github.com/theMimolet/themimolet.github.io#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-plugin-rss": "^3.0.0",
+    "js-yaml": "^5.4.2",
+    "nunjucks": "^3.2.4"
+  }
+}

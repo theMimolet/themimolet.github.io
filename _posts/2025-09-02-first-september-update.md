@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "first september update."
-date: 2025-09-02 22:30
 lang: en
 summary: "A quick update on the website's feed."
 ---

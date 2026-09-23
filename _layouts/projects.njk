@@ -3,12 +3,12 @@ layout: default
 ---
 
 <div class="projects-container">
-    {% for project in page.projects %}
+    {% for project in projects %}
     <div class="project">
         <img src="{{ project.icon }}" alt="{{ project.name }} icon" class="project-image">
         <div>
             <h2>{{ project.name }}</h2>
-            <p>{{ project.description | newline_to_br | markdownify | strip_newlines }}</p>
+            <p>{{ project.description | replace('\n', '<br>') | safe }}</p>
             <div class="project-links">
                 {% if project.links %}
                 {% for link in project.links %}

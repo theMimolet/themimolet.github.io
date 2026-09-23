@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Le Capitaine est de retour à bon port !"
-date: 2026-04-07 16:00
 lang: fr
 summary: "Poste sur la dernière mise à jour du site web, l'école et un nouveau projet..."
 ---
