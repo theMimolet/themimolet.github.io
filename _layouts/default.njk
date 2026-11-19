@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{ site.images }}/website-icon.ico"
+    >
+    <title>{{ title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.styles }}/main.css">
+    <link rel="stylesheet" href="{{ site.styles }}/home.css">
+    <meta property="og:title" content="Mimolet's Website!">
+    <meta
+      property="og:description"
+      content="Hi ! Come and check out my website :)"
+    >
+    <meta property="og:image" content="{{ site.images }}/mimo-pfp.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mimolet's Website!">
+    <meta
+      name="twitter:description"
+      content="Hi ! Come and check out my website :)"
+    >
+    <meta name="twitter:image" content="{{ site.images }}/mimo-pfp.png">
+  </head>
+
+  <body data-lang="{{ lang }}">
+    <main>
+      <div class="top-bg">
+        <div class="right-buttons">
+          <!-- Languages select -->
+
+          <select class="menu-buttons" id="languages-select"></select>
+          <script src="{{ site.scripts }}/language.js"></script>
+        </div>
+      </div>
+
+      <!-- Main page start -->
+
+      <div class="header_picture">
+        <img src="{{ site.images }}/mimo-pfp.png" alt="Mimolet profile picture">
+      </div>
+
+      <h1>Mimolet</h1>
+      <p id="citation">"Say cheese !"</p>
+
+      <!-- Description -->
+
+      <section id="about">
+        {{ content | safe }}
+      </section>
+
+      <!-- Links to my socials -->
+
+      <div id="socials">
+        {% for social in links.socials %}
+          <a
+            href="{{ social.url }}"
+            title="{{ socialsI10N[social.name | lower] }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="{{ site.icons }}/socials/{{ social.name | lower }}.svg"
+              alt="{{ social.name }}'s icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+          </a>
+        {% endfor %}
+      </div>
+
+      <div id="projects">
+        <h2>{{ projectsTitle }}</h2>
+        <div id="projects-list">
+          {% for project in projects %}
+            <div class="project-card">
+              {% if project.illustration %}
+                <div
+                  class="background-image"
+                  style="background-image: url('{{ project.illustration }}');"
+                >
+                </div>
+              {% endif %}
+              <div class="project-description">
+                <h3>{{ project.name }}</h3>
+                <p class="project-role">{{ project.role }}</p>
+                <p>{{ project.description }}</p>
+              </div>
+
+              {% if project.links %}
+                <div class="project-links">
+                  {% for link in project.links %}
+                    <a
+                      class="project-link"
+                      href="{{ link.url }}"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {{ link.caption }}
+                    </a>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div id="friends">
+        <h2>{{ friends.title }}</h2>
+        <div id="friends-list">
+          {% for friend in links.friends %}
+            <a
+              href="{{ friend.url }}"
+              title="{{ friend.name }}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="{{friend.image}}">
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div id="footer">
+        <p>{{ footer }}</p>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+{
+  "socials": [
+    {
+      "name": "Bluesky",
+      "url": "https://bsky.app/profile/themimolet.bsky.social"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/themimolet/"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com/@Mimolet"
+    },
+    {
+      "name": "Reddit",
+      "url": "https://www.reddit.com/user/theMimolet/"
+    },
+    {
+      "name": "Twitch",
+      "url": "https://www.twitch.tv/themimolet"
+    },
+    {
+      "name": "Steam",
+      "url": "https://steamcommunity.com/id/mimolet/"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/themimolet"
+    },
+    {
+      "name": "Mail",
+      "url": "mailto:themimolet@proton.me"
+    }
+  ],
+  "friends": [
+    {
+      "name": "HappySunnySun",
+      "image": "/assets/images/friends/sunshine.png",
+      "url": "https://happysunnysun.github.io/SunWebsite/"
+    },
+    {
+      "name": "Kolunmi",
+      "image": "https://kolunmi.net/kolunmi88x31.png",
+      "url": "https://www.kolunmi.net/"
+    },
+    {
+      "name": "Lumaeris",
+      "image": "https://lumaeris.com/assets/img/88x31.png",
+      "url": "https://lumaeris.com/"
+    },
+    {
+      "name": "libffi",
+      "image": "https://ffi.lol/88x31@1x.png",
+      "url": "https://ffi.lol/"
+    }
+  ]
+}
