@@ -13,10 +13,10 @@ socialsI10N:
   "mail": "E-mail"
 projectsTitle: "Projects"
 projects:
-  - name: "Unlost"
+  - name: "Unlost (in production)"
     role: "Chief developer"
     illustration: "/assets/images/projects/unlost.png"
-    description: "Unlost is a turn-by-turn RPG (currently in production). It's being developed by a team of students on their own within the perspective of a school project."
+    description: "Unlost is a turn-by-turn RPG. It's being developed by a team of students on their own within the perspective of a school project."
     links:
       - url: "https://team-unlost.github.io/"
         caption: "Official Website"
@@ -31,7 +31,7 @@ projects:
         caption: "Github Repository"
   - name: "uMOTD"
     role: "Creator and developer"
-    description: "uMOTD is a Universal Blue utility that returns translated and relevant tips to the user."
+    description: "uMOTD is a Universal Blue software that returns translated and relevant tips to the user."
     links:
       - url: "https://github.com/projectbluefin/umotd"
         caption: "Github Repository"

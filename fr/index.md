@@ -13,10 +13,10 @@ socialsI10N:
   "mail": "Courriel"
 projectsTitle: "Projets"
 projects:
-  - name: "Unlost"
+  - name: "Unlost (en production)"
     role: "Développeur en chef"
     illustration: "/assets/images/projects/unlost.png"
-    description: "Unlost est un RPG en tour par tour (en cours de production). Il est développé en autonomie par une équipe d'étudiants dans le cadre d'un projet d'école."
+    description: "Unlost est un RPG en tour par tour. Il est développé en autonomie par une équipe d'étudiants dans le cadre d'un projet d'école."
     links:
       - url: "https://team-unlost.github.io/"
         caption: "Site officiel"
@@ -31,7 +31,7 @@ projects:
         caption: "Dépôt Github"
   - name: "uMOTD"
     role: "Créateur et développeur"
-    description: "uMOTD est un utilitaire d'Universal Blue qui renvoie des astuces traduites et pertinentes à l'utilisateur."
+    description: "uMOTD est un logiciel d'Universal Blue qui renvoie des astuces traduites et pertinentes à l'utilisateur."
     links:
       - url: "https://github.com/projectbluefin/umotd"
         caption: "Dépôt Github"
