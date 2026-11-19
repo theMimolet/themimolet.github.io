@@ -14,13 +14,11 @@
     --menu-hover: rgba(212, 208, 204, 0.7);
     --border: solid rgba(0, 0, 0, 0.1) 1px;
     --icon: #000000;
-    --icon-light: block;
-    --icon-dark: none;
     --icon-filter: invert(0%);
     --accent: linear-gradient(300deg, rgb(255, 94, 0), rgb(228, 153, 41));
     --accent-simple: rgb(255, 94, 0);
     --background-gradient: radial-gradient(circle, rgb(249, 176, 86) 0%, rgb(235, 235, 235) 75%);
-    --border-radius: 25px;
+    --border-radius: 30px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,8 +30,6 @@
         --menu-hover: rgba(75, 75, 75, 0.7);
         --border: solid rgba(255, 255, 255, 0.1) 1px;
         --icon: #ffffff;
-        --icon-light: none;
-        --icon-dark: block;
         --icon-filter: invert(100%);
         --accent: linear-gradient(300deg, rgb(255, 94, 0), rgb(228, 153, 41));
         --background-color: rgb(19, 19, 19);
